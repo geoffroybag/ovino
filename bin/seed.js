@@ -1,24 +1,30 @@
-const plats = []
+const mongoose = require("mongoose");
+
+const Meal = require ('../models/meal-model.js')
+const Wine = require("../models/wine-model.js")
+
+mongoose
+  .connect('mongodb://localhost/awesome-project', {useNewUrlParser: true})
+  .then(x => {
+    console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
+  })
+  .catch(err => {
+    console.error('Error connecting to mongo', err)
+  });
 
 
-REFERENCING DOCUMENTS
+// const mealData =
+// 	{"type":"Meat","subtype":"Lamb","dish":["Lamb", "Lamb chop", "Rack ok lamb","Leg of lamb","Navarin of lamb","Shoulder of Lamb"],"winepairing":[{"$oid":"5bf0214b6f95a57fe1464b47"},{"$oid":"5bf0214b6f95a57fe1464b48"},{"$oid":"5bf0214b6f95a57fe1464b49"}]}
 
 
 
-Meat	Lamb	Lamb
-		Lamb chop
-		Rack ok lamb
-		Leg of lamb
-		Agneau aux herbes
-		Navarin of lamb
-		Shoulder of lamb
-		
-	Beef	Beef
-		Ribs
-		Roast beef
-		Steak
-		Flank steak
-		Skirt steak
-		Rib Steak
-		Beef stew
-		Steak tartare
+
+// Meal.create(mealData)
+// 	.then(bookDoc => {
+// 		console.log(`Created dish ${bookDoc.subtype}`)
+// 	})
+// 	.catch(err=> {console.log("Book creation FAILED", err)});
+
+
+
+

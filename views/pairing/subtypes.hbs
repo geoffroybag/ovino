@@ -1,0 +1,9 @@
+<h2>What kind of meat do you want to eat?</h2>
+
+<ul>
+  {{#each subTypes.dish}}
+  <li><a href="/{{this._id}}">{{this}}</a></li>
+<br>
+{{/each}}
+
+</ul>

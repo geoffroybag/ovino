@@ -1,0 +1,170 @@
+{"type":"Meat","subtype":"Lamb","dish":"Lamb","wine1":{"$oid":"5bf0214b6f95a57fe1464b47"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b48"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b49"}}
+{"type":"Meat","subtype":"Lamb","dish":"Lamb chop","wine1":{"$oid":"5bf0214b6f95a57fe1464b48"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b49"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b4a"}}
+{"type":"Meat","subtype":"Lamb","dish":"Rack ok lamb","wine1":{"$oid":"5bf0214b6f95a57fe1464b49"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b4a"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b4b"}}
+{"type":"Meat","subtype":"Lamb","dish":"Leg of lamb","wine1":{"$oid":"5bf0214b6f95a57fe1464b4a"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b4b"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b4c"}}
+{"type":"Meat","subtype":"Lamb","dish":"Agneau aux herbes","wine1":{"$oid":"5bf0214b6f95a57fe1464b4b"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b4c"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b4d"}}
+{"type":"Meat","subtype":"Lamb","dish":"Navarin of lamb","wine1":{"$oid":"5bf0214b6f95a57fe1464b4c"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b4d"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b4e"}}
+{"type":"Meat","subtype":"Lamb","dish":"Shoulder of lamb","wine1":{"$oid":"5bf0214b6f95a57fe1464b4d"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b4e"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b4f"}}
+{"type":"Meat","subtype":"Beef","dish":"Beef","wine1":{"$oid":"5bf0214b6f95a57fe1464b4e"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b4f"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b50"}}
+{"type":"Meat","subtype":"Beef","dish":"Ribs","wine1":{"$oid":"5bf0214b6f95a57fe1464b4f"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b50"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b51"}}
+{"type":"Meat","subtype":"Beef","dish":"Roast beef","wine1":{"$oid":"5bf0214b6f95a57fe1464b50"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b51"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b52"}}
+{"type":"Meat","subtype":"Beef","dish":"Steak","wine1":{"$oid":"5bf0214b6f95a57fe1464b51"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b52"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b53"}}
+{"type":"Meat","subtype":"Beef","dish":"Flank steak","wine1":{"$oid":"5bf0214b6f95a57fe1464b52"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b53"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b54"}}
+{"type":"Meat","subtype":"Beef","dish":"Skirt steak","wine1":{"$oid":"5bf0214b6f95a57fe1464b53"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b54"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b55"}}
+{"type":"Meat","subtype":"Beef","dish":"Rib Steak","wine1":{"$oid":"5bf0214b6f95a57fe1464b54"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b55"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b56"}}
+{"type":"Meat","subtype":"Beef","dish":"Beef stew","wine1":{"$oid":"5bf0214b6f95a57fe1464b55"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b56"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b57"}}
+{"type":"Meat","subtype":"Beef","dish":"Steak tartare","wine1":{"$oid":"5bf0214b6f95a57fe1464b56"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b57"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b58"}}
+{"type":"Meat","subtype":"Veal","dish":"Veal","wine1":{"$oid":"5bf0214b6f95a57fe1464b57"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b58"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b59"}}
+{"type":"Meat","subtype":"Veal","dish":"Veal with cream","wine1":{"$oid":"5bf0214b6f95a57fe1464b58"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b59"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b5a"}}
+{"type":"Meat","subtype":"Veal","dish":"Ris de veau","wine1":{"$oid":"5bf0214b6f95a57fe1464b59"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b5a"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b5b"}}
+{"type":"Meat","subtype":"Veal","dish":"Veal chop","wine1":{"$oid":"5bf0214b6f95a57fe1464b5a"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b5b"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b5c"}}
+{"type":"Meat","subtype":"Veal","dish":"Veal escalope","wine1":{"$oid":"5bf0214b6f95a57fe1464b5b"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b5c"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b5d"}}
+{"type":"Meat","subtype":"Veal","dish":"Veal liver","wine1":{"$oid":"5bf0214b6f95a57fe1464b5c"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b5d"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b5e"}}
+{"type":"Meat","subtype":"Veal","dish":"Paupiettes","wine1":{"$oid":"5bf0214b6f95a57fe1464b5d"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b5e"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b5f"}}
+{"type":"Meat","subtype":"Veal","dish":"Orloff veal","wine1":{"$oid":"5bf0214b6f95a57fe1464b5e"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b5f"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b60"}}
+{"type":"Meat","subtype":"Veal","dish":"Veal stew","wine1":{"$oid":"5bf0214b6f95a57fe1464b5f"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b60"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b61"}}
+{"type":"Meat","subtype":"Pork","dish":"Pork","wine1":{"$oid":"5bf0214b6f95a57fe1464b60"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b61"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b62"}}
+{"type":"Meat","subtype":"Pork","dish":"Filet mignon","wine1":{"$oid":"5bf0214b6f95a57fe1464b61"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b62"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b63"}}
+{"type":"Meat","subtype":"Pork","dish":"Spare Rib","wine1":{"$oid":"5bf0214b6f95a57fe1464b62"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b63"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b64"}}
+{"type":"Meat","subtype":"Pork","dish":"Cured Ham","wine1":{"$oid":"5bf0214b6f95a57fe1464b63"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b64"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b65"}}
+{"type":"Meat","subtype":"Pork","dish":"Roast Pork","wine1":{"$oid":"5bf0214b6f95a57fe1464b64"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b65"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b66"}}
+{"type":"Meat","subtype":"Game","dish":"Venison","wine1":{"$oid":"5bf0214b6f95a57fe1464b65"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b66"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b67"}}
+{"type":"Meat","subtype":"Game","dish":"Hare","wine1":{"$oid":"5bf0214b6f95a57fe1464b66"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b67"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b68"}}
+{"type":"Meat","subtype":"Game","dish":"Wild boar","wine1":{"$oid":"5bf0214b6f95a57fe1464b67"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b68"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b69"}}
+{"type":"Meat","subtype":"Game","dish":"Pheasant","wine1":{"$oid":"5bf0214b6f95a57fe1464b47"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b48"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b49"}}
+{"type":"Meat","subtype":"Game","dish":"Partridge","wine1":{"$oid":"5bf0214b6f95a57fe1464b48"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b49"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b4a"}}
+{"type":"Meat","subtype":"Game","dish":"Deer","wine1":{"$oid":"5bf0214b6f95a57fe1464b49"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b4a"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b4b"}}
+{"type":"Meat","subtype":"Cold meats","dish":"Cold meats","wine1":{"$oid":"5bf0214b6f95a57fe1464b4a"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b4b"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b4c"}}
+{"type":"Meat","subtype":"Cold meats","dish":"Ham","wine1":{"$oid":"5bf0214b6f95a57fe1464b4b"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b4c"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b4d"}}
+{"type":"Meat","subtype":"Cold meats","dish":"Cured ham","wine1":{"$oid":"5bf0214b6f95a57fe1464b4c"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b4d"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b4e"}}
+{"type":"Meat","subtype":"Cold meats","dish":"Dried sausage","wine1":{"$oid":"5bf0214b6f95a57fe1464b4d"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b4e"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b4f"}}
+{"type":"Meat","subtype":"Cold meats","dish":"Terrine","wine1":{"$oid":"5bf0214b6f95a57fe1464b4e"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b4f"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b50"}}
+{"type":"Meat","subtype":"Cold meats","dish":"Potted meat","wine1":{"$oid":"5bf0214b6f95a57fe1464b4f"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b50"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b51"}}
+{"type":"Meat","subtype":"Cold meats","dish":"Chorizo","wine1":{"$oid":"5bf0214b6f95a57fe1464b50"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b51"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b52"}}
+{"type":"Meat","subtype":"Cold meats","dish":"Sausage","wine1":{"$oid":"5bf0214b6f95a57fe1464b51"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b52"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b53"}}
+{"type":"Meat","subtype":"Cold meats","dish":"Blood sausage","wine1":{"$oid":"5bf0214b6f95a57fe1464b52"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b53"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b54"}}
+{"type":"Poultry","subtype":"Chicken","dish":"Chicken","wine1":{"$oid":"5bf0214b6f95a57fe1464b53"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b54"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b55"}}
+{"type":"Poultry","subtype":"Chicken","dish":"Roast chicken","wine1":{"$oid":"5bf0214b6f95a57fe1464b54"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b55"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b56"}}
+{"type":"Poultry","subtype":"Chicken","dish":"Chicken with cream","wine1":{"$oid":"5bf0214b6f95a57fe1464b55"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b56"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b57"}}
+{"type":"Poultry","subtype":"Chicken","dish":"Basque-style chicken","wine1":{"$oid":"5bf0214b6f95a57fe1464b56"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b57"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b58"}}
+{"type":"Poultry","subtype":"Chicken","dish":"Chicken curry","wine1":{"$oid":"5bf0214b6f95a57fe1464b57"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b58"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b59"}}
+{"type":"Poultry","subtype":"Duck","dish":"Duck breast","wine1":{"$oid":"5bf0214b6f95a57fe1464b58"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b59"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b5a"}}
+{"type":"Poultry","subtype":"Duck","dish":"Duck","wine1":{"$oid":"5bf0214b6f95a57fe1464b59"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b5a"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b5b"}}
+{"type":"Poultry","subtype":"Duck","dish":"Duck confit","wine1":{"$oid":"5bf0214b6f95a57fe1464b5a"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b5b"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b5c"}}
+{"type":"Poultry","subtype":"Rabbit","dish":"Rabbit in mustard sauce","wine1":{"$oid":"5bf0214b6f95a57fe1464b5b"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b5c"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b5d"}}
+{"type":"Poultry","subtype":"Rabbit","dish":"Rabbit with cream","wine1":{"$oid":"5bf0214b6f95a57fe1464b5c"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b5d"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b5e"}}
+{"type":"Poultry","subtype":"Others","dish":"Foie Gras","wine1":{"$oid":"5bf0214b6f95a57fe1464b5d"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b5e"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b5f"}}
+{"type":"Poultry","subtype":"Others","dish":"Coq au vin","wine1":{"$oid":"5bf0214b6f95a57fe1464b5e"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b5f"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b60"}}
+{"type":"Poultry","subtype":"Others","dish":"Pigeon","wine1":{"$oid":"5bf0214b6f95a57fe1464b5f"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b60"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b61"}}
+{"type":"Poultry","subtype":"Others","dish":"Capon","wine1":{"$oid":"5bf0214b6f95a57fe1464b60"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b61"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b62"}}
+{"type":"Poultry","subtype":"Others","dish":"Turkey","wine1":{"$oid":"5bf0214b6f95a57fe1464b61"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b62"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b63"}}
+{"type":"Fish & Seafood","subtype":"White fish","dish":"Sea bream","wine1":{"$oid":"5bf0214b6f95a57fe1464b62"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b63"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b64"}}
+{"type":"Fish & Seafood","subtype":"White fish","dish":"Cod","wine1":{"$oid":"5bf0214b6f95a57fe1464b63"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b64"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b65"}}
+{"type":"Fish & Seafood","subtype":"White fish","dish":"Coley","wine1":{"$oid":"5bf0214b6f95a57fe1464b64"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b65"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b66"}}
+{"type":"Fish & Seafood","subtype":"White fish","dish":"Whiting","wine1":{"$oid":"5bf0214b6f95a57fe1464b65"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b66"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b67"}}
+{"type":"Fish & Seafood","subtype":"White fish","dish":"Monkfish","wine1":{"$oid":"5bf0214b6f95a57fe1464b66"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b67"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b68"}}
+{"type":"Fish & Seafood","subtype":"White fish","dish":"Pollock","wine1":{"$oid":"5bf0214b6f95a57fe1464b67"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b68"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b69"}}
+{"type":"Fish & Seafood","subtype":"White fish","dish":"Bass","wine1":{"$oid":"5bf0214b6f95a57fe1464b47"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b48"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b49"}}
+{"type":"Fish & Seafood","subtype":"Other fish","dish":"Salmon","wine1":{"$oid":"5bf0214b6f95a57fe1464b48"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b49"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b4a"}}
+{"type":"Fish & Seafood","subtype":"Other fish","dish":"Smoked salmon","wine1":{"$oid":"5bf0214b6f95a57fe1464b49"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b4a"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b4b"}}
+{"type":"Fish & Seafood","subtype":"Other fish","dish":"Anchovy","wine1":{"$oid":"5bf0214b6f95a57fe1464b4a"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b4b"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b4c"}}
+{"type":"Fish & Seafood","subtype":"Other fish","dish":"Sole","wine1":{"$oid":"5bf0214b6f95a57fe1464b4b"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b4c"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b4d"}}
+{"type":"Fish & Seafood","subtype":"Other fish","dish":"Carp","wine1":{"$oid":"5bf0214b6f95a57fe1464b4c"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b4d"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b4e"}}
+{"type":"Fish & Seafood","subtype":"Other fish","dish":"Tuna","wine1":{"$oid":"5bf0214b6f95a57fe1464b4d"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b4e"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b4f"}}
+{"type":"Fish & Seafood","subtype":"Other fish","dish":"Swordfish","wine1":{"$oid":"5bf0214b6f95a57fe1464b4e"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b4f"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b50"}}
+{"type":"Fish & Seafood","subtype":"Other fish","dish":"Red mullet","wine1":{"$oid":"5bf0214b6f95a57fe1464b4f"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b50"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b51"}}
+{"type":"Fish & Seafood","subtype":"Other fish","dish":"Turbot","wine1":{"$oid":"5bf0214b6f95a57fe1464b50"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b51"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b52"}}
+{"type":"Fish & Seafood","subtype":"Other fish","dish":"Sardine","wine1":{"$oid":"5bf0214b6f95a57fe1464b51"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b52"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b53"}}
+{"type":"Fish & Seafood","subtype":"Seafood","dish":"Seafood","wine1":{"$oid":"5bf0214b6f95a57fe1464b52"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b53"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b54"}}
+{"type":"Fish & Seafood","subtype":"Seafood","dish":"Oyster","wine1":{"$oid":"5bf0214b6f95a57fe1464b53"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b54"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b55"}}
+{"type":"Fish & Seafood","subtype":"Seafood","dish":"Whelk","wine1":{"$oid":"5bf0214b6f95a57fe1464b54"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b55"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b56"}}
+{"type":"Fish & Seafood","subtype":"Seafood","dish":"Clam","wine1":{"$oid":"5bf0214b6f95a57fe1464b55"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b56"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b57"}}
+{"type":"Fish & Seafood","subtype":"Seafood","dish":"Scallop","wine1":{"$oid":"5bf0214b6f95a57fe1464b56"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b57"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b58"}}
+{"type":"Fish & Seafood","subtype":"Seafood","dish":"Squid","wine1":{"$oid":"5bf0214b6f95a57fe1464b57"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b58"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b59"}}
+{"type":"Fish & Seafood","subtype":"Crustacean","dish":"Shrimp","wine1":{"$oid":"5bf0214b6f95a57fe1464b58"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b59"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b5a"}}
+{"type":"Fish & Seafood","subtype":"Crustacean","dish":"Lobster","wine1":{"$oid":"5bf0214b6f95a57fe1464b59"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b5a"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b5b"}}
+{"type":"Fish & Seafood","subtype":"Crustacean","dish":"Crab","wine1":{"$oid":"5bf0214b6f95a57fe1464b5a"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b5b"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b5c"}}
+{"type":"Fish & Seafood","subtype":"Crustacean","dish":"Mussel","wine1":{"$oid":"5bf0214b6f95a57fe1464b5b"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b5c"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b5d"}}
+{"type":"Fish & Seafood","subtype":"Other","dish":"Caviar","wine1":{"$oid":"5bf0214b6f95a57fe1464b5c"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b5d"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b5e"}}
+{"type":"Fish & Seafood","subtype":"Other","dish":"Octopus","wine1":{"$oid":"5bf0214b6f95a57fe1464b5d"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b5e"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b5f"}}
+{"type":"Fish & Seafood","subtype":"Other","dish":"Frog","wine1":{"$oid":"5bf0214b6f95a57fe1464b5e"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b5f"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b60"}}
+{"type":"Fish & Seafood","subtype":"Other","dish":"Snail","wine1":{"$oid":"5bf0214b6f95a57fe1464b5f"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b60"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b61"}}
+{"type":"Fish & Seafood","subtype":"Other","dish":"Tempura","wine1":{"$oid":"5bf0214b6f95a57fe1464b60"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b61"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b62"}}
+{"type":"Fish & Seafood","subtype":"Other","dish":"Tarama","wine1":{"$oid":"5bf0214b6f95a57fe1464b61"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b62"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b63"}}
+{"type":"Cheese","subtype":"Hard cheese","dish":"Comt_","wine1":{"$oid":"5bf0214b6f95a57fe1464b62"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b63"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b64"}}
+{"type":"Cheese","subtype":"Hard cheese","dish":"Cantal","wine1":{"$oid":"5bf0214b6f95a57fe1464b63"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b64"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b65"}}
+{"type":"Cheese","subtype":"Hard cheese","dish":"Sheep cheese","wine1":{"$oid":"5bf0214b6f95a57fe1464b64"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b65"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b66"}}
+{"type":"Cheese","subtype":"Hard cheese","dish":"Mimolette","wine1":{"$oid":"5bf0214b6f95a57fe1464b65"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b66"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b67"}}
+{"type":"Cheese","subtype":"Hard cheese","dish":"Gruyere","wine1":{"$oid":"5bf0214b6f95a57fe1464b66"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b67"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b68"}}
+{"type":"Cheese","subtype":"Hard cheese","dish":"Gouda","wine1":{"$oid":"5bf0214b6f95a57fe1464b67"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b68"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b69"}}
+{"type":"Cheese","subtype":"Parsley cheese","dish":"Bleu d'auvergne","wine1":{"$oid":"5bf0214b6f95a57fe1464b47"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b48"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b49"}}
+{"type":"Cheese","subtype":"Parsley cheese","dish":"Gorgonzola","wine1":{"$oid":"5bf0214b6f95a57fe1464b48"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b49"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b4a"}}
+{"type":"Cheese","subtype":"Parsley cheese","dish":"Roquefort","wine1":{"$oid":"5bf0214b6f95a57fe1464b49"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b4a"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b4b"}}
+{"type":"Cheese","subtype":"Parsley cheese","dish":"Fourme d'Ambert","wine1":{"$oid":"5bf0214b6f95a57fe1464b4a"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b4b"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b4c"}}
+{"type":"Cheese","subtype":"Goat cheese","dish":"Goat cheese","wine1":{"$oid":"5bf0214b6f95a57fe1464b4b"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b4c"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b4d"}}
+{"type":"Cheese","subtype":"Goat cheese","dish":"Ash-coated goat's cheese","wine1":{"$oid":"5bf0214b6f95a57fe1464b4c"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b4d"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b4e"}}
+{"type":"Cheese","subtype":"Goat cheese","dish":"Crottin","wine1":{"$oid":"5bf0214b6f95a57fe1464b4d"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b4e"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b4f"}}
+{"type":"Cheese","subtype":"Goat cheese","dish":"Valenay","wine1":{"$oid":"5bf0214b6f95a57fe1464b4e"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b4f"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b50"}}
+{"type":"Cheese","subtype":"Goat cheese","dish":"Chabichou","wine1":{"$oid":"5bf0214b6f95a57fe1464b4f"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b50"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b51"}}
+{"type":"Cheese","subtype":"Creamy cheese","dish":"Saint-F_licien","wine1":{"$oid":"5bf0214b6f95a57fe1464b50"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b51"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b52"}}
+{"type":"Cheese","subtype":"Creamy cheese","dish":"Vacherin","wine1":{"$oid":"5bf0214b6f95a57fe1464b51"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b52"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b53"}}
+{"type":"Cheese","subtype":"Creamy cheese","dish":"Mont d'Or","wine1":{"$oid":"5bf0214b6f95a57fe1464b52"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b53"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b54"}}
+{"type":"Cheese","subtype":"Creamy cheese","dish":"Chaource","wine1":{"$oid":"5bf0214b6f95a57fe1464b53"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b54"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b55"}}
+{"type":"Cheese","subtype":"Creamy cheese","dish":"Brie","wine1":{"$oid":"5bf0214b6f95a57fe1464b54"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b55"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b56"}}
+{"type":"Cheese","subtype":"Creamy cheese","dish":"Reblochon","wine1":{"$oid":"5bf0214b6f95a57fe1464b55"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b56"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b57"}}
+{"type":"Cheese","subtype":"Creamy cheese","dish":"Tomme","wine1":{"$oid":"5bf0214b6f95a57fe1464b56"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b57"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b58"}}
+{"type":"Cheese","subtype":"Creamy cheese","dish":"Feta","wine1":{"$oid":"5bf0214b6f95a57fe1464b57"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b58"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b59"}}
+{"type":"Cheese","subtype":"Creamy cheese","dish":"Mozarella","wine1":{"$oid":"5bf0214b6f95a57fe1464b58"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b59"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b5a"}}
+{"type":"Cheese","subtype":"Creamy cheese","dish":"Ricotta","wine1":{"$oid":"5bf0214b6f95a57fe1464b59"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b5a"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b5b"}}
+{"type":"Cheese","subtype":"Creamy cheese","dish":"Camembert","wine1":{"$oid":"5bf0214b6f95a57fe1464b5a"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b5b"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b5c"}}
+{"type":"Vegetable","subtype":"Classical","dish":"Ratatouille","wine1":{"$oid":"5bf0214b6f95a57fe1464b5b"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b5c"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b5d"}}
+{"type":"Vegetable","subtype":"Classical","dish":"Tomatoes","wine1":{"$oid":"5bf0214b6f95a57fe1464b5c"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b5d"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b5e"}}
+{"type":"Vegetable","subtype":"Classical","dish":"Potato","wine1":{"$oid":"5bf0214b6f95a57fe1464b5d"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b5e"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b5f"}}
+{"type":"Vegetable","subtype":"Classical","dish":"Gratin","wine1":{"$oid":"5bf0214b6f95a57fe1464b5e"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b5f"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b60"}}
+{"type":"Vegetable","subtype":"Classical","dish":"Zucchini","wine1":{"$oid":"5bf0214b6f95a57fe1464b5f"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b60"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b61"}}
+{"type":"Vegetable","subtype":"Classical","dish":"Pepper","wine1":{"$oid":"5bf0214b6f95a57fe1464b60"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b61"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b62"}}
+{"type":"Vegetable","subtype":"Classical","dish":"Mashed potatoes","wine1":{"$oid":"5bf0214b6f95a57fe1464b61"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b62"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b63"}}
+{"type":"Vegetable","subtype":"Mushrooms","dish":"Mushrooms","wine1":{"$oid":"5bf0214b6f95a57fe1464b62"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b63"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b64"}}
+{"type":"Vegetable","subtype":"Mushrooms","dish":"Cep","wine1":{"$oid":"5bf0214b6f95a57fe1464b63"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b64"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b65"}}
+{"type":"Vegetable","subtype":"Mushrooms","dish":"Girolles","wine1":{"$oid":"5bf0214b6f95a57fe1464b64"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b65"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b66"}}
+{"type":"Vegetable","subtype":"Mushrooms","dish":"Morel","wine1":{"$oid":"5bf0214b6f95a57fe1464b65"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b66"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b67"}}
+{"type":"Vegetable","subtype":"Mushrooms","dish":"Truffle","wine1":{"$oid":"5bf0214b6f95a57fe1464b66"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b67"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b68"}}
+{"type":"Vegetable","subtype":"Green vegetables","dish":"Leek","wine1":{"$oid":"5bf0214b6f95a57fe1464b67"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b68"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b69"}}
+{"type":"Vegetable","subtype":"Green vegetables","dish":"Aspargus","wine1":{"$oid":"5bf0214b6f95a57fe1464b47"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b48"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b49"}}
+{"type":"Vegetable","subtype":"Green vegetables","dish":"Artichoke","wine1":{"$oid":"5bf0214b6f95a57fe1464b48"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b49"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b4a"}}
+{"type":"Vegetable","subtype":"Green vegetables","dish":"Spinach","wine1":{"$oid":"5bf0214b6f95a57fe1464b49"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b4a"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b4b"}}
+{"type":"Vegetable","subtype":"Green vegetables","dish":"Beans","wine1":{"$oid":"5bf0214b6f95a57fe1464b4a"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b4b"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b4c"}}
+{"type":"Vegetable","subtype":"Others","dish":"Beetoot","wine1":{"$oid":"5bf0214b6f95a57fe1464b4b"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b4c"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b4d"}}
+{"type":"Vegetable","subtype":"Others","dish":"Chicory","wine1":{"$oid":"5bf0214b6f95a57fe1464b4c"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b4d"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b4e"}}
+{"type":"Vegetable","subtype":"Others","dish":"Avocado","wine1":{"$oid":"5bf0214b6f95a57fe1464b4d"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b4e"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b4f"}}
+{"type":"Vegetable","subtype":"Others","dish":"Cauliflower","wine1":{"$oid":"5bf0214b6f95a57fe1464b4e"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b4f"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b50"}}
+{"type":"Vegetable","subtype":"Others","dish":"Lentil","wine1":{"$oid":"5bf0214b6f95a57fe1464b4f"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b50"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b51"}}
+{"type":"Vegetable","subtype":"Others","dish":"Bouillabaisse","wine1":{"$oid":"5bf0214b6f95a57fe1464b50"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b51"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b52"}}
+{"type":"Others","subtype":"Pasta/Pizza","dish":"Carbonara","wine1":{"$oid":"5bf0214b6f95a57fe1464b51"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b52"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b53"}}
+{"type":"Others","subtype":"Pasta/Pizza","dish":"Seefood","wine1":{"$oid":"5bf0214b6f95a57fe1464b52"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b53"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b54"}}
+{"type":"Others","subtype":"Pasta/Pizza","dish":"Meet","wine1":{"$oid":"5bf0214b6f95a57fe1464b53"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b54"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b55"}}
+{"type":"Others","subtype":"Pasta/Pizza","dish":"Mushrooms","wine1":{"$oid":"5bf0214b6f95a57fe1464b54"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b55"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b56"}}
+{"type":"Others","subtype":"Pasta/Pizza","dish":"all'arabiata","wine1":{"$oid":"5bf0214b6f95a57fe1464b55"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b56"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b57"}}
+{"type":"Others","subtype":"Pasta/Pizza","dish":"Salmon","wine1":{"$oid":"5bf0214b6f95a57fe1464b56"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b57"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b58"}}
+{"type":"Others","subtype":"Pasta/Pizza","dish":"Lasagna","wine1":{"$oid":"5bf0214b6f95a57fe1464b57"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b58"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b59"}}
+{"type":"Others","subtype":"Pasta/Pizza","dish":"Napolitana","wine1":{"$oid":"5bf0214b6f95a57fe1464b58"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b59"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b5a"}}
+{"type":"Others","subtype":"Pasta/Pizza","dish":"Quiche","wine1":{"$oid":"5bf0214b6f95a57fe1464b59"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b5a"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b5b"}}
+{"type":"Others","subtype":"Classical","dish":"Raclette","wine1":{"$oid":"5bf0214b6f95a57fe1464b5a"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b5b"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b5c"}}
+{"type":"Others","subtype":"Classical","dish":"Tartiflette","wine1":{"$oid":"5bf0214b6f95a57fe1464b5b"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b5c"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b5d"}}
+{"type":"Others","subtype":"Classical","dish":"Pot-au-feu","wine1":{"$oid":"5bf0214b6f95a57fe1464b5c"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b5d"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b5e"}}
+{"type":"Others","subtype":"Classical","dish":"Crepes","wine1":{"$oid":"5bf0214b6f95a57fe1464b5d"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b5e"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b5f"}}
+{"type":"Others","subtype":"Classical","dish":"Paella","wine1":{"$oid":"5bf0214b6f95a57fe1464b5e"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b5f"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b60"}}
+{"type":"Others","subtype":"Classical","dish":"Meat balls","wine1":{"$oid":"5bf0214b6f95a57fe1464b5f"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b60"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b61"}}
+{"type":"Others","subtype":"Classical","dish":"Moussaka","wine1":{"$oid":"5bf0214b6f95a57fe1464b60"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b61"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b62"}}
+{"type":"Others","subtype":"Classical","dish":"Hamburger","wine1":{"$oid":"5bf0214b6f95a57fe1464b61"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b62"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b63"}}
+{"type":"Others","subtype":"Asian","dish":"Sushi","wine1":{"$oid":"5bf0214b6f95a57fe1464b62"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b63"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b64"}}
+{"type":"Others","subtype":"Asian","dish":"Tandoori","wine1":{"$oid":"5bf0214b6f95a57fe1464b63"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b64"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b65"}}
+{"type":"Others","subtype":"Asian","dish":"Chinese","wine1":{"$oid":"5bf0214b6f95a57fe1464b64"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b65"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b66"}}
+{"type":"Others","subtype":"Asian","dish":"Tempura","wine1":{"$oid":"5bf0214b6f95a57fe1464b65"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b66"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b67"}}
+{"type":"Others","subtype":"Middle East","dish":"Couscous","wine1":{"$oid":"5bf0214b6f95a57fe1464b66"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b67"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b68"}}
+{"type":"Others","subtype":"Middle East","dish":"Tajine","wine1":{"$oid":"5bf0214b6f95a57fe1464b67"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b68"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b69"}}
+{"type":"Others","subtype":"Middle East","dish":"Houmous","wine1":{"$oid":"5bf0214b6f95a57fe1464b47"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b48"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b49"}}
+{"type":"Others","subtype":"Middle East","dish":"Lebanese","wine1":{"$oid":"5bf0214b6f95a57fe1464b48"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b49"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b4a"}}
+{"type":"Others","subtype":"Others","dish":"Chili con carne","wine1":{"$oid":"5bf0214b6f95a57fe1464b49"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b4a"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b4b"}}
+{"type":"Others","subtype":"Others","dish":"Mexican food","wine1":{"$oid":"5bf0214b6f95a57fe1464b4a"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b4b"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b4c"}}
+{"type":"Others","subtype":"Others","dish":"Tapas","wine1":{"$oid":"5bf0214b6f95a57fe1464b4b"},"wine2":{"$oid":"5bf0214b6f95a57fe1464b4c"},"wine3":{"$oid":"5bf0214b6f95a57fe1464b4d"}}

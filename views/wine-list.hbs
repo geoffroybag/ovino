@@ -1,0 +1,14 @@
+<h2>Wine list:</h2>
+<ul>
+
+{{#each allWines}}
+  <li>{{this.appelation}}</li>
+<ul>
+  <li>{{this.domaine}} - {{this.millesime}}</li>
+  <li>{{this.geographie}} - {{this.couleur}}</li>
+  <li>{{this.style}}</li>
+  <li>{{this.accord1}}</li>
+</ul>
+
+{{/each}}
+</ul>

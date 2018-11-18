@@ -1,0 +1,26 @@
+<h2>Meal list:</h2>
+<ul>
+  {{#each allMeals}}
+
+  <li>{{this.dish}}</li>
+      <ul>
+        <li>{{this.wine1.domaine}}</li>
+        <li>{{this.wine1.appelation}}</li>
+        <li>{{this.wine1.millesime}}</li>
+      </ul>
+<br>
+      <ul>
+        <li>{{this.wine2.domaine}}</li>
+        <li>{{this.wine2.appelation}}</li>
+        <li>{{this.wine2.millesime}}</li>
+      </ul>
+<br>
+      <ul>
+        <li>{{this.wine3.domaine}}</li>
+        <li>{{this.wine3.appelation}}</li>
+        <li>{{this.wine3.millesime}}</li>
+      </ul>
+<br>
+{{/each}}
+
+</ul>
