@@ -1,8 +1,242 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Coquette-Regular';
+  src: url("/public/font/Coquette-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'GTAmerica-Bold';
+  src: url("/public/font/GTAmerica-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'GTAmerica-BoldItalic';
+  src: url("/public/font/GTAmerica-BoldItalic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'GTAmerica-Regular';
+  src: url("/public/font/GTAmerica-Regular.ttf") format("truetype"); }
+
+p {
+  font-family: "GTAmerica-Regular";
+  font-size: 10px;
+  color: #000000;
+  letter-spacing: 1.76px;
+  text-transform: lowercase; }
+  p::first-letter {
+    text-transform: uppercase; }
+
+.button-font {
+  background: #000000;
+  padding: 15px 100px;
+  border-radius: 50px;
+  font-family: "GTAmerica-Regular";
+  font-size: 13px;
+  color: #FFFFFF;
+  letter-spacing: 2.29px;
+  text-align: center;
+  line-height: 15px;
+  text-transform: uppercase; }
+
+.h0 {
+  font-family: "GTAmerica-Bold";
+  font-size: 100px;
+  color: #000000;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 45px; }
+
+.h1 {
+  font-family: "GTAmerica-Bold";
+  font-size: 45px;
+  color: #000000;
+  letter-spacing: 3.94px;
+  line-height: 45px;
+  text-transform: uppercase; }
+
+.h2 {
+  font-family: "GTAmerica-Bold";
+  font-size: 16px;
+  color: #000000;
+  letter-spacing: 1.37px;
+  text-align: center;
+  line-height: 45px;
+  text-transform: uppercase; }
+
+.h3 {
+  font-family: "GTAmerica-Regular";
+  font-size: 20px;
+  color: #000000;
+  letter-spacing: 3.53px;
+  line-height: 15px; }
+
+.h4 {
+  font-family: "GTAmerica-Regular";
+  font-size: 14px;
+  color: #000000;
+  letter-spacing: 2.47px;
+  line-height: 20px; }
+
+.h5 {
+  font-family: "GTAmerica-Regular";
+  font-size: 10px;
+  color: #000000;
+  letter-spacing: 1.76px;
+  text-align: center;
+  line-height: 15px; }
+
+.h6 {
+  font-family: "Coquette-Regular";
+  font-size: 20px;
+  color: #000000;
+  text-align: center;
+  text-transform: lowercase; }
+  .h6::first-letter {
+    text-transform: uppercase; }
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden; }
 
 a {
-  color: #00B7FF; }
+  text-decoration: none; }
+
+ul {
+  list-style-type: none; }
+
+section {
+  width: 100vw;
+  height: 100vh; }
+
+header {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  margin-bottom: 5px;
+  transform: translate(-50%, -50%); }
+
+#menu:hover {
+  animation: 1s crazyflip;
+  /* choisir combien de fois l'animation va se répéter sur l'élément */
+  animation-iteration-count: 1; }
+
+#logo {
+  width: 180px; }
+
+.section-menu .fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+  background-color: #8C2632; }
+  .section-menu .fullscreen-bg .row {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0; }
+    .section-menu .fullscreen-bg .row ul {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-block-start: 0;
+      margin-block-end: 0;
+      padding-inline-start: 0; }
+      .section-menu .fullscreen-bg .row ul li {
+        font-family: "GTAmerica-Bold";
+        font-size: 45px;
+        letter-spacing: 3.86px;
+        text-align: center;
+        line-height: 80px;
+        text-transform: uppercase;
+        color: white; }
+      .section-menu .fullscreen-bg .row ul li:hover {
+        font-family: "GTAmerica-BoldItalic"; }
+
+.section-home .fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+  background-image: url("../images/background-home.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.section-home .bottles-homepage {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: -50;
+  background-image: url("../images/icon-bottles.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: auto; }
+
+.section-home .row {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  text-align: center; }
+  .section-home .row .div3 {
+    margin: 0; }
+    .section-home .row .div3 .h6 {
+      margin: 20px; }
+    @media (max-width: 992px) {
+      .section-home .row .div3 .h6 {
+        margin: 10px; } }
+  .section-home .row .icon {
+    width: 150px;
+    height: 150px; }
+  @media (max-width: 992px) {
+    .section-home .row .icon {
+      width: 120px;
+      height: 120px; } }
+  @media (max-width: 767px) {
+    .section-home .row .icon {
+      width: 100px;
+      height: 100px; } }
+
+@media (max-width: 575px) {
+  .section-home .row {
+    height: 0;
+    margin-top: 40px; }
+  .section-home .bottles-homepage {
+    display: none; } }
+
+.section-home button {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 80px;
+  transform: translate(-50%, -50%);
+  left: 50%; }
+
+@keyframes crazyflip {
+  0% {
+    transform: rotateX(0); }
+  50% {
+    transform: rotateX(360deg); }
+  100% {
+    transform: rotateX(0); } }
 
 /*# sourceMappingURL=style.css.map */

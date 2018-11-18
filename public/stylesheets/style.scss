@@ -1,8 +1,318 @@
+// COLORS
+// ----------------------------------------------------------------
+
+$red: #8C2632;
+$darkgrey: #B5ACA5;
+$beige: #F4ECDD;
+$lightgrey: #EFECE9;
+
+
+// FONTS
+// ----------------------------------------------------------------
+
+@font-face {
+  font-family: 'Coquette-Regular';
+  // src: url('/public/font/Coquette-Regular.eot');
+  src: url('/public/font/Coquette-Regular.ttf') format('truetype');
+      //  url('/public/font/Coquette.woff') format('woff'),
+  }
+@font-face {
+	font-family: 'GTAmerica-Bold';
+	src: url('/public/font/GTAmerica-Bold.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'GTAmerica-BoldItalic';
+	src: url('/public/font/GTAmerica-BoldItalic.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'GTAmerica-Regular';
+	src: url('/public/font/GTAmerica-Regular.ttf') format('truetype');
+}
+
+$coquette: 'Coquette-Regular';
+$gtbold: 'GTAmerica-Bold';
+$gtboldit: 'GTAmerica-BoldItalic';
+$gtreg: 'GTAmerica-Regular';
+
+// Details wine pages paragraphes
+p{
+  font-family: $gtreg;
+  font-size: 10px;
+  color: #000000;
+  letter-spacing: 1.76px;
+  text-transform: lowercase;
+  &::first-letter {
+		text-transform: uppercase;
+  }
+}
+
+// Button font
+.button-font{
+  background: #000000;
+  padding: 15px 100px;
+  border-radius: 50px;
+  font-family: $gtreg;
+  font-size: 13px;
+  color: #FFFFFF;
+  letter-spacing: 2.29px;
+  text-align: center;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+// Delivery hour or "0" in empty friends pages/favorite wines page
+.h0{
+  font-family: $gtbold;
+  font-size: 100px;
+  color: #000000;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 45px;
+}
+
+// Details wine pages titles
+.h1{
+  font-family: $gtbold;
+  font-size: 45px;
+  color: #000000;
+  letter-spacing: 3.94px;
+  line-height: 45px;
+  text-transform: uppercase;
+  }
+
+// Name of wines in lists pages 
+.h2{
+  font-family: $gtbold;
+  font-size: 16px;
+  color: #000000;
+  letter-spacing: 1.37px;
+  text-align: center;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+
+// Details wine pages dates
+.h3{
+  font-family: $gtreg;
+  font-size: 20px;
+  color: #000000;
+  letter-spacing: 3.53px;
+  line-height: 15px;
+}
+
+// Lists pages dates or details terms (alchool, food eat with) in details wine pages
+.h4{
+  font-family: $gtreg;
+  font-size: 14px;
+  color: #000000;
+  letter-spacing: 2.47px;
+  line-height: 20px;
+}
+
+// Very small letters (ex: price)
+.h5{
+  font-family: $gtreg;
+  font-size: 10px;
+  color: #000000;
+  letter-spacing: 1.76px;
+  text-align: center;
+  line-height: 15px;
+}
+
+// Hand lettering
+.h6{
+  font-family: $coquette;
+  font-size: 20px;
+  color: #000000;
+  text-align: center;
+  text-transform: lowercase;
+  &::first-letter {
+		text-transform: uppercase;
+	}
+}
+
+// CSS
+// ----------------------------------------------------------------
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
 }
 
 a {
-  color: #00B7FF;
+  text-decoration: none;
+}
+
+ul{
+  list-style-type: none;
+}
+
+section{
+  width: 100vw;
+  height: 100vh;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px
+}
+
+footer{
+  position: fixed;
+  bottom: 0; 
+  left: 50%;
+  margin-bottom: 5px;
+  transform: translate(-50%, -50%);
+}
+
+#menu:hover{
+  animation: 1s crazyflip;
+  /* choisir combien de fois l'animation va se répéter sur l'élément */
+  animation-iteration-count: 1;
+}
+
+#logo{
+  width: 180px;
+}
+.section-menu{
+  .fullscreen-bg{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    background-color: $red;
+    .row{
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        padding-inline-start: 0;
+        li{
+          font-family: $gtbold;
+          font-size: 45px;
+          letter-spacing: 3.86px;
+          text-align: center;
+          line-height: 80px;
+          text-transform: uppercase;
+          color: white;
+        }
+        li:hover{
+          font-family: $gtboldit;
+        }
+      }
+    }
+  }
+}
+
+.section-home{
+  .fullscreen-bg{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    background-image: url("../images/background-home.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .bottles-homepage{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: -50;
+    background-image: url("../images/icon-bottles.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: auto;
+  }
+  .row{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    .div3{
+      margin: 0;
+      .h6{
+        margin: 20px;
+      }
+      @media (max-width: 992px){
+        .h6{
+          margin: 10px;
+        }
+      }
+    }
+    .icon{
+      width: 150px;
+      height: 150px;
+    }
+    @media (max-width: 992px){
+      .icon{
+        width: 120px;
+        height: 120px;
+      }
+    }
+    @media (max-width: 767px){
+      .icon{
+        width: 100px;
+        height: 100px;
+      }
+    }
+  } 
+  @media (max-width: 575px){
+    .row{
+      height: 0;
+      margin-top: 40px;
+    }
+    .bottles-homepage{
+      display: none;
+    }
+  }
+  button{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 80px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+  }
+}
+
+
+// ANIMATIONS
+// ----------------------------------------------------------------
+
+@keyframes crazyflip{
+  0% {
+    transform: rotateX(0);
+  }
+  50% {
+    transform: rotateX(360deg);
+  }
+  100% {
+    transform: rotateX(0);
+  }
 }
