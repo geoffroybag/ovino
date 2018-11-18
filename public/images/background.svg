@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="1024px" viewBox="0 0 1440 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage">
+            <g id="Group-2" transform="translate(-122.000000, -351.000000)">
+                <rect id="Rectangle" fill="#EFECE9" x="122" y="351" width="1440" height="1024"></rect>
+                <path d="M1255.05451,0 C1171.93307,14 1118.94094,55 1096.07813,123 C1061.7839,225 1255.05451,237.828395 1255.05451,300.222494 C1255.05451,362.616593 1160.10697,518.774152 1303.98188,574.814852 C1447.85678,630.855551 1429.03517,813.301517 1509.86208,904.953068 C1522.8953,919.731741 1540.14673,931.275506 1561.61637,939.584364 L1561.61637,0 L1255.05451,0 Z" id="Path-4" fill="#8C2632"></path>
+                <path d="M25.9205022,1245.23781 C112.431309,1178 186.829023,1161.19055 249.113645,1194.80945 C342.540578,1245.23781 396.941574,1317.34859 523.011106,1317.34859 C607.057462,1317.34859 656.544017,1352.38369 671.470772,1422.45389 L0,1422.45389 L26.7615022,1257.30336 L25.9205022,1245.23781 Z" id="Path-2" fill="#8C2632"></path>
+            </g>
+        </g>
+        <g id="Page"></g>
+        <g id="Page"></g>
+    </g>
+</svg>

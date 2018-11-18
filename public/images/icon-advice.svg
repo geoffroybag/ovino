@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="113px" height="113px" viewBox="0 0 113 113" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>User 07b Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="56.5" cy="56.5" r="56.5"></circle>
+    </defs>
+    <g id="Advice" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-664.000000, -193.000000)" id="Group-7">
+            <g transform="translate(209.000000, 193.000000)">
+                <g id="User-07b-Copy" transform="translate(455.000000, 0.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#B5ACA5" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    <circle id="Oval" stroke="#F4ECDD" stroke-width="3" mask="url(#mask-2)" cx="56" cy="-12" r="46"></circle>
+                    <g id="if_Energy_Energy_Bulb_Lamp_Electric_Light_3911242" mask="url(#mask-2)">
+                        <g transform="translate(56.000000, 51.000000) scale(1, -1) translate(-56.000000, -51.000000) translate(46.000000, 35.000000)">
+                            <path d="M20,10 C20,12.53 19.05,14.94 17.33,16.8 C16.47,17.72 16,18.86 16,20 C16,20.55 15.55,21 15,21 L5,21 C4.45,21 4,20.55 4,20 C4,18.86 3.53,17.72 2.67,16.8 C0.93,14.93 -0.02,12.48 -5.06261699e-14,9.93 C0.04,4.6 4.4,0.15 9.72,0 L10,0 C15.51,0 20,4.49 20,10 Z" id="Path" fill="#EBDA95"></path>
+                            <path d="M14,28 C14,28.35 13.96,28.68 13.87,29 C13.43,30.73 11.86,32 10,32 C8.14,32 6.57,30.73 6.13,29 C6.04,28.68 6,28.35 6,28 C6,27.45 6.45,27 7,27 L13,27 C13.55,27 14,27.45 14,28 Z" id="Path" fill="#000000"></path>
+                            <path d="M16,22 L16,27 C16,28.1 15.1,29 14,29 L6,29 C4.9,29 4,28.1 4,27 L4,22 C4,21.45 4.45,21 5,21 L15,21 C15.55,21 16,21.45 16,22 Z" id="Path" fill="#B94553"></path>
+                            <rect id="Rectangle" fill="#8C2632" x="4" y="24" width="12" height="2"></rect>
+                        </g>
+                    </g>
+                    <g id="if_Energy_Energy_Bulb_Lamp_Electric_Light_3911242-Copy-2" mask="url(#mask-2)">
+                        <g transform="translate(22.800363, 41.043004) scale(-1, -1) rotate(-330.000000) translate(-22.800363, -41.043004) translate(12.800363, 25.043004)">
+                            <path d="M20,10 C20,12.53 19.05,14.94 17.33,16.8 C16.47,17.72 16,18.86 16,20 C16,20.55 15.55,21 15,21 L5,21 C4.45,21 4,20.55 4,20 C4,18.86 3.53,17.72 2.67,16.8 C0.93,14.93 -0.02,12.48 -8.8817842e-16,9.93 C0.04,4.6 4.4,0.15 9.72,0 L10,0 C15.51,0 20,4.49 20,10 Z" id="Path" fill="#EBDA95"></path>
+                            <path d="M14,28 C14,28.35 13.96,28.68 13.87,29 C13.43,30.73 11.86,32 10,32 C8.14,32 6.57,30.73 6.13,29 C6.04,28.68 6,28.35 6,28 C6,27.45 6.45,27 7,27 L13,27 C13.55,27 14,27.45 14,28 Z" id="Path" fill="#000000"></path>
+                            <path d="M16,22 L16,27 C16,28.1 15.1,29 14,29 L6,29 C4.9,29 4,28.1 4,27 L4,22 C4,21.45 4.45,21 5,21 L15,21 C15.55,21 16,21.45 16,22 Z" id="Path" fill="#B94553"></path>
+                            <rect id="Rectangle" fill="#8C2632" x="4" y="24" width="12" height="2"></rect>
+                        </g>
+                    </g>
+                    <g id="if_Energy_Energy_Bulb_Lamp_Electric_Light_3911242-Copy-3" mask="url(#mask-2)">
+                        <g transform="translate(89.199637, 41.043004) scale(1, -1) rotate(-330.000000) translate(-89.199637, -41.043004) translate(79.199637, 25.043004)">
+                            <path d="M20,10 C20,12.53 19.05,14.94 17.33,16.8 C16.47,17.72 16,18.86 16,20 C16,20.55 15.55,21 15,21 L5,21 C4.45,21 4,20.55 4,20 C4,18.86 3.53,17.72 2.67,16.8 C0.93,14.93 -0.02,12.48 -8.8817842e-16,9.93 C0.04,4.6 4.4,0.15 9.72,0 L10,0 C15.51,0 20,4.49 20,10 Z" id="Path" fill="#EBDA95"></path>
+                            <path d="M14,28 C14,28.35 13.96,28.68 13.87,29 C13.43,30.73 11.86,32 10,32 C8.14,32 6.57,30.73 6.13,29 C6.04,28.68 6,28.35 6,28 C6,27.45 6.45,27 7,27 L13,27 C13.55,27 14,27.45 14,28 Z" id="Path" fill="#000000"></path>
+                            <path d="M16,22 L16,27 C16,28.1 15.1,29 14,29 L6,29 C4.9,29 4,28.1 4,27 L4,22 C4,21.45 4.45,21 5,21 L15,21 C15.55,21 16,21.45 16,22 Z" id="Path" fill="#B94553"></path>
+                            <rect id="Rectangle" fill="#8C2632" x="4" y="24" width="12" height="2"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
