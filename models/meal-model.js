@@ -6,7 +6,7 @@ const mealSchema = new Schema({
   type : {type : String,required : true},
   subtype : {type : String,required : true},
   dish : [{type : String,required : true}],
-  winepairing : [{type : Schema.Types.ObjectId, ref: "Wine"}],
+  wine : [{type : Schema.Types.ObjectId, ref: "Wine"}],
 }, {
   timestamps : true
 });
