@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="1024px" viewBox="0 0 1440 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage---Step3">
+            <g id="Group-2" transform="translate(-103.000000, -332.000000)">
+                <rect id="Rectangle" fill="#EFECE9" x="103" y="332" width="1440" height="1024"></rect>
+                <path d="M1322.69134,59 C1219.6145,73 1153.90027,114 1125.54866,182 C1083.02124,284 1078.20449,380.050973 1182.65671,498.25 C1287.10893,616.449027 1358.20269,546.84 1465.52464,574.197456 C1572.84659,601.554913 1538.44044,716.562336 1638.6719,808.213887 C1654.83407,822.99256 1676.22714,834.536325 1702.85112,842.845183 L1702.85112,59 L1322.69134,59 Z" id="Path-4" fill="#8C2632" transform="translate(1400.019197, 450.922591) rotate(13.000000) translate(-1400.019197, -450.922591) "></path>
+                <path d="M137.533995,1097.12412 C190.258187,1072.9806 247.762594,1077.71829 310.047216,1111.33719 C403.474149,1161.76555 365.569865,1321.63866 471.785254,1355.63562 C542.595514,1378.30026 608.202922,1452.01661 668.60748,1576.78466 L83.7770349,1484.24893 L110.538537,1319.09841 L137.533995,1097.12412 Z" id="Path-2" fill="#8C2632" transform="translate(376.192257, 1329.385762) rotate(-29.000000) translate(-376.192257, -1329.385762) "></path>
+            </g>
+        </g>
+        <g id="Page"></g>
+        <g id="Page"></g>
+    </g>
+</svg>
