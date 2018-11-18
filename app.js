@@ -8,10 +8,10 @@ const hbs          = require('hbs');
 const mongoose     = require('mongoose');
 const logger       = require('morgan');
 const path         = require('path');
-// const session      = require('express-session')
-// const flash        = require('connect-flash')
-// const MongoStore   = require('connect-mongo')(session);
-// const passport     = require('passport')
+const session      = require('express-session')
+const flash        = require('connect-flash')
+const MongoStore   = require('connect-mongo')(session);
+const passport     = require('passport')
 
 mongoose
   .connect('mongodb://localhost/awesome-project', {useNewUrlParser: true})
