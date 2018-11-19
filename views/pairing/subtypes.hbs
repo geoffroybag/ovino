@@ -9,3 +9,35 @@
 {{/each}}
 
 </ul>
+
+
+
+<section class="section-type">
+
+  <div class="fullscreen-bg"></div>
+
+  <div class="row justify-content-center">
+
+    <div class="div1 col-lg-8 col-md-8 col-sm-8">
+      
+    
+    <img src="/images/icon-food.gif" alt="" class="icon">
+      <div class="h6">What kind of food do you want to eat?</div>
+
+            
+              {{#each allMeat}}
+
+              <li><a href="/{{this._id}}">{{this.subtype}}</a></li>
+            <br>
+            {{/each}}
+
+           
+    
+    </div>
+
+  </div>
+
+<a href="/pairing"><button class="button-font">previous</button></a>
+</section>
+
+{{> footer}}
