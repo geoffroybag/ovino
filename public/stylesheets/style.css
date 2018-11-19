@@ -61,6 +61,10 @@ p {
   line-height: 45px;
   text-transform: uppercase; }
 
+@media (max-width: 767px) {
+  .h2 {
+    font-size: 14px; } }
+
 .h3 {
   font-family: "GTAmerica-Regular";
   font-size: 20px;
@@ -231,7 +235,7 @@ footer {
       text-transform: uppercase; }
     @media (max-width: 992px) {
       .section-home .row .div3 .h6 {
-        margin: 10px; } }
+        margin: 20px 10px 10px 10px; } }
   .section-home .row .icon {
     width: 150px;
     height: 150px; }
@@ -389,7 +393,7 @@ footer {
         margin: 20px; }
       @media (max-width: 992px) {
         .section-type .row .div1 .h6 {
-          margin: 10px; } }
+          margin: 20px 10px 10px 10px; } }
     .section-type .row .icon {
       width: 150px;
       height: 150px; }
@@ -462,7 +466,18 @@ footer {
             margin-top: 10px; }
             .section-reco .row .div1 .list .one-wine .appelation a:hover {
               background-color: rgba(181, 172, 165, 0.2);
-              border-radius: 15px; }
+              border-radius: 15px;
+              padding: 5px 25px; }
+            @media (max-width: 992px) {
+              .section-reco .row .div1 .list .one-wine .appelation a:hover {
+                padding: 5px 15px; } }
+            @media (max-width: 767px) {
+              .section-reco .row .div1 .list .one-wine .appelation a:hover {
+                padding: 5px 0px; } }
+          @media (max-width: 767px) {
+            .section-reco .row .div1 .list .one-wine .appelation {
+              font-size: 14px;
+              line-height: 15px; } }
           .section-reco .row .div1 .list .one-wine .proprieties {
             text-align: center;
             padding-inline-start: 0;
@@ -471,6 +486,12 @@ footer {
               margin-top: 10px; }
           .section-reco .row .div1 .list .one-wine .h5 {
             margin-bottom: 0; }
+      @media (max-width: 992px) {
+        .section-reco .row .div1 .list {
+          width: 90%; } }
+      @media (max-width: 767px) {
+        .section-reco .row .div1 .list {
+          width: 100%; } }
       .section-reco .row .div1 #details {
         text-decoration: underline; }
     .section-reco .row .icon {
@@ -484,12 +505,20 @@ footer {
       .section-reco .row .icon {
         width: 100px;
         height: 100px; } }
-  .section-reco button {
+  .section-reco .button-div {
     position: absolute;
     bottom: 0;
     margin-bottom: 80px;
     transform: translate(-50%, -50%);
     left: 50%; }
+    .section-reco .button-div .button-div-position {
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      .section-reco .button-div .button-div-position .button-left {
+        margin-right: 5px; }
+      .section-reco .button-div .button-div-position .button-right {
+        margin-left: 5px; }
 
 @keyframes crazyflip {
   0% {

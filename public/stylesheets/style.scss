@@ -90,6 +90,11 @@ p{
   line-height: 45px;
   text-transform: uppercase;
 }
+@media (max-width: 767px){
+  .h2{
+    font-size: 14px;
+  }
+}
 
 // Details wine pages dates
 .h3{
@@ -296,7 +301,7 @@ footer{
       }
       @media (max-width: 992px){
         .h6{
-          margin: 10px;
+          margin: 20px 10px 10px 10px;
         }
       }
     }
@@ -400,7 +405,6 @@ footer{
     }
 }
 
-
 .section-product{
   display: flex;
   flex-direction: column;
@@ -493,7 +497,7 @@ footer{
       }
       @media (max-width: 992px){
         .h6{
-          margin: 10px;
+          margin: 20px 10px 10px 10px;
         }
       }
     }
@@ -583,6 +587,23 @@ footer{
             a:hover{
               background-color: rgba(181, 172, 165, 0.2);
               border-radius: 15px;
+              padding: 5px 25px;
+            }
+            @media (max-width: 992px){
+              a:hover{
+                padding: 5px 15px;
+              }
+            }
+            @media (max-width: 767px){
+              a:hover{
+                padding: 5px 0px;
+              }
+            }
+          }
+          @media (max-width: 767px){
+            .appelation{
+              font-size:14px;
+              line-height: 15px;
             }
           }
         .proprieties{
@@ -597,6 +618,16 @@ footer{
           margin-bottom: 0;
         }
       }    
+    }
+    @media (max-width: 992px){
+      .list{
+        width: 90%;
+      }
+    }
+    @media (max-width: 767px){
+      .list{
+        width: 100%;
+      }
     }
     #details{
       text-decoration: underline;
@@ -620,13 +651,24 @@ footer{
     }
   }
 } 
-button{
-  position: absolute;
-  bottom: 0;
-  margin-bottom: 80px;
-  transform: translate(-50%, -50%);
-  left: 50%;
-}
+  .button-div{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 80px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    .button-div-position{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .button-left{
+        margin-right: 5px;
+      }
+      .button-right{
+        margin-left: 5px;
+      }
+    }
+  }
 }
 
 
