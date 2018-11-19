@@ -29,7 +29,7 @@ $lightgrey: #EFECE9;
 	src: url('/public/font/GTAmerica-Regular.ttf') format('truetype');
 }
 
-$coquette: 'Coquette-Regular';
+$coquette: 'Coquette';
 $gtbold: 'GTAmerica-Bold';
 $gtboldit: 'GTAmerica-BoldItalic';
 $gtreg: 'GTAmerica-Regular';
@@ -103,7 +103,7 @@ p{
 // Lists pages dates or details terms (alchool, food eat with) in details wine pages
 .h4{
   font-family: $gtreg;
-  font-size: 14px;
+  font-size: 12px;
   color: #000000;
   letter-spacing: 2.47px;
   line-height: 20px;
@@ -141,10 +141,10 @@ body {
   overflow-y: hidden;
 }
 
-a {
+a, a:hover {
   text-decoration: none;
   z-index: 50;
-
+  color: black;
 }
 
 ul{
@@ -153,7 +153,7 @@ ul{
 
 section{
   width: 100vw;
-  height: 100vh;
+  height: 70vh;
 }
 
 header{
@@ -234,12 +234,15 @@ footer{
           font-size: 45px;
           letter-spacing: 3.86px;
           text-align: center;
-          line-height: 80px;
           text-transform: uppercase;
           color: white;
-        }
-        li:hover{
-          font-family: $gtboldit;
+          a{
+            color: white;
+          }
+          a:hover{
+            font-family: $gtboldit;
+            color: white;
+          }
         }
       }
     }
@@ -281,12 +284,15 @@ footer{
     height: 100%;
     margin: 0;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     text-align: center;
     .div3{
       margin: 0;
       .h6{
         margin: 20px;
+      }
+      p{
+        text-transform: uppercase;
       }
       @media (max-width: 992px){
         .h6{
@@ -312,10 +318,6 @@ footer{
     }
   } 
   @media (max-width: 575px){
-    .row{
-      height: 0;
-      margin-top: 40px;
-    }
     .bottles-homepage{
       display: none;
     }
@@ -445,9 +447,10 @@ footer{
     }}
 }
 
-
 .section-type{
-    height: 72vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   .fullscreen-bg{
     position: fixed;
     top: 0;
@@ -461,7 +464,6 @@ footer{
     background-position: center;
     background-repeat: no-repeat;
   }
-
   .row{
     width: 100%;
     height: 100%;
@@ -476,9 +478,15 @@ footer{
       justify-content: center;
       ul{
         padding-inline-start: 0;
-      }
-      li{
-        list-style: none;
+        li{
+          list-style-type: none;
+          line-height: 30px;
+        }
+        li:hover{
+          background-color: rgba(181, 172, 165, 0.2);
+          border-radius: 15px;
+          padding: 0 25px;
+        }
       }
       .h6{
         margin: 20px;
@@ -507,10 +515,6 @@ footer{
     }
   } 
   @media (max-width: 575px){
-    .row{
-      height: 0;
-      margin-top: 40px;
-    }
     .bottles-homepage{
       display: none;
     }
@@ -524,10 +528,10 @@ footer{
   }
 }
 
-
-
 .section-reco{
-  height: 72vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 .fullscreen-bg{
   position: fixed;
   top: 0;
@@ -553,33 +557,50 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    .h6{
+      margin: 20px;
+    }
     .list{
       padding-inline-start: 0;
       display : flex; 
       padding-inline-start: 0;
+      width: 70%;
       .one-wine{
       list-style: none;  
         img{
           height : 150px;
         }
-        .appelation{
-          font-family: $gtbold;
-          font-size: 16px;
-          color: #000000;
-          letter-spacing: 1.37px;
-          text-align: center;
-          text-transform: uppercase;
-          height: 40px;
-          align-items: center;
-        }
+          .appelation{
+            font-family: $gtbold;
+            font-size: 16px;
+            color: #000000;
+            letter-spacing: 1.37px;
+            text-align: center;
+            text-transform: uppercase;
+            height: 30px;
+            align-items: center;
+            margin-top: 10px;
+            a:hover{
+              background-color: rgba(181, 172, 165, 0.2);
+              border-radius: 15px;
+            }
+          }
         .proprieties{
           text-align: center;
           padding-inline-start: 0;
+          text-transform: uppercase;
+          li{
+            margin-top: 10px;
+          }
+        }
+        .h5{
+          margin-bottom: 0;
         }
       }    
-     
     }
-
+    #details{
+      text-decoration: underline;
+    }
   }
   .icon{
     width: 150px;
@@ -599,15 +620,6 @@ footer{
     }
   }
 } 
-@media (max-width: 575px){
-  .row{
-    height: 0;
-    margin-top: 40px;
-  }
-  .bottles-homepage{
-    display: none;
-  }
-}
 button{
   position: absolute;
   bottom: 0;
@@ -618,6 +630,7 @@ button{
 }
 
 
+<<<<<<< HEAD
 
 
 
@@ -631,6 +644,8 @@ button{
 }
 
 
+=======
+>>>>>>> 23e85c4926ba8b448028e968e6f13683c1491c9d
 // ANIMATIONS
 // ----------------------------------------------------------------
 

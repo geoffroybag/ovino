@@ -13,14 +13,14 @@
     <img src="/images/icon-food.gif" alt="" class="icon">
       <div class="h6">What kind of food do you want to eat?</div>
 
+          <ul>
             
               {{#each allMeat}}
 
-              <li><a href="/{{this._id}}">{{this.subtype}}</a></li>
-            <br>
+              <li class="h2"><a href="/{{this._id}}">{{this.subtype}}</a></li>
             {{/each}}
 
-           
+          </ul>
     
     </div>
 
