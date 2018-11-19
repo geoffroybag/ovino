@@ -15,7 +15,7 @@ router.get('/index', (req, res, next) => {
 
 /* GET home page */
 router.get('/', (req, res, next) => {
-  res.render('loadingpage.hbs');
+  res.render('index.hbs');
   // setTimeout(function(){ 
   //   res.render('index.hbs');
   //  }, 2000);
