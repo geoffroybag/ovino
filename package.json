@@ -17,7 +17,8 @@
     "express": "^4.16.3",
     "express-session": "^1.15.6",
     "hbs": "^4.0.1",
-    "mongoose": "^5.2.10",
+    "mongodb": "^3.1.10",
+    "mongoose": "^5.3.12",
     "morgan": "^1.9.0",
     "node-sass-middleware": "^0.11.0",
     "passport": "^0.4.0",
@@ -25,5 +26,21 @@
   },
   "devDependencies": {
     "nodemon": "^1.12.1"
-  }
+  },
+  "main": "app.js",
+  "bin": {
+    "awesome-project": "seed.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geoffroybag/ovino.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/geoffroybag/ovino/issues"
+  },
+  "homepage": "https://github.com/geoffroybag/ovino#readme",
+  "description": ""
 }
