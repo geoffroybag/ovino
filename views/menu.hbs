@@ -1,5 +1,5 @@
 <header>
-    <img src="/images/logo-allwhite.svg" alt="" id="white-logo">
+    <a href="/index"><img src="/images/logo-allwhite.svg" alt="" id="white-logo"></a>
   </header>
 
 <section class="section-menu">
@@ -8,12 +8,26 @@
 
     <div class="row">
       <ul>
-        <li><a>HOME</a></li>
-        <li><a>PROFILE</a></li>
-        <li><a>OUR CELLAR</a></li>
+        {{!-- <li><a href="/">HOME</a></li> --}}
+        <li><a href="/profile">PROFILE</a></li>
+        <li><a href="/wines">OUR CELLAR</a></li>
+        <li><a href="/wines">WINE PAIRING</a></li>
         <li><a>ADVICE</a></li>
         <li><a>CONTACT</a></li>
+
+        {{#if currentUser}}
+            <li>{{currentUser.email}}</li>
+            <li><a href="/logout">LOG OUT</a></li>
+     
+       {{else}}
+            <li><a href="/signup">SIGN UP</a> / <a href="/login">LOG IN</a></li>
+       {{/if}}
       </ul>
+
+
+    </nav>
+
+
     </div>
 
 </div>

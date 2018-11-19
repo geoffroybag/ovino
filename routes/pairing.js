@@ -1,13 +1,11 @@
 const express = require('express');
 const router  = express.Router();
-
 const Wine = require("../models/wine-model.js")
 const Meal = require("../models/meal-model.js")
 
 
 
 router.get("/pairing", (req,res,next)=>{
-
   res.render("pairing/type-pairing.hbs")
 })
 
@@ -78,6 +76,7 @@ router.get("/:subtypeId", (req,res,next)=>{
   .catch(err=>next(err))
 })
 
+// pour relier les deux bases de données, mettre "populate()" pour pusher les données de la DB "wine" dans la DB "meal"
 router.get("/wine-reco/:subtypeId", (req,res,next)=>{
   const subtypeId = req.params.subtypeId
   Meal.findById(subtypeId)
