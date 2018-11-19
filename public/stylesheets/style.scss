@@ -328,6 +328,47 @@ footer{
   }
 }
 
+.section-winelist{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .list{
+    margin: 0 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    flex-wrap: wrap;
+    padding-inline-start: 0;
+    .one-wine{
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .img{
+        height: 200px;
+        img{
+          height: 100%;
+        }
+      }
+      .appelation{
+        font-family: $gtbold;
+        font-size: 16px;
+        color: #000000;
+        letter-spacing: 1.37px;
+        text-align: center;
+        text-transform: uppercase;
+        height: 60px;
+      }
+      .proprieties{
+        display: flex;
+        flex-direction: column;
+        padding-inline-start: 0;
+      }
+    }
+  }
+}
+
 
 // ANIMATIONS
 // ----------------------------------------------------------------

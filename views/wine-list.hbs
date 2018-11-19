@@ -1,14 +1,26 @@
+<<<<<<< HEAD
 <h2>Wine list:</h2>
 <ul>
+=======
+{{> header}}
 
-{{#each allWines}}
-  <li>{{this.appelation}}</li>
-<ul>
-  <li>{{this.domaine}} - {{this.millesime}}</li>
-  <li>{{this.geographie}} - {{this.couleur}}</li>
-  <li>{{this.style}}</li>
-  <li>{{this.accord1}}</li>
-</ul>
+<section class="section-winelist">
+>>>>>>> 8de6420a7c1df5ef45a16e8caca9117812995700
 
-{{/each}}
-</ul>
+  <h2>Wine list:</h2>
+  <ul class="list">
+
+  {{#each allWines}}
+    <li class="one-wine">
+      <div class="img">
+        <img src="{{this.pictureUrl}}" alt="">
+      </div>
+      <div class="appelation">{{this.appelation}}</div>
+      <ul class="proprieties">
+        <li>{{this.domaine}} - {{this.millesime}}</li>
+      </ul>
+  </li>
+  {{/each}}
+  </ul>
+
+</section>
