@@ -1,14 +1,27 @@
 {{> header}}
 
-<h2>Your wine:</h2>
+<section class="section-product">
+  <h2>Your wine:</h2>
 
-  <img src="{{oneWine.pictureUrl}}" alt="">
-  <li>{{oneWine.appelation}}</li>
-  <li>{{oneWine.domaine}}</li>
-  <li>{{oneWine.millesime}}</li>
-  <li>{{oneWine.geographie}}</li>
-  <li>{{oneWine.description}}</li>
+  <li class="one-wine">
+        <div class="img">
+          <img src="{{oneWine.pictureUrl}}" alt="">
+        </div>
+        <div class="content">
+        <div class="appelation">{{oneWine.appelation}}</div>
+        <div class="appelation">{{oneWine.domaine}} - {{oneWine.millesime}}</div>
+        <ul class="proprieties">
+          <li>{{oneWine.description}}</li>
+          <li>Cépages : {{oneWine.cepage}}</li>
+          <li>Style : {{oneWine.style}}</li>
+          <li>Parfum : {{oneWine.parfum}}</li>
+        </ul>
+        </div>
+    </li>
 
 
-<button class="button-font">back</button>
-<button class="button-font">order</button>
+  <button class="button-font">back</button>
+  <button class="button-font">order</button>
+
+
+</section>
