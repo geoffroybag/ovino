@@ -1,0 +1,20 @@
+{{> header}}
+
+
+<h2>What time & where please ?</h2>
+
+
+<input type='time' value='20:30' class ="hour"/>
+
+
+
+<h3>{{oneWine.appelation}}</h3>
+<h3>{{oneWine.domaine}}-{{oneWine.millesime}}</h3>
+
+
+<h4>CART : 10€  + DELIVERY : 3€ = TOTAL : 13€</h4>
+
+  <a href="/order/{{oneWine._id}}"<button class="button-font">PREVIOUS</button></a>
+  <a href="/order/{{oneWine._id}}"><button class="button-font">order</button></a>
+
+
