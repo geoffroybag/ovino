@@ -90,6 +90,17 @@ router.get("/wine-reco/:subtypeId", (req,res,next)=>{
 })
 
 
+router.get("/details/:wineId", (req,res,next)=>{
+  const wineId = req.params.wineId
+  Wine.findById(wineId)
+  .then(data =>{
+    res.locals.oneWine = data;
+    res.render("product-page.hbs")
+  })
+  .catch(err=>next(err))
+})
+
+
 
 
 

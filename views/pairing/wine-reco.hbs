@@ -4,7 +4,8 @@
 
 <ul>
   {{#each wineRecos.wine}}
-  <li><a href="/">{{this.appelation}}</a></li>
+  <li><a href="/details/{{this._id}}">{{this.appelation}}</a></li>
+  <li><a href="/details/{{this._id}}">Details</a></li>
 <br>
 {{/each}}
 
