@@ -5,6 +5,7 @@ const Meal = require("../models/meal-model.js")
 
 
 
+
 router.get("/pairing", (req,res,next)=>{
   res.render("pairing/type-pairing.hbs")
 })
@@ -66,7 +67,7 @@ router.get("/other", (req,res,next)=>{
 })
 
 
-router.get("/:subtypeId", (req,res,next)=>{
+router.get("/subtype/:subtypeId", (req,res,next)=>{
   const subtypeId = req.params.subtypeId
   Meal.findById(subtypeId)
   .then(data =>{
@@ -101,16 +102,18 @@ router.get("/details/:wineId", (req,res,next)=>{
 })
 
 
-router.get("/order/:wineId", (req,res,next)=>{
-  const wineId = req.params.wineId
-  Wine.findById(wineId)
-  .then(data =>{
-    res.locals.oneWine = data;
-    res.render("order-page.hbs")
-  })
-  .catch(err=>next(err))
-})
+router.get("/order", (req,res,next)=>{
+  // cart.forEach(oneItem => {
+  //   Wine.findById(oneItem)
+  // })
+  // .then(data =>{
+  //   // res.locals.oneWine = data;
+  //   // res.render("order-page.hbs")
+  //   res.send(data)
+  // })
+  res.render("order-page.hbs")
 
+})
 
 
 module.exports = router;

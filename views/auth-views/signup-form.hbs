@@ -1,25 +1,12 @@
-<h2>Sign Up</h2>
 
 {{> flash_messages}}
 
-
-<form action="/process-signup" method="POST">
-
-  <label>
-    Your Full name : 
-    <input type="text" name="fullName" placeholder="B2OBA">
-  </label>
-
-  <label>
-    Email : 
-    <input type="email" name="email" placeholder="b2o@unkut.com">
-  </label>
-
-  <label>
-    Password : 
-    <input type="password" name="originalPassword" placeholder="izi">
-  </label>
-
-  <button>Sign up</button>
-
-</form>
+<div class="left">
+            <h1>Sign Up</h1>
+            <form action="/process-signup" method="POST">
+                <input type="text" name="fullName" placeholder="Your full name">
+                <input type="email" name="email" placeholder="Your email">
+                <input type="password" name="originalPassword" placeholder="Password">
+                <input type="submit" value="SIGN UP">
+            </form>
+</div>

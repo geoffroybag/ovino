@@ -1,19 +1,10 @@
-<h2>Log in</h2>
-
 {{> flash_messages}}
 
-<form action="/process-login" method="POST">
-
-  <label>
-    Email : 
-    <input type="email" name="emailguess" placeholder="b2o@unkut.com">
-  </label>
-
-  <label>
-    Password : 
-    <input type="password" name="passwordguess" placeholder="izi">
-  </label>
-
-  <button>Log in</button>
-
-</form>
+<div class="left">
+            <h1>Login</h1>
+            <form action="/process-login" method="POST">
+                <input type="email" name="emailguess" placeholder="b2o@unkut.com">
+                <input type="password" name="passwordguess" placeholder="izi">
+                <input type="submit" value="LOG IN">
+            </form>
+</div>

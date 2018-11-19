@@ -80,13 +80,15 @@ app.locals.title = "O'VINO";
 
 const index = require('./routes/index');
 app.use('/', index);
+
 const filters = require('./routes/filters');
 app.use('/', filters);
+
 const authRouter = require('./routes/auth-router.js');
 app.use('/', authRouter);
+
 const pairing = require('./routes/pairing');
 app.use('/', pairing);
-
 
 
 

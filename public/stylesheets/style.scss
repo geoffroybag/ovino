@@ -630,22 +630,49 @@ button{
 }
 
 
-<<<<<<< HEAD
+
+
+// LOGIN FORM
+
+
+.main .left{
+  width:50%;
+  float:left;
+  /*border-right:1px solid #fff;*/
+  height:100%;
+  /*padding:15px 0 0 0;*/
+  background-color:#fff;
+  position: relative;
+}
 
 
 
-
-
-
-.hour{
-  font-size: 3em;
-  border : none;
+.left form input{
+  text-align:center;
+  width:70%;
+  height:35px;
+  margin-bottom:10px;
+  border:none;
+  border:1px solid #F8F8F8;
+  background-color:#F8F8F8;
+  border-radius:25px;
+}
+.left form input:focus{
+  outline:none;
+}
+::-webkit-input-placeholder{
+  color:grey;
+  letter-spacing: 1px;
+}
+.left form input[type="submit"]{
+  background-color:#FFBF37;
+  color:#fff;
   font-weight: bold;
 }
 
 
-=======
->>>>>>> 23e85c4926ba8b448028e968e6f13683c1491c9d
+
+
 // ANIMATIONS
 // ----------------------------------------------------------------
 
