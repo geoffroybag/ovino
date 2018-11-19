@@ -100,7 +100,8 @@ body {
 
 a {
   text-decoration: none;
-  z-index: 50; }
+  z-index: 50;
+  color: black; }
 
 ul {
   list-style-type: none; }
