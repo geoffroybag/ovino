@@ -520,6 +520,11 @@ footer {
       .section-reco .button-div .button-div-position .button-right {
         margin-left: 5px; }
 
+.selected {
+  background-color: rgba(181, 172, 165, 0.2);
+  border-radius: 15px;
+  padding: 5px 25px; }
+
 .main .left {
   width: 50%;
   float: left;

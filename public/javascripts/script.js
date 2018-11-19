@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 var cart = []
 
-$(".img").click(function () {
+$(".appelation").click(function () {
 
   var wine = $(event.target);
   wine.toggleClass("selected");

@@ -672,7 +672,11 @@ footer{
 }
 
 
-
+.selected{
+  background-color: rgba(181, 172, 165, 0.2);
+  border-radius: 15px;
+  padding: 5px 25px;
+}
 
 // LOGIN FORM
 
