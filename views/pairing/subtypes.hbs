@@ -1,16 +1,5 @@
 {{> header}}
 
-<h2>What kind of meat do you want to eat?</h2>
-
-<ul>
-  {{#each subTypes.dish}}
-  <li><a href="/wine-reco/{{../subTypes._id}}">{{this}}</a></li>
-<br>
-{{/each}}
-
-</ul>
-
-
 
 <section class="section-type">
 
@@ -25,19 +14,18 @@
       <div class="h6">What kind of food do you want to eat?</div>
 
             
-              {{#each allMeat}}
+              {{#each subTypes.dish}}
 
-              <li><a href="/{{this._id}}">{{this.subtype}}</a></li>
-            <br>
+                <li><a href="/wine-reco/{{../subTypes._id}}">{{this}}</a></li>
+              <br>
             {{/each}}
 
-           
-    
+
     </div>
 
   </div>
 
-<a href="/pairing"><button class="button-font">previous</button></a>
+<a href="/{{subTypes.type}}"><button class="button-font">previous</button></a>
 </section>
 
 {{> footer}}

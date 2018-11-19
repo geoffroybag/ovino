@@ -47,7 +47,7 @@ router.get("/cheese", (req,res,next)=>{
   .catch(err=>next(err))
 })
 
-router.get("/vegetables", (req,res,next)=>{
+router.get("/vegetable", (req,res,next)=>{
   Meal.find({type : {$eq : "Vegetable"}})
   .then(data =>{
     res.locals.allMeat = data
