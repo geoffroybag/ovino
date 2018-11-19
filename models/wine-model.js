@@ -17,6 +17,7 @@ const wineSchema = new Schema({
   accord2 : {type : Schema.Types.ObjectId, ref: "Meal",required : true},
   description : {type : String},
   prix : {type : Number},
+  pictureUrl : {type : String},
 }, {
   timestamps : true
 });
