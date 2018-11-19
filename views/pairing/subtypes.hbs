@@ -13,13 +13,15 @@
     <img src="/images/icon-food.gif" alt="" class="icon">
       <div class="h6">What kind of food do you want to eat?</div>
 
-            
+        <ul>
+
               {{#each subTypes.dish}}
 
-                <li><a href="/wine-reco/{{../subTypes._id}}">{{this}}</a></li>
-              <br>
+                <li class="h2"><a href="/wine-reco/{{../subTypes._id}}">{{this}}</a></li>
+
             {{/each}}
 
+        </ul>
 
     </div>
 

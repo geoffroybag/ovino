@@ -70,7 +70,7 @@ p {
 
 .h4 {
   font-family: "GTAmerica-Regular";
-  font-size: 14px;
+  font-size: 12px;
   color: #000000;
   letter-spacing: 2.47px;
   line-height: 20px; }
@@ -85,7 +85,7 @@ p {
   text-transform: uppercase; }
 
 .h6 {
-  font-family: "Coquette-Regular";
+  font-family: "Coquette";
   font-size: 20px;
   color: #000000;
   text-align: center;
@@ -98,7 +98,7 @@ body {
   padding: 0;
   overflow-y: hidden; }
 
-a {
+a, a:hover {
   text-decoration: none;
   z-index: 50;
   color: black; }
@@ -108,7 +108,7 @@ ul {
 
 section {
   width: 100vw;
-  height: 100vh; }
+  height: 70vh; }
 
 header {
   display: flex;
@@ -179,11 +179,13 @@ footer {
         font-size: 45px;
         letter-spacing: 3.86px;
         text-align: center;
-        line-height: 80px;
         text-transform: uppercase;
         color: white; }
-      .section-menu .fullscreen-bg .row ul li:hover {
-        font-family: "GTAmerica-BoldItalic"; }
+        .section-menu .fullscreen-bg .row ul li a {
+          color: white; }
+        .section-menu .fullscreen-bg .row ul li a:hover {
+          font-family: "GTAmerica-BoldItalic";
+          color: white; }
 
 .section-home .fullscreen-bg {
   position: fixed;
@@ -219,12 +221,14 @@ footer {
   height: 100%;
   margin: 0;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   text-align: center; }
   .section-home .row .div3 {
     margin: 0; }
     .section-home .row .div3 .h6 {
       margin: 20px; }
+    .section-home .row .div3 p {
+      text-transform: uppercase; }
     @media (max-width: 992px) {
       .section-home .row .div3 .h6 {
         margin: 10px; } }
@@ -241,9 +245,6 @@ footer {
       height: 100px; } }
 
 @media (max-width: 575px) {
-  .section-home .row {
-    height: 0;
-    margin-top: 40px; }
   .section-home .bottles-homepage {
     display: none; } }
 
@@ -348,7 +349,9 @@ footer {
           margin-bottom: 10px; }
 
 .section-type {
-  height: 72vh; }
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
   .section-type .fullscreen-bg {
     position: fixed;
     top: 0;
@@ -375,8 +378,13 @@ footer {
       justify-content: center; }
       .section-type .row .div1 ul {
         padding-inline-start: 0; }
-      .section-type .row .div1 li {
-        list-style: none; }
+        .section-type .row .div1 ul li {
+          list-style-type: none;
+          line-height: 30px; }
+        .section-type .row .div1 ul li:hover {
+          background-color: rgba(181, 172, 165, 0.2);
+          border-radius: 15px;
+          padding: 0 25px; }
       .section-type .row .div1 .h6 {
         margin: 20px; }
       @media (max-width: 992px) {
@@ -394,9 +402,6 @@ footer {
         width: 100px;
         height: 100px; } }
   @media (max-width: 575px) {
-    .section-type .row {
-      height: 0;
-      margin-top: 40px; }
     .section-type .bottles-homepage {
       display: none; } }
   .section-type button {
@@ -407,7 +412,9 @@ footer {
     left: 50%; }
 
 .section-reco {
-  height: 72vh; }
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
   .section-reco .fullscreen-bg {
     position: fixed;
     top: 0;
@@ -432,10 +439,13 @@ footer {
       flex-direction: column;
       align-items: center;
       justify-content: center; }
+      .section-reco .row .div1 .h6 {
+        margin: 20px; }
       .section-reco .row .div1 .list {
         padding-inline-start: 0;
         display: flex;
-        padding-inline-start: 0; }
+        padding-inline-start: 0;
+        width: 70%; }
         .section-reco .row .div1 .list .one-wine {
           list-style: none; }
           .section-reco .row .div1 .list .one-wine img {
@@ -447,11 +457,22 @@ footer {
             letter-spacing: 1.37px;
             text-align: center;
             text-transform: uppercase;
-            height: 40px;
-            align-items: center; }
+            height: 30px;
+            align-items: center;
+            margin-top: 10px; }
+            .section-reco .row .div1 .list .one-wine .appelation a:hover {
+              background-color: rgba(181, 172, 165, 0.2);
+              border-radius: 15px; }
           .section-reco .row .div1 .list .one-wine .proprieties {
             text-align: center;
-            padding-inline-start: 0; }
+            padding-inline-start: 0;
+            text-transform: uppercase; }
+            .section-reco .row .div1 .list .one-wine .proprieties li {
+              margin-top: 10px; }
+          .section-reco .row .div1 .list .one-wine .h5 {
+            margin-bottom: 0; }
+      .section-reco .row .div1 #details {
+        text-decoration: underline; }
     .section-reco .row .icon {
       width: 150px;
       height: 150px; }
@@ -463,12 +484,6 @@ footer {
       .section-reco .row .icon {
         width: 100px;
         height: 100px; } }
-  @media (max-width: 575px) {
-    .section-reco .row {
-      height: 0;
-      margin-top: 40px; }
-    .section-reco .bottles-homepage {
-      display: none; } }
   .section-reco button {
     position: absolute;
     bottom: 0;
