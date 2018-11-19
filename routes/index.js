@@ -10,6 +10,10 @@ router.get('/', (req, res, next) => {
   res.render('index');
 });
 
+router.get('/menu', (req, res, next) => {
+  res.render('menu.hbs');
+})
+
 router.get("/wines", (req,res,next)=>{
   Wine.find()
     .then(data =>{
