@@ -101,6 +101,15 @@ router.get("/details/:wineId", (req,res,next)=>{
 })
 
 
+router.get("/order/:wineId", (req,res,next)=>{
+  const wineId = req.params.wineId
+  Wine.findById(wineId)
+  .then(data =>{
+    res.locals.oneWine = data;
+    res.render("order-page.hbs")
+  })
+  .catch(err=>next(err))
+})
 
 
 

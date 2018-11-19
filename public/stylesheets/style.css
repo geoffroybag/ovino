@@ -475,6 +475,11 @@ footer {
     transform: translate(-50%, -50%);
     left: 50%; }
 
+.hour {
+  font-size: 3em;
+  border: none;
+  font-weight: bold; }
+
 @keyframes crazyflip {
   0% {
     transform: rotateX(0); }
