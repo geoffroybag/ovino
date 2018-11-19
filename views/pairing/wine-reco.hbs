@@ -1,12 +1,38 @@
 {{> header}}
 
-<h2>Choose your wine:</h2>
 
-<ul>
-  {{#each wineRecos.wine}}
-  <li><a href="/details/{{this._id}}">{{this.appelation}}</a></li>
-  <li><a href="/details/{{this._id}}">Details</a></li>
-<br>
-{{/each}}
+<section class="section-reco">
 
-</ul>
+  <div class="fullscreen-bg"></div>
+
+  <div class="row justify-content-center">
+
+    <div class="div1 col-lg-8 col-md-8 col-sm-8">
+      
+    
+    <img src="/images/icon-drink.gif" alt="" class="icon">
+      <div class="h6">Choose your wine</div>
+
+        <ul class="list">
+        {{#each wineRecos.wine}}
+          <li class="one-wine col-lg-4"><a href="/details/{{this._id}}">
+          <div class="img">
+           <img src="{{this.pictureUrl}}" alt="">
+          </div>
+          <div class="appelation">{{this.appelation}}</div>
+          <ul class="proprieties">
+           <li>{{this.domaine}} - {{this.millesime}}</li>
+        </ul>
+        
+  </a></li>
+  {{/each}}
+  </ul>
+        
+    </div>
+
+  </div>
+
+<a href="/{{subTypes.type}}"><button class="button-font">previous</button></a>
+</section>
+
+{{> footer}}
