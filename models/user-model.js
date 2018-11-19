@@ -7,7 +7,7 @@ const userSchema = new Schema({
   email : {type : String, required : true, unique : true},
   encryptedPassword : {type : String,},
   role : {type : String, enum : ["normal", "admin"], required : true, default : "normal"},
-  favorites : [{type : Schema.Types.ObjectId, ref: "Wine"}],
+  favorites : [{wine : {type : Schema.Types.ObjectId, ref: "Wine"}}],
 }, {
   timestamps : true
 });
