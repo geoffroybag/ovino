@@ -4,14 +4,21 @@ const router  = express.Router();
 const Wine = require("../models/wine-model.js")
 const Meal = require("../models/meal-model.js")
 
-/* GET home page */
-router.get('/', (req, res, next) => {
-  res.render('index');
-});
-
 router.get('/menu', (req, res, next) => {
   res.render('menu.hbs');
 })
+
+router.get('/index', (req, res, next) => {
+  res.render('index.hbs');
+})
+
+/* GET home page */
+router.get('/', (req, res, next) => {
+  res.render('loadingpage.hbs');
+  // setTimeout(function(){ 
+  //   res.render('index.hbs');
+  //  }, 2000);
+});
 
 router.get("/wines", (req,res,next)=>{
   Wine.find()
