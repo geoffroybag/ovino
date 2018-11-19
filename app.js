@@ -68,12 +68,9 @@ app.use((req,res,next)=>{
 
 
 
-<<<<<<< HEAD
-app.locals.title = 'OVINO';
-=======
+
 // default value for title local
 app.locals.title = "O'VINO";
->>>>>>> a42485a6a22b58f0f214c711dce93de6f6a07d69
 
 
 
