@@ -1,17 +1,21 @@
 {{> header}}
 
-<h2>Wine list:</h2>
-<ul>
+<section class="section-winelist">
 
-{{#each allWines}}
-  <img src="{{this.pictureUrl}}" alt="">
-  <li>{{this.appelation}}</li>
-<ul>
-  <li>{{this.domaine}} - {{this.millesime}}</li>
-  <li>{{this.geographie}} - {{this.couleur}}</li>
-  <li>{{this.style}}</li>
-  <li>{{this.accord1}}</li>
-</ul>
+  <h2>Wine list:</h2>
+  <ul class="list">
 
-{{/each}}
-</ul>
+  {{#each allWines}}
+    <li class="one-wine">
+      <div class="img">
+        <img src="{{this.pictureUrl}}" alt="">
+      </div>
+      <div class="appelation">{{this.appelation}}</div>
+      <ul class="proprieties">
+        <li>{{this.domaine}} - {{this.millesime}}</li>
+      </ul>
+  </li>
+  {{/each}}
+  </ul>
+
+</section>
