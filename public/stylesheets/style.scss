@@ -117,6 +117,7 @@ p{
   letter-spacing: 1.76px;
   text-align: center;
   line-height: 15px;
+  text-transform: uppercase;
 }
 
 // Hand lettering
@@ -332,41 +333,69 @@ footer{
   display: flex;
   flex-direction: column;
   align-items: center;
+  .list-filters{
+    padding-inline-start:0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    li{
+      text-align: center;
+      padding: 0 10px;
+    }
+    .wine-color{
+      .wine-color-filter{
+        padding: 0 5px;
+      }
+    }
+  }
   .list{
-    margin: 0 10%;
     display: flex;
     flex-direction: row;
     align-items: baseline;
     flex-wrap: wrap;
     padding-inline-start: 0;
-    .one-wine{
-      width: 20%;
+    padding: 0 100px;
+      .one-wine{
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      .img{
-        height: 200px;
-        img{
-          height: 100%;
+        a{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          color: black;
+          text-decoration: none;
+          .img{
+            height: 200px;
+            text-align: center;
+            img{
+              height: 100%;
+            }
+          }
+          .appelation{
+            font-family: $gtbold;
+            font-size: 16px;
+            color: #000000;
+            letter-spacing: 1.37px;
+            text-align: center;
+            text-transform: uppercase;
+            height: 40px;
+            display: flex;
+            align-items: center;
+          }
+          .proprieties{
+            display: flex;
+            flex-direction: column;
+            padding-inline-start: 0;
+            text-align: center;
+            margin-bottom: 20px;
+          }
         }
       }
-      .appelation{
-        font-family: $gtbold;
-        font-size: 16px;
-        color: #000000;
-        letter-spacing: 1.37px;
-        text-align: center;
-        text-transform: uppercase;
-        height: 60px;
-      }
-      .proprieties{
-        display: flex;
-        flex-direction: column;
-        padding-inline-start: 0;
-      }
     }
-  }
 }
 
 
