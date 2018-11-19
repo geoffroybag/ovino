@@ -50,22 +50,23 @@ app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
 
 
-// app.use(session({
-//   resave : true,
-//   saveUninitialized : true,
-//   secret : "eXUW6iJ6=2h}yBC36P^;MmJ+fpYiU8A[Mg2KNRAj?C",
-//   store : new MongoStore({mongooseConnection: mongoose.connection})
-// }))
+app.use(session({
+  resave : true,
+  saveUninitialized : true,
+  secret : "eXUW6iJ6=2h}yBC36P^;MmJ+fpYiU8A[Mg2KNRAj?C",
+  store : new MongoStore({mongooseConnection: mongoose.connection})
+}))
 
-// app.use(passport.initialize())
-// app.use(passport.session())
+app.use(passport.initialize())
+app.use(passport.session())
 
-// app.use(flash())
-// app.use((req,res,next)=>{
-//   res.locals.messages = req.flash()
-//   res.locals.currentUser = req.user;
-//   next()
-// })
+app.use(flash())
+app.use((req,res,next)=>{
+  res.locals.messages = req.flash()
+  res.locals.currentUser = req.user;
+  next()
+})
+
 
 
 // default value for title local
@@ -75,8 +76,11 @@ app.locals.title = "O'VINO";
 
 const index = require('./routes/index');
 app.use('/', index);
-
+const authRouter = require('./routes/auth-router.js');
+app.use('/', authRouter);
 const pairing = require('./routes/pairing');
 app.use('/', pairing);
+
+
 
 module.exports = app;
