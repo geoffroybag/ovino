@@ -30,4 +30,18 @@ router.get("/wines", (req,res,next)=>{
     .catch(err=>next(err))
 })
 
+router.get("/add-fav/:wineId", (req, res, next) => {
+  const { wineId } = req.params;
+  User.findByIdAndUpdate(
+    req.user._id,
+    {$push: { favorites: {wineId} }},
+    {runValidators: true},
+  )
+  .populate("favorites")
+    .then(data =>{
+      res.redirect(`/wine-reco/${wineId}`)
+    })
+    .catch(err => next(err))
+})
+
 module.exports = router;
