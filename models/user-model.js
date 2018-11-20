@@ -6,9 +6,11 @@ const userSchema = new Schema({
   fullName : {type : String, required : true, minlength : 2},
   email : {type : String, required : true, unique : true},
   encryptedPassword : {type : String,},
-  role : {type : String, enum : ["normal", "admin"], required : true, default : "normal"},
+  role : {type : String, enum : ["normal", "admin"], default : "normal"},
   favorites : [{wine : {type : Schema.Types.ObjectId, ref: "Wine"}}],
   avatar : String,
+  friends : [{type : Schema.Types.ObjectId, ref: "User"}],
+
 }, {
   timestamps : true
 });

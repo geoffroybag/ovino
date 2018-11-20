@@ -96,6 +96,37 @@ router.get("/my-orders", (req,res,next)=>{
     })
 })
 
+router.get("/friends", (req,res,next)=>{
+  User.findById(req.user._id)
+     .populate("favorites")
+    .populate("friends")
+    .then(data=>{
+      res.locals.userFriends = data;
+      res.render("friends.hbs")
+      // res.send(data)
+    })
+})
+
+router.post("/add-friend", (req,res,next)=>{
+    const{email} = req.body;
+
+    User.findOne({email : {$eq : email}})
+    .then(oneFriend =>
+        User.findByIdAndUpdate(
+        req.user._id,
+        {$push: { friends: oneFriend._id }},
+      )
+      .then(data =>{
+        res.redirect(`/friends`)
+      })
+    .catch(err => next(err)))
+    
+})
+
+
+
+
+
 
 
 module.exports = router;

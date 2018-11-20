@@ -183,4 +183,23 @@ router.get("/cellar/details/:_id/", (req,res,next)=>{
 })
 
 
+
+router.get("/delete/:_id/:subtypeId/:wine", (req,res,next)=>{
+  const { _id, subtypeId, wine } = req.params;
+  Order.findByIdAndUpdate(
+    _id,
+    {$pull: {cart :  wine}}
+  )
+  .then(data =>{
+    res.redirect(`/wine-reco/${_id}/${subtypeId}/reco-route`)
+  })
+  .catch(err => next(err))
+})
+
+
+
+
+
+
+
 module.exports = router;

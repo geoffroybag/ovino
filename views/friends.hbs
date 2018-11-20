@@ -1,0 +1,20 @@
+Add friends : 
+<form action="/add-friend" method="POST">   
+  <input type="email" name="email" placeholder="b2o@unkut.com">
+</form>
+
+
+Your friends : 
+<div>{{#each userFriends.friends}}
+  <ul>
+<li>{{this.fullName}}</li>
+<li>{{this.email}}</li>
+<li>Favorites : 
+  <ul>{{#each userFriends.favorites}}
+    <li>{{this.appelation}}</li>
+    {{/each }}
+  </ul>
+</li>
+  </ul>
+{{/each}}
+</div>
