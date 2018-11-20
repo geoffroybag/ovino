@@ -20,9 +20,7 @@ p {
   font-size: 10px;
   color: #000000;
   letter-spacing: 1.76px;
-  text-transform: lowercase; }
-  p::first-letter {
-    text-transform: uppercase; }
+  text-transform: uppercase; }
 
 .button-font {
   background: #000000;
@@ -44,13 +42,28 @@ p {
   text-align: center;
   line-height: 45px; }
 
+@media (max-width: 767px) {
+  .h0 {
+    font-size: 60px;
+    line-height: 30px; } }
+
 .h1 {
   font-family: "GTAmerica-Bold";
-  font-size: 45px;
+  font-size: 40px;
   color: #000000;
   letter-spacing: 3.94px;
   line-height: 45px;
   text-transform: uppercase; }
+
+@media (max-width: 767px) {
+  .h1 {
+    font-size: 30px;
+    line-height: 30px; } }
+
+@media (max-width: 575px) {
+  .h1 {
+    font-size: 25px;
+    line-height: 25px; } }
 
 .h2 {
   font-family: "GTAmerica-Bold";
@@ -63,7 +76,8 @@ p {
 
 @media (max-width: 767px) {
   .h2 {
-    font-size: 14px; } }
+    font-size: 14px;
+    line-height: 20px; } }
 
 .h3 {
   font-family: "GTAmerica-Regular";
@@ -72,12 +86,21 @@ p {
   letter-spacing: 3.53px;
   line-height: 15px; }
 
+@media (max-width: 767px) {
+  .h3 {
+    font-size: 16px; } }
+
 .h4 {
   font-family: "GTAmerica-Regular";
   font-size: 12px;
   color: #000000;
   letter-spacing: 2.47px;
-  line-height: 20px; }
+  line-height: 25px;
+  text-transform: uppercase; }
+
+@media (max-width: 767px) {
+  .h4 {
+    font-size: 11px; } }
 
 .h5 {
   font-family: "GTAmerica-Regular";
@@ -263,6 +286,18 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  .section-winelist .fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    background-image: url("../images/background-cellar.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
   .section-winelist .list-filters {
     padding-inline-start: 0;
     display: flex;
@@ -320,37 +355,92 @@ footer {
   flex-direction: column;
   align-items: center;
   margin-top: 50px; }
-  .section-product .one-wine {
-    width: 80%;
-    margin: 0 10%;
+  .section-product .fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    background-image: url("../images/background-cellar.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+  .section-product .row .div1 {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 50px; }
-    .section-product .one-wine .img {
-      height: 300px; }
-      .section-product .one-wine .img img {
-        height: 100%; }
-    .section-product .one-wine .content {
+    flex-direction: column; }
+    .section-product .row .div1 .icon {
+      width: 150px;
+      height: 150px; }
+    .section-product .row .div1 .one-wine {
+      width: 80%;
+      margin: 10px 10%;
       display: flex;
-      flex-direction: column;
-      width: 50%;
-      margin-left: 30px; }
-      .section-product .one-wine .content .appelation {
-        font-family: "GTAmerica-Bold";
-        font-size: 20px;
-        color: #000000;
-        letter-spacing: 1.37px;
-        text-transform: uppercase;
-        margin-bottom: 10px; }
-      .section-product .one-wine .content .proprieties {
-        margin-top: 20px;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center; }
+      .section-product .row .div1 .one-wine .img {
+        height: 300px;
         display: flex;
-        flex-direction: column;
-        padding-inline-start: 0; }
-        .section-product .one-wine .content .proprieties li {
-          margin-bottom: 10px; }
+        align-items: center;
+        justify-content: flex-end; }
+        .section-product .row .div1 .one-wine .img img {
+          height: 100%; }
+      @media (max-width: 767px) {
+        .section-product .row .div1 .one-wine .img {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 20px 0;
+          height: 300px; }
+          .section-product .row .div1 .one-wine .img img {
+            height: 70%; } }
+      @media (max-width: 575px) {
+        .section-product .row .div1 .one-wine .img {
+          height: 250px; }
+          .section-product .row .div1 .one-wine .img img {
+            height: 70%; } }
+      .section-product .row .div1 .one-wine .content {
+        display: flex;
+        flex-direction: column; }
+        .section-product .row .div1 .one-wine .content .h1 {
+          text-align: left; }
+        .section-product .row .div1 .one-wine .content .h2 {
+          text-align: left; }
+        .section-product .row .div1 .one-wine .content .proprieties {
+          margin-top: 20px;
+          display: flex;
+          flex-direction: column;
+          padding-inline-start: 0; }
+          .section-product .row .div1 .one-wine .content .proprieties li {
+            margin-bottom: 10px; }
+          .section-product .row .div1 .one-wine .content .proprieties .h4 {
+            line-height: 10px; }
+      @media (max-width: 767px) {
+        .section-product .row .div1 .one-wine .content {
+          text-align: center; }
+          .section-product .row .div1 .one-wine .content .appelation, .section-product .row .div1 .one-wine .content .domaine {
+            text-align: center; } }
+    @media (max-width: 767px) {
+      .section-product .row .div1 .one-wine {
+        flex-direction: column; } }
+  .section-product .button-div {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 80px;
+    transform: translate(-50%, -50%);
+    left: 50%; }
+    .section-product .button-div .button-div-position {
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      .section-product .button-div .button-div-position .button-left {
+        margin-right: 5px; }
+      .section-product .button-div .button-div-position .button-right {
+        margin-left: 5px; }
 
 .section-type {
   display: flex;

@@ -40,10 +40,10 @@ p{
   font-size: 10px;
   color: #000000;
   letter-spacing: 1.76px;
-  text-transform: lowercase;
-  &::first-letter {
-		text-transform: uppercase;
-  }
+  text-transform: uppercase;
+  // &::first-letter {
+	// 	text-transform: uppercase;
+  // }
 }
 
 // Button font
@@ -69,15 +69,33 @@ p{
   text-align: center;
   line-height: 45px;
 }
+@media (max-width: 767px){
+  .h0{
+    font-size: 60px;
+    line-height: 30px;
+  }
+}
 
 // Details wine pages titles
 .h1{
   font-family: $gtbold;
-  font-size: 45px;
+  font-size: 40px;
   color: #000000;
   letter-spacing: 3.94px;
   line-height: 45px;
   text-transform: uppercase;
+  }
+  @media (max-width: 767px){
+    .h1{
+      font-size: 30px;
+      line-height: 30px;
+    }
+  }
+  @media (max-width: 575px){
+    .h1{
+      font-size: 25px;
+      line-height: 25px;
+    }
   }
 
 // Name of wines in lists pages 
@@ -93,6 +111,7 @@ p{
 @media (max-width: 767px){
   .h2{
     font-size: 14px;
+    line-height: 20px;
   }
 }
 
@@ -104,6 +123,11 @@ p{
   letter-spacing: 3.53px;
   line-height: 15px;
 }
+@media (max-width: 767px){
+  .h3{
+    font-size: 16px;
+  }
+}
 
 // Lists pages dates or details terms (alchool, food eat with) in details wine pages
 .h4{
@@ -111,7 +135,13 @@ p{
   font-size: 12px;
   color: #000000;
   letter-spacing: 2.47px;
-  line-height: 20px;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+@media (max-width: 767px){
+  .h4{
+    font-size: 11px;
+  }
 }
 
 // Very small letters (ex: price)
@@ -340,6 +370,19 @@ footer{
   display: flex;
   flex-direction: column;
   align-items: center;
+  .fullscreen-bg{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    background-image: url("../images/background-cellar.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
   .list-filters{
     padding-inline-start:0;
     display: flex;
@@ -410,34 +453,73 @@ footer{
   flex-direction: column;
   align-items: center;
   margin-top : 50px;
+  .fullscreen-bg{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    background-image: url("../images/background-cellar.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+    .row{
+      .div1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .icon{
+          width: 150px;
+          height: 150px;
+        }
     .one-wine{
       width: 80%;
-      margin: 0 10%;
+      margin: 10px 10%;
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: center;
-      margin-top : 50px;
       .img{
         height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
         img{
           height: 100%;
+        }
+      }
+      @media (max-width : 767px){
+        .img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0;
+        height: 300px;
+        img{
+          height: 70%;
+        }
+        }
+      }
+      @media (max-width: 575px){
+        .img{
+          height: 250px;
+          img{
+            height: 70%;
+          }
         }
       }
       .content{
         display: flex;
         flex-direction: column;
-        width : 50%;
-        margin-left: 30px;
-      .appelation{
-        font-family: $gtbold;
-        font-size: 20px;
-        color: #000000;
-        letter-spacing: 1.37px;
-        text-transform: uppercase;
-        // height: 60px;
-        margin-bottom: 10px;
-
+      .h1{
+        text-align: left;
+      }
+      .h2{
+        text-align: left;
       }
       .proprieties{
         margin-top: 20px;
@@ -447,8 +529,45 @@ footer{
         li{
           margin-bottom : 10px;
         }
+        .h4{
+          line-height: 10px;
+        }
       }
-    }}
+    }
+    @media (max-width: 767px){
+      .content{
+        text-align: center;
+        .appelation, .domaine{
+          text-align: center;
+        }
+      }
+    }
+  }
+  @media (max-width: 767px){
+    .one-wine{
+      flex-direction: column;
+    }
+  }
+      }
+    }
+  .button-div{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 80px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    .button-div-position{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .button-left{
+        margin-right: 5px;
+      }
+      .button-right{
+        margin-left: 5px;
+      }
+    }
+  }  
 }
 
 .section-type{
