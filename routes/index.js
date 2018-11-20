@@ -98,7 +98,6 @@ router.get("/my-orders", (req,res,next)=>{
 
 router.get("/friends", (req,res,next)=>{
   User.findById(req.user._id)
-     .populate("favorites")
     .populate("friends")
     .then(data=>{
       res.locals.userFriends = data;
@@ -123,7 +122,15 @@ router.post("/add-friend", (req,res,next)=>{
     
 })
 
-
+router.get("/favorites", (req,res,next)=>{
+  User.findById(req.user._id)
+     .populate("favorites")
+    .then(data=>{
+      // res.locals.userFavorites = data;
+      // res.render("favorites.hbs")
+      res.send(data)
+    })
+})
 
 
 
