@@ -7,7 +7,6 @@
   <div class="row justify-content-center">
 
     <div class="div1 col-lg-8 col-md-8 col-sm-8">
-      
     
     <img src="/images/icon-order.gif" alt="" class="icon">
       <div class="h6">What time please ?</div>
@@ -15,12 +14,19 @@
       <input type='time' value='20:30' class ="h0 time-input"/>
 
       <input type="text" name="addressguess" placeholder="Where do you want to be delivered ?" class="address-input">
+        <ul class="list justify-content-center">
 
-{{#each orderInfo}}
-        <div class="appelation h1">{{this.appelation}}</div>
-        <div class="domaine h2">{{this.domaine}}</div>
-        <div class="h3">{{this.millesime}}</div>
-{{/each}}
+        {{#each orderInfo}}
+          <li class="one-wine col-lg-4">
+            <div class="img">
+            <img src="{{this.pictureUrl}}" name = "{{this._id}}" alt="" class="wine-pic">
+            </div>
+            <div class="appelation h2"><a href="/add-cart/{{../orderInfo._id}}/{{../wineRecos._id}}/{{this._id}}">{{this.appelation}}</a></div>
+            <a href="#"><p><u>Delete</u></p></a>
+          </li>
+          {{/each}}
+        </ul>
+
         <div class="h5">CART : 10€  + DELIVERY : 3€ = TOTAL : 13€</div>
                 
     </div>
@@ -29,7 +35,7 @@
 
 <div class="button-div">
   <div class="button-div-position">
-    <a href="/order/{{oneWine._id}}"><button class="button-font button-left">previous</button></a>
+    <a href="/wine-reco/"><button class="button-font button-left">previous</button></a>
     <a href="/order/{{oneWine._id}}"><button class="button-font button-right">order</button></a>
   </div>
 </div>

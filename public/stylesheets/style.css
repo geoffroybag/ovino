@@ -36,7 +36,7 @@ p {
 
 .h0 {
   font-family: "GTAmerica-Bold";
-  font-size: 100px;
+  font-size: 80px;
   color: #000000;
   letter-spacing: 2px;
   text-align: center; }
@@ -133,7 +133,8 @@ ul {
 
 section {
   width: 100vw;
-  height: 70vh; }
+  height: 70vh;
+  overflow: hidden; }
 
 header {
   display: flex;
@@ -258,8 +259,8 @@ footer {
       .section-home .row .div3 .h6 {
         margin: 20px 10px 10px 10px; } }
   .section-home .row .icon {
-    width: 150px;
-    height: 150px; }
+    width: 130px;
+    height: 130px; }
   @media (max-width: 992px) {
     .section-home .row .icon {
       width: 120px;
@@ -374,8 +375,8 @@ footer {
     justify-content: center;
     flex-direction: column; }
     .section-product .row .div1 .icon {
-      width: 150px;
-      height: 150px; }
+      width: 130px;
+      height: 130px; }
     .section-product .row .div1 .one-wine {
       width: 80%;
       margin: 10px 10%;
@@ -484,8 +485,8 @@ footer {
         .section-type .row .div1 .h6 {
           margin: 20px 10px 10px 10px; } }
     .section-type .row .icon {
-      width: 150px;
-      height: 150px; }
+      width: 130px;
+      height: 130px; }
     @media (max-width: 992px) {
       .section-type .row .icon {
         width: 120px;
@@ -546,7 +547,7 @@ footer {
             justify-content: center;
             align-items: flex-end; }
             .section-reco .row .div1 .list .one-wine .img .wine-pic {
-              height: 150px; }
+              height: 130px; }
           .section-reco .row .div1 .list .one-wine .appelation {
             font-family: "GTAmerica-Bold";
             font-size: 16px;
@@ -608,8 +609,8 @@ footer {
       .section-reco .row .div1 #details {
         text-decoration: underline; }
     .section-reco .row .icon {
-      width: 150px;
-      height: 150px; }
+      width: 130px;
+      height: 130px; }
     @media (max-width: 992px) {
       .section-reco .row .icon {
         width: 120px;
@@ -660,11 +661,43 @@ footer {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center; }
+      justify-content: center;
+      margin-top: 30px; }
+      .section-order .row .div1 .list {
+        display: flex;
+        margin-bottom: 0; }
+        .section-order .row .div1 .list .one-wine {
+          list-style: none; }
+          .section-order .row .div1 .list .one-wine .img {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end; }
+            .section-order .row .div1 .list .one-wine .img .wine-pic {
+              height: 80px; }
+          .section-order .row .div1 .list .one-wine .appelation {
+            font-family: "GTAmerica-Bold";
+            font-size: 16px;
+            color: #000000;
+            letter-spacing: 1.37px;
+            text-align: center;
+            text-transform: uppercase;
+            height: 30px;
+            align-items: center; }
+            .section-order .row .div1 .list .one-wine .appelation .proprieties {
+              text-align: center;
+              padding-inline-start: 0;
+              text-transform: uppercase;
+              line-height: 15px; }
+              .section-order .row .div1 .list .one-wine .appelation .proprieties .h4 {
+                line-height: 15px; }
+          @media (max-width: 767px) {
+            .section-order .row .div1 .list .one-wine .appelation {
+              font-size: 14px;
+              line-height: 15px; } }
       .section-order .row .div1 .time-input {
         border: none;
         background-color: transparent;
-        height: 100px;
+        height: 80px;
         overflow: hidden; }
       .section-order .row .div1 .address-input {
         text-align: center;
@@ -689,8 +722,8 @@ footer {
         .section-order .row .div1 .h6 {
           margin: 20px 10px 10px 10px; } }
     .section-order .row .icon {
-      width: 150px;
-      height: 150px; }
+      width: 130px;
+      height: 130px; }
     @media (max-width: 992px) {
       .section-order .row .icon {
         width: 120px;
