@@ -16,10 +16,11 @@
 
       <input type="text" name="addressguess" placeholder="Where do you want to be delivered ?" class="address-input">
 
-        <div class="appelation h1">{{oneWine.appelation}}</div>
-        <div class="domaine h2">{{oneWine.domaine}}</div>
-        <div class="h3">{{oneWine.millesime}}</div>
-
+{{#each orderInfo}}
+        <div class="appelation h1">{{this.appelation}}</div>
+        <div class="domaine h2">{{this.domaine}}</div>
+        <div class="h3">{{this.millesime}}</div>
+{{/each}}
         <div class="h5">CART : 10€  + DELIVERY : 3€ = TOTAL : 13€</div>
                 
     </div>
