@@ -67,12 +67,10 @@ p{
   color: #000000;
   letter-spacing: 2px;
   text-align: center;
-  line-height: 45px;
 }
 @media (max-width: 767px){
   .h0{
     font-size: 60px;
-    line-height: 30px;
   }
 }
 
@@ -821,6 +819,110 @@ footer{
     }
 }
 
+.section-order{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .fullscreen-bg{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    background-image: url("../images/background-home.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .row{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    .div1{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .time-input{
+        border: none;
+        background-color: transparent;
+        height: 100px;
+        overflow: hidden;
+      }
+      .address-input{
+        text-align: center;
+        width: 80%;
+        height: 35px;
+        margin-bottom: 10px;
+        border: none;
+        background-color: #F8F8F8;
+        border-radius: 25px;
+        margin-top: 20px;
+        font-family: $gtreg;
+        font-size: 12px;
+        letter-spacing: 2.29px;
+        text-align: center;
+        text-transform: uppercase;
+        @media (max-width: 575px) {
+          font-size: 10px;
+        }
+      }
+      .h6{
+        margin: 20px;
+      }
+      @media (max-width: 992px){
+        .h6{
+          margin: 20px 10px 10px 10px;
+        }
+      }
+    }
+    .icon{
+      width: 150px;
+      height: 150px;
+    }
+    @media (max-width: 992px){
+      .icon{
+        width: 120px;
+        height: 120px;
+      }
+    }
+    @media (max-width: 767px){
+      .icon{
+        width: 100px;
+        height: 100px;
+      }
+    }
+  } 
+  @media (max-width: 575px){
+    .bottles-homepage{
+      display: none;
+    }
+  }
+  .button-div{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 80px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    .button-div-position{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .button-left{
+        margin-right: 5px;
+      }
+      .button-right{
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
 
 .selected{
   background-color: rgba(181, 172, 165, 0.2);
@@ -829,7 +931,7 @@ footer{
 }
 
 // LOGIN FORM
-
+// ----------------------------------------------------------------
 
 .main .left{
   width:50%;
@@ -840,8 +942,6 @@ footer{
   background-color:#fff;
   position: relative;
 }
-
-
 
 .left form input{
   text-align:center;

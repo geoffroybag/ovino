@@ -1,20 +1,38 @@
 {{> header}}
 
+<section class="section-order">
 
-<h2>What time & where please ?</h2>
+  <div class="fullscreen-bg"></div>
 
+  <div class="row justify-content-center">
 
-<input type='time' value='20:30' class ="hour"/>
+    <div class="div1 col-lg-8 col-md-8 col-sm-8">
+      
+    
+    <img src="/images/icon-order.gif" alt="" class="icon">
+      <div class="h6">What time please ?</div>
+    
+      <input type='time' value='20:30' class ="h0 time-input"/>
 
+      <input type="text" name="addressguess" placeholder="Where do you want to be delivered ?" class="address-input">
 
+        <div class="appelation h1">{{oneWine.appelation}}</div>
+        <div class="domaine h2">{{oneWine.domaine}}</div>
+        <div class="h3">{{oneWine.millesime}}</div>
 
-<h3>{{oneWine.appelation}}</h3>
-<h3>{{oneWine.domaine}}-{{oneWine.millesime}}</h3>
+        <div class="h5">CART : 10€  + DELIVERY : 3€ = TOTAL : 13€</div>
+                
+    </div>
 
+  </div>
 
-<h4>CART : 10€  + DELIVERY : 3€ = TOTAL : 13€</h4>
+<div class="button-div">
+  <div class="button-div-position">
+    <a href="/order/{{oneWine._id}}"><button class="button-font button-left">previous</button></a>
+    <a href="/order/{{oneWine._id}}"><button class="button-font button-right">order</button></a>
+  </div>
+</div>
 
-  <a href="/order/{{oneWine._id}}"<button class="button-font">PREVIOUS</button></a>
-  <a href="/order/{{oneWine._id}}"><button class="button-font">order</button></a>
+</section>
 
-
+{{> footer}}
