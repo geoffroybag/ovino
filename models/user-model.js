@@ -8,6 +8,7 @@ const userSchema = new Schema({
   encryptedPassword : {type : String,},
   role : {type : String, enum : ["normal", "admin"], required : true, default : "normal"},
   favorites : [{wine : {type : Schema.Types.ObjectId, ref: "Wine"}}],
+  avatar : String,
 }, {
   timestamps : true
 });
