@@ -133,22 +133,25 @@ router.get("/add-cart/:_id/:subtypeId/:wine", (req, res, next)=>{
 
 })
 
-router.get("/order-process/:_id", (req,res,next)=>{
-  const { _id } = req.params;
-
+router.get("/order-process/:_id/:subtypeId", (req,res,next)=>{
+  const { _id, subtypeId } = req.params;
+   res.locals.mealId = subtypeId
+    res.locals.orderId = _id
   Order.findById(_id)
   .populate("cart")
   .then(data =>{
     res.locals.orderInfo = data.cart
+ 
     res.render("order-page.hbs")
   })
   .catch(err => next(err))
-  
 })
 
 
-router.get("/details/:wineId", (req,res,next)=>{
-  const wineId = req.params.wineId
+router.get("/details/:_id/:subtypeId/:wineId", (req,res,next)=>{
+  const { _id, subtypeId, wineId } = req.params
+  res.locals.mealId = subtypeId
+    res.locals.orderId = _id
   Wine.findById(wineId)
   .then(data =>{
     res.locals.oneWine = data;

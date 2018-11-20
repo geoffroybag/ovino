@@ -24,7 +24,7 @@
         </ul>
         
         <div class="more">
-           <a href="/details/{{this._id}}" id="details" class="h5">Details</a>
+           <a href="/details/{{../orderInfo._id}}/{{../wineRecos._id}}/{{this._id}}" id="details" class="h5">Details</a>
            <a href="/add-fav/{{../wineRecos._id}}/{{this._id}}" class="fav-link"><div class="fav-off"></div></a>
         </div>
         
@@ -40,7 +40,7 @@
 <div class="button-div">
   <div class="button-div-position">
     <a href="/{{subTypes.type}}"><button class="button-font button-left">previous</button></a>
-    <a href="/order-process/{{orderInfo._id}}"><button class="button-font button-right">add</button></a>
+    <a href="/order-process/{{orderInfo._id}}/{{wineRecos._id}}/"><button class="button-font button-right">add</button></a>
   </div>
 </div>
 
