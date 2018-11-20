@@ -87,6 +87,9 @@ router.post('/process-settings', fileUploader.single("avatarUpload") ,(req,res, 
 
 router.get("/my-orders", (req,res,next)=>{
   Order.find({customerId : {$eq : req.user._id}})
+    .populate("cart")
+    .sort({createdAt : -1})
+    .limit(5)
     .then(data=>{
       res.locals.orderInfo = data;
       res.render("my-orders.hbs")

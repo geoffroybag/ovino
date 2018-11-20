@@ -1,1 +1,12 @@
-{{orderInfo}}
+<div>{{#each orderInfo}}
+<ul>
+  <li>Order Id : {{this.randomId}}</li>
+  <li>Order date : {{this.createdAt}}</li>
+  <ul>Wines : 
+      {{#each this.cart}}
+      <li>{{this.appelation}}</li>
+      {{/each}}
+   </ul>
+</ul>
+{{/each}}
+</div>
