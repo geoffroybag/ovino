@@ -577,24 +577,13 @@ footer{
   }
       }
     }
-  .button-div{
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 80px;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    .button-div-position{
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      .button-left{
-        margin-right: 5px;
-      }
-      .button-right{
-        margin-left: 5px;
-      }
-    }
-  }  
+    button{
+      position: absolute;
+      bottom: 0;
+      margin-bottom: 80px;
+      transform: translate(-50%, -50%);
+      left: 50%;
+    }  
 }
 
 .section-type{

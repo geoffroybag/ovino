@@ -445,20 +445,12 @@ footer {
     @media (max-width: 767px) {
       .section-product .row .div1 .one-wine {
         flex-direction: column; } }
-  .section-product .button-div {
+  .section-product button {
     position: absolute;
     bottom: 0;
     margin-bottom: 80px;
     transform: translate(-50%, -50%);
     left: 50%; }
-    .section-product .button-div .button-div-position {
-      display: flex;
-      flex-direction: row;
-      align-items: center; }
-      .section-product .button-div .button-div-position .button-left {
-        margin-right: 5px; }
-      .section-product .button-div .button-div-position .button-right {
-        margin-left: 5px; }
 
 .section-type {
   display: flex;
