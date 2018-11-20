@@ -152,7 +152,10 @@ router.get("/favorites", (req,res,next)=>{
 })
 
 
+router.get("/autocomplete", (req,res,next)=>{
+      res.render("autocomplete.hbs")
 
+})
 
 
 module.exports = router;
