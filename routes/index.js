@@ -30,8 +30,8 @@ router.get("/wines", (req,res,next)=>{
     .catch(err=>next(err))
 })
 
-router.get("/add-fav/:wine", (req, res, next) => {
-  const { wine } = req.params;
+router.get("/add-fav/:meal/:wine", (req, res, next) => {
+  const { meal, wine } = req.params;
   User.findByIdAndUpdate(
     req.user._id,
     {$push: { favorites: {wine} }},
@@ -39,7 +39,7 @@ router.get("/add-fav/:wine", (req, res, next) => {
   )
   .populate("favorites")
     .then(data =>{
-      res.redirect(`/wine-reco/${wine}`)
+      res.redirect(`/wine-reco/${meal}`)
     })
     .catch(err => next(err))
 })

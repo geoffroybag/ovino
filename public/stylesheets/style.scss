@@ -356,6 +356,9 @@ footer{
     .bottles-homepage{
       display: none;
     }
+    .row{
+      margin-top: 30px;
+    }
   }
   button{
     position: absolute;
@@ -453,6 +456,7 @@ footer{
   flex-direction: column;
   align-items: center;
   margin-top : 50px;
+  height: 100%;
   .fullscreen-bg{
     position: fixed;
     top: 0;
@@ -506,9 +510,9 @@ footer{
       }
       @media (max-width: 575px){
         .img{
-          height: 250px;
+          height: 200px;
           img{
-            height: 70%;
+            height: 80%;
           }
         }
       }
@@ -526,11 +530,8 @@ footer{
         display: flex;
         flex-direction: column;
         padding-inline-start: 0;
-        li{
-          margin-bottom : 10px;
-        }
         .h4{
-          line-height: 10px;
+          line-height: 13px;
         }
       }
     }
@@ -655,139 +656,169 @@ footer{
   display: flex;
   flex-direction: column;
   align-items: center;
-.fullscreen-bg{
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-  z-index: -100;
-  background-image: url("../images/background-home.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.row{
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  .div1{
+  .fullscreen-bg{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    background-image: url("../images/background-home.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .row{
+    width: 100%;
+    height: 100%;
+    margin: 0;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    .h6{
-      margin: 20px;
-    }
-    .list{
-      padding-inline-start: 0;
-      display : flex; 
-      padding-inline-start: 0;
-      width: 70%;
-      .one-wine{
-      list-style: none;  
-        img{
-          height : 150px;
-        }
-          .appelation{
-            font-family: $gtbold;
-            font-size: 16px;
-            color: #000000;
-            letter-spacing: 1.37px;
-            text-align: center;
-            text-transform: uppercase;
-            height: 30px;
-            align-items: center;
-            margin-top: 10px;
-            a:hover{
-              background-color: rgba(181, 172, 165, 0.2);
-              border-radius: 15px;
-              padding: 5px 25px;
+    text-align: center;
+    .div1{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .h6{
+        margin: 20px;
+      }
+      .list{
+        padding-inline-start: 0;
+        display : flex; 
+        padding-inline-start: 0;
+        width: 70%;
+        .one-wine{
+        list-style: none;  
+          .img{
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            .wine-pic{
+              height : 150px;
             }
-            @media (max-width: 992px){
+          }
+            .appelation{
+              font-family: $gtbold;
+              font-size: 16px;
+              color: #000000;
+              letter-spacing: 1.37px;
+              text-align: center;
+              text-transform: uppercase;
+              height: 30px;
+              align-items: center;
+              margin-top: 10px;
               a:hover{
-                padding: 5px 15px;
+                background-color: rgba(181, 172, 165, 0.2);
+                border-radius: 15px;
+                padding: 5px 25px;
+              }
+              @media (max-width: 992px){
+                a:hover{
+                  padding: 5px 15px;
+                }
+              }
+              @media (max-width: 767px){
+                a:hover{
+                  padding: 5px 0px;
+                }
               }
             }
             @media (max-width: 767px){
-              a:hover{
-                padding: 5px 0px;
+              .appelation{
+                font-size:14px;
+                line-height: 15px;
               }
             }
-          }
-          @media (max-width: 767px){
-            .appelation{
-              font-size:14px;
-              line-height: 15px;
+          .proprieties{
+            text-align: center;
+            padding-inline-start: 0;
+            text-transform: uppercase;
+            li{
+              margin-top: 10px;
             }
           }
-        .proprieties{
-          text-align: center;
-          padding-inline-start: 0;
-          text-transform: uppercase;
-          li{
-            margin-top: 10px;
+          .more{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .h5{
+            margin-bottom: 0;
+            }
+            .fav-on{
+              background-image: url("../images/icon-heart-full.svg");
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-position: center;
+              height: 30px;
+              width: 30px;
+              margin-left: 20px;
+            }
+            .fav-off{
+              background-image: url("../images/icon-heard-empty.svg");
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-position: center;
+              height: 30px;
+              width: 30px;
+              margin-left: 20px;
+
+            }
           }
+          
+        }    
+      }
+      @media (max-width: 992px){
+        .list{
+          width: 90%;
         }
-        .h5{
-          margin-bottom: 0;
+      }
+      @media (max-width: 767px){
+        .list{
+          width: 100%;
         }
-      }    
+      }
+      #details{
+        text-decoration: underline;
+      }
     }
+    .icon{
+      width: 150px;
+      height: 150px;
+    }
+    
     @media (max-width: 992px){
-      .list{
-        width: 90%;
+      .icon{
+        width: 120px;
+        height: 120px;
       }
     }
     @media (max-width: 767px){
-      .list{
-        width: 100%;
+      .icon{
+        width: 100px;
+        height: 100px;
       }
     }
-    #details{
-      text-decoration: underline;
-    }
-  }
-  .icon{
-    width: 150px;
-    height: 150px;
-  }
-  
-  @media (max-width: 992px){
-    .icon{
-      width: 120px;
-      height: 120px;
-    }
-  }
-  @media (max-width: 767px){
-    .icon{
-      width: 100px;
-      height: 100px;
-    }
-  }
-} 
-  .button-div{
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 80px;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    .button-div-position{
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      .button-left{
-        margin-right: 5px;
-      }
-      .button-right{
-        margin-left: 5px;
+  } 
+    .button-div{
+      position: absolute;
+      bottom: 0;
+      margin-bottom: 80px;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      .button-div-position{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .button-left{
+          margin-right: 5px;
+        }
+        .button-right{
+          margin-left: 5px;
+        }
       }
     }
-  }
 }
 
 

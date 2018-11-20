@@ -1,15 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="55px" height="51px" viewBox="0 0 55 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
-    <title>Path</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Our-cellar" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Our-cellar---2" transform="translate(-518.000000, -723.000000)" fill="#EFECE9" stroke="#8C2632">
-            <g id="Group-5" transform="translate(464.000000, 250.000000)">
-                <g id="Group-4" transform="translate(0.000000, 169.000000)">
-                    <path d="M83.7047607,309.490379 L81.6647777,311.657028 L79.6247948,309.490379 C73.9915084,303.507096 64.8582512,303.507096 59.2249648,309.490379 C53.5916784,315.473663 53.5916784,325.176915 59.2249648,331.163532 L61.2649478,333.330181 L81.6647777,355 L102.064608,333.326847 L104.104591,331.160199 C109.737877,325.176915 109.737877,315.473663 104.104591,309.487046 C98.4713043,303.503763 89.3380471,303.503763 83.7047607,309.490379 Z" id="Path"></path>
-                </g>
-            </g>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-681 683.3 55 51" enable-background="new -681 683.3 55 51" xml:space="preserve">
+<title>Path</title>
+<desc>Created with Sketch.</desc>
+<g id="Our-cellar">
+	<g id="Our-cellar---2" transform="translate(-518.000000, -723.000000)">
+		<g id="Group-5" transform="translate(464.000000, 250.000000)">
+			<g id="Group-4" transform="translate(0.000000, 169.000000)">
+				<path id="Path" fill="none" stroke="#8C2632" d="M-597.3,992.8l-2,2.2l-2-2.2c-5.6-6-14.8-6-20.4,0s-5.6,15.7,0,21.7l2,2.2
+					l20.4,21.7l20.4-21.7l2-2.2c5.6-6,5.6-15.7,0-21.7C-582.5,986.8-591.7,986.8-597.3,992.8z"/>
+			</g>
+		</g>
+	</g>
+</g>
 </svg>

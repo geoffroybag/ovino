@@ -23,6 +23,17 @@ $(".appelation").click(function () {
 
 });
 
+$(".fav-link").click(function () {
+
+  var wine = $(event.target);
+  wine.toggleClass("added");
+  $(function() {
+    $(".section-reco .added").each(function() {
+      cart.push($(this).attr('name'));
+    });
+  });
+
+})
 
 
 

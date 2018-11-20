@@ -85,8 +85,15 @@ router.get("/wine-reco/:subtypeId", (req,res,next)=>{
   .then(data =>{
     res.locals.wineRecos = data
     // res.send(data.wine)
-    res.render("pairing/wine-reco.hbs")
-  })
+    
+    // return User.findById(req.user._id)
+    //   .then(data => {
+    //     const { favorites } = data;
+        
+    //     res.render("pairing/wine-reco.hbs")
+    //   })
+      res.render("pairing/wine-reco.hbs")
+    })
   .catch(err=>next(err))
 })
 
