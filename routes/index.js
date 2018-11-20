@@ -47,6 +47,22 @@ router.get("/add-fav/:meal/:wine", (req, res, next) => {
 })
 
 
+router.get("/add-fav-cellar/:wine", (req, res, next) => {
+  const { wine } = req.params;
+  User.findByIdAndUpdate(
+    req.user._id,
+    {$push: { favorites: {wine} }},
+    {runValidators: true},
+  )
+  .populate("favorites")
+    .then(data =>{
+      res.redirect(`/cellar/details/${wine}`)
+    })
+    .catch(err => next(err))
+})
+
+
+
 router.get('/profile', (req, res,next)=>{
   res.render('profile-page.hbs')
 })
@@ -98,10 +114,13 @@ router.get("/my-orders", (req,res,next)=>{
 
 router.get("/friends", (req,res,next)=>{
   User.findById(req.user._id)
-     .populate("favorites")
     .populate("friends")
+    .populate({
+      path: 'friends',
+      populate: { path: 'favorites.wine' }
+    })
     .then(data=>{
-      res.locals.userFriends = data;
+      res.locals.userFriends = data.friends;
       res.render("friends.hbs")
       // res.send(data)
     })
@@ -123,7 +142,14 @@ router.post("/add-friend", (req,res,next)=>{
     
 })
 
-
+router.get("/favorites", (req,res,next)=>{
+  User.findById(req.user._id)
+    .populate("favorites.wine")
+    .then(data=>{
+      res.locals.userFavorites = data.favorites;
+      res.render("favorites.hbs")
+    })
+})
 
 
 

@@ -172,7 +172,17 @@ router.get("/cellar/details/:_id/", (req,res,next)=>{
   const { _id } = req.params
   Wine.findById(_id)
   .then(data =>{
-    res.locals.oneWine = data;
+    
+
+    
+      const objVersion = data.toObject()
+        objVersion.isFavorite = req.user.favorites.some(fave => {
+          return fave.wine.toString() === data._id.toString();
+        });
+
+        
+      res.locals.oneWine = objVersion;
+
     res.render("wine-page.hbs")
   })
   .catch(err=>next(err))
