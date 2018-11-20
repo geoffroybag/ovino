@@ -1,12 +1,34 @@
-<div>{{#each orderInfo}}
-<ul>
-  <li>Order Id : {{this.randomId}}</li>
-  <li>Order date : {{this.createdAt}}</li>
-  <ul>Wines : 
-      {{#each this.cart}}
-      <li>{{this.appelation}}</li>
-      {{/each}}
-   </ul>
-</ul>
-{{/each}}
-</div>
+{{> header}}
+
+<section class="section-myorders">
+
+  <div class="fullscreen-bg"></div>
+
+  <div class="row justify-content-center">
+
+    <div class="div1">
+
+  <img src="/images/icon-bottles.svg" alt="" class="icon">
+  <div class="h6">My orders</div>
+
+  <div class="list">
+   {{#each orderInfo}}
+      <ul>
+      <li>Order Id : {{this.randomId}}</li>
+      <li>Order date : {{this.createdAt}}</li>
+      <ul>Wines : 
+            {{#each this.cart}}
+            <li>{{this.appelation}}</li>
+            {{/each}}
+         </ul>
+      </ul>
+   {{/each}}
+  </div>
+
+  </div>
+  
+  <div>
+
+</section>
+
+{{> footer}}

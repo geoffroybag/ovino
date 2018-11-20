@@ -626,7 +626,7 @@ footer {
               background-position: center;
               height: 30px;
               width: 30px;
-              margin: 20px 0; }
+              margin: 0 20px; }
             .section-reco .row .div1 .list .one-wine .more .fav-off {
               background-image: url("../images/icon-heard-empty.svg");
               background-size: contain;
@@ -785,6 +785,57 @@ footer {
         margin-right: 5px; }
       .section-order .button-div .button-div-position .button-right {
         margin-left: 5px; }
+
+.section-myorders {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .section-myorders .fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    background-image: url("../images/background-cellar.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+  .section-myorders .row {
+    margin-top: 30px; }
+    .section-myorders .row .div1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .section-myorders .row .div1 .h6 {
+        margin: 20px; }
+      .section-myorders .row .div1 .icon {
+        width: 130px;
+        height: 130px; }
+      @media (max-width: 992px) {
+        .section-myorders .row .div1 .icon {
+          width: 120px;
+          height: 120px; } }
+      @media (max-width: 767px) {
+        .section-myorders .row .div1 .icon {
+          width: 100px;
+          height: 100px; } }
+      .section-myorders .row .div1 .list-filters {
+        padding-inline-start: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: row; }
+        .section-myorders .row .div1 .list-filters li {
+          text-align: center;
+          padding: 0 10px; }
+        .section-myorders .row .div1 .list-filters .wine-color .wine-color-filter {
+          padding: 0 5px; }
+      .section-myorders .row .div1 .list {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        flex-wrap: wrap; }
 
 .selected {
   background-color: rgba(181, 172, 165, 0.2);

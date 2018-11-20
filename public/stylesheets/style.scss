@@ -476,7 +476,6 @@ footer{
             }
           }
         }
-
     }
   }
 }
@@ -800,7 +799,7 @@ footer{
               background-position: center;
               height: 30px;
               width: 30px;
-              margin: 20px 0;
+              margin: 0 20px;
             }
             .fav-off{
               background-image: url("../images/icon-heard-empty.svg");
@@ -1010,6 +1009,72 @@ footer{
   }
 }
 
+.section-myorders{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .fullscreen-bg{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    background-image: url("../images/background-cellar.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .row{    
+    margin-top: 30px;
+    .div1{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .h6{
+        margin: 20px;
+      }
+      .icon{
+        width: 130px;
+        height: 130px;
+      }
+      @media (max-width: 992px){
+        .icon{
+          width: 120px;
+          height: 120px;
+        }
+      }
+      @media (max-width: 767px){
+        .icon{
+          width: 100px;
+          height: 100px;
+        }
+      }
+      .list-filters{
+        padding-inline-start:0;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        li{
+          text-align: center;
+          padding: 0 10px;
+        }
+        .wine-color{
+          .wine-color-filter{
+            padding: 0 5px;
+          }
+        }
+      }
+      .list{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        flex-wrap: wrap;
+        }
+    }
+  }
+}
 
 .selected{
   background-color: rgba(181, 172, 165, 0.2);
