@@ -13,12 +13,18 @@
 
         <ul class="list justify-content-center">
 
-        {{#each wineRecos.wine}}
+        {{#each wineArray}}
           <li class="one-wine col-lg-4">
           <div class="img">
            <img src="{{this.pictureUrl}}" name = "{{this._id}}" alt="" class="wine-pic">
           </div>
-          <div class="appelation h2"><a href="/add-cart/{{../orderInfo._id}}/{{../wineRecos._id}}/{{this._id}}">{{this.appelation}}</a></div>
+          <div class="appelation h2">
+            {{#if this.isAdded}}
+              <div class="appelation-active">{{this.appelation}}</div>
+            {{else}}
+              <a href="/add-cart/{{../orderInfo._id}}/{{../wineRecos._id}}/{{this._id}}">{{this.appelation}}</a>
+            {{/if}}
+          </div>
           <ul class="proprieties">
            <li class="h4">{{this.domaine}} - {{this.millesime}}</li>
         </ul>
@@ -26,6 +32,7 @@
         <div class="more">
            <a href="/details/{{../orderInfo._id}}/{{../wineRecos._id}}/{{this._id}}" id="details" class="h5">Details</a>
            <a href="/add-fav/{{../wineRecos._id}}/{{this._id}}" class="fav-link"><div class="fav-off"></div></a>
+          <a href="/details/{{../orderInfo._id}}/{{../wineRecos._id}}/{{this._id}}" id="details" class="h5">Delete</a>
         </div>
         
         
