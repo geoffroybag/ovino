@@ -39,13 +39,11 @@ p {
   font-size: 100px;
   color: #000000;
   letter-spacing: 2px;
-  text-align: center;
-  line-height: 45px; }
+  text-align: center; }
 
 @media (max-width: 767px) {
   .h0 {
-    font-size: 60px;
-    line-height: 30px; } }
+    font-size: 60px; } }
 
 .h1 {
   font-family: "GTAmerica-Bold";
@@ -633,6 +631,90 @@ footer {
       .section-reco .button-div .button-div-position .button-left {
         margin-right: 5px; }
       .section-reco .button-div .button-div-position .button-right {
+        margin-left: 5px; }
+
+.section-order {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .section-order .fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    background-image: url("../images/background-home.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+  .section-order .row {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    text-align: center; }
+    .section-order .row .div1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .section-order .row .div1 .time-input {
+        border: none;
+        background-color: transparent;
+        height: 100px;
+        overflow: hidden; }
+      .section-order .row .div1 .address-input {
+        text-align: center;
+        width: 80%;
+        height: 35px;
+        margin-bottom: 10px;
+        border: none;
+        background-color: #F8F8F8;
+        border-radius: 25px;
+        margin-top: 20px;
+        font-family: "GTAmerica-Regular";
+        font-size: 12px;
+        letter-spacing: 2.29px;
+        text-align: center;
+        text-transform: uppercase; }
+        @media (max-width: 575px) {
+          .section-order .row .div1 .address-input {
+            font-size: 10px; } }
+      .section-order .row .div1 .h6 {
+        margin: 20px; }
+      @media (max-width: 992px) {
+        .section-order .row .div1 .h6 {
+          margin: 20px 10px 10px 10px; } }
+    .section-order .row .icon {
+      width: 150px;
+      height: 150px; }
+    @media (max-width: 992px) {
+      .section-order .row .icon {
+        width: 120px;
+        height: 120px; } }
+    @media (max-width: 767px) {
+      .section-order .row .icon {
+        width: 100px;
+        height: 100px; } }
+  @media (max-width: 575px) {
+    .section-order .bottles-homepage {
+      display: none; } }
+  .section-order .button-div {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 80px;
+    transform: translate(-50%, -50%);
+    left: 50%; }
+    .section-order .button-div .button-div-position {
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      .section-order .button-div .button-div-position .button-left {
+        margin-right: 5px; }
+      .section-order .button-div .button-div-position .button-right {
         margin-left: 5px; }
 
 .selected {
