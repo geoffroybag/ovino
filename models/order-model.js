@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema
 
 const orderSchema = new Schema({
-  cart : [{wine : {type : Schema.Types.ObjectId, ref: "Wine"}}],
+  cart : [{type : Schema.Types.ObjectId, ref: "Wine"}],
   randomId : {type : Number},
   quantity : {type : Number},
   totalPrice : {type : Number},

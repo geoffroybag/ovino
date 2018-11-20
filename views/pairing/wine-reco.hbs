@@ -18,7 +18,7 @@
           <div class="img">
            <img src="{{this.pictureUrl}}" name = "{{this._id}}" alt="" class="wine-pic">
           </div>
-          <div class="appelation h2"><a href="/add-cart/{{../orderInfo._id}}/{{this._id}}">{{this.appelation}}</a></div>
+          <div class="appelation h2"><a href="/add-cart/{{../orderInfo._id}}/{{../wineRecos._id}}/{{this._id}}">{{this.appelation}}</a></div>
           <ul class="proprieties">
            <li class="h4">{{this.domaine}} - {{this.millesime}}</li>
         </ul>
@@ -40,7 +40,7 @@
 <div class="button-div">
   <div class="button-div-position">
     <a href="/{{subTypes.type}}"><button class="button-font button-left">previous</button></a>
-    <a href="/order"><button class="button-font button-right">add</button></a>
+    <a href="/order-process/{{orderInfo._id}}"><button class="button-font button-right">add</button></a>
   </div>
 </div>
 

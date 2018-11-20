@@ -118,23 +118,32 @@ router.get("/wine-reco/:orderId/:subtypeId/reco-route", (req,res,next)=>{
 
 
 
-router.get("/add-cart/:_id/:wine", (req, res, next)=>{
-  const { _id, wine } = req.params;
+router.get("/add-cart/:_id/:subtypeId/:wine", (req, res, next)=>{
+  const { _id, subtypeId, wine } = req.params;
 
   Order.findByIdAndUpdate(
     _id,
-    {$push: { cart: {wine} }},
+    {$push: { cart: wine }},
     {runValidators: true},
   )
   .then(data =>{
-    res.redirect(`/order-process`)
+    res.redirect(`/wine-reco/${_id}/${subtypeId}/reco-route`)
   })
   .catch(err => next(err))
 
 })
 
-router.get("/order-process", (req,res,next)=>{
-  res.render("order-page.hbs")
+router.get("/order-process/:_id", (req,res,next)=>{
+  const { _id } = req.params;
+
+  Order.findById(_id)
+  .populate("cart")
+  .then(data =>{
+    res.locals.orderInfo = data.cart
+    res.render("order-page.hbs")
+  })
+  .catch(err => next(err))
+  
 })
 
 
@@ -149,18 +158,7 @@ router.get("/details/:wineId", (req,res,next)=>{
 })
 
 
-router.get("/order", (req,res,next)=>{
-  // cart.forEach(oneItem => {
-  //   Wine.findById(oneItem)
-  // })
-  // .then(data =>{
-  //   // res.locals.oneWine = data;
-  //   // res.render("order-page.hbs")
-  //   res.send(data)
-  // })
-  res.render("order-page.hbs")
 
-})
 
 
 module.exports = router;
