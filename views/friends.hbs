@@ -1,20 +1,44 @@
-Add friends : 
-<form action="/add-friend" method="POST">   
-  <input type="email" name="email" placeholder="b2o@unkut.com">
-</form>
+{{> header}}
 
+<section class="section-myfriends">
 
-Your friends : 
-<div>{{#each userFriends}}
-  <ul>
-<li>{{this.fullName}}</li>
-<li>{{this.email}}</li>
-<li>Favorites : 
-  <ul>{{#each this.favorites}}
-    <li>{{this.wine.appelation}}</li>
-    {{/each }}
-  </ul>
-</li>
-  </ul>
-{{/each}}
-</div>
+  <div class="fullscreen-bg"></div>
+
+  <div class="row justify-content-center">
+
+    <div class="div1">
+
+  <img src="/images/icon-bottles.svg" alt="" class="icon">
+  <div class="h6">Your favorites :</div>
+
+  <div class="add-friends">
+    <div class="h4">Add friends :</div>
+    <form action="/add-friend" method="POST" class="form">   
+    <input type="email" name="email" placeholder="b2o@unkut.com">
+    </form>
+  </div>
+  
+  <div class="list">
+  <div class="h4">Your friends :</div>
+  {{#each userFriends}}
+    <div class="one-friend"><a href="#">
+      <div class="h2">{{this.fullName}}</div>
+      <div class="h4">{{this.email}}</div>
+      <div class="h5">Favorites : </div>
+        <ul>
+          {{#each this.favorites}}
+          <li class="h4">{{this.wine.appelation}}</li>
+          {{/each }}
+        </ul>
+    </a></div>
+  {{/each}}
+  </div>
+
+  </div>
+  
+  <div>
+
+</section>
+
+{{> footer}}
+
