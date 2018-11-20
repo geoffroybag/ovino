@@ -146,6 +146,10 @@ footer {
   margin-bottom: 5px;
   transform: translate(-50%, -50%); }
 
+.button-font {
+  width: 350px;
+  padding: 15px 0; }
+
 #menu:hover {
   animation: 1s crazyflip;
   /* choisir combien de fois l'animation va se répéter sur l'élément */
@@ -906,6 +910,85 @@ footer {
 
 @media (max-width: 575px) {
   .section-profile .row {
+    margin-top: 30px; } }
+
+.section-settings .fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+  background-image: url("../images/background-home.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.section-settings .row {
+  width: 100%;
+  height: 80vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  text-align: center; }
+  .section-settings .row .div1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .section-settings .row .div1 .h6 {
+      margin: 20px; }
+    .section-settings .row .div1 .icon {
+      width: 130px;
+      height: 130px;
+      margin: 0 10px; }
+    @media (max-width: 992px) {
+      .section-settings .row .div1 .icon {
+        width: 120px;
+        height: 120px; } }
+    @media (max-width: 767px) {
+      .section-settings .row .div1 .icon {
+        width: 100px;
+        height: 100px; } }
+    .section-settings .row .div1 .settings-form {
+      float: left;
+      /*border-right:1px solid #fff;*/
+      height: 100%;
+      /*padding:15px 0 0 0;*/
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .section-settings .row .div1 .settings-form label {
+        display: flex;
+        flex-direction: row; }
+        .section-settings .row .div1 .settings-form label input {
+          text-align: center;
+          height: 35px;
+          margin-bottom: 10px;
+          border: none;
+          border-radius: 25px; }
+        .section-settings .row .div1 .settings-form label input:focus {
+          outline: none; }
+        .section-settings .row .div1 .settings-form label ::-webkit-input-placeholder {
+          color: grey;
+          letter-spacing: 1px; }
+        .section-settings .row .div1 .settings-form label input[type="submit"] {
+          background-color: #FFBF37;
+          color: #fff;
+          font-weight: bold; }
+      .section-settings .row .div1 .settings-form .button-div .button-font {
+        width: 350px; }
+  .section-settings .row .profile-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .section-settings .row .profile-buttons .profile-btn {
+      width: 350px;
+      margin: 5px; }
+
+@media (max-width: 575px) {
+  .section-settings .row {
     margin-top: 30px; } }
 
 @keyframes crazyflip {
