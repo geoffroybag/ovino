@@ -10,12 +10,10 @@
       <ul>
         <li><a href="/profile">PROFILE</a></li>
         <li><a href="/wines">OUR CELLAR</a></li>
-        <li><a href="/pairing">WINE PAIRING</a></li>
         <li><a>ADVICE</a></li>
         <li><a>CONTACT</a></li>
 
         {{#if currentUser}}
-            <li>{{currentUser.email}}</li>
             <li><a href="/logout">LOG OUT</a></li>
      
        {{else}}
