@@ -855,6 +855,49 @@ footer {
   .section-login .row {
     margin-top: 30px; } }
 
+.section-profile .fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+  background-image: url("../images/background-home.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.section-profile .row {
+  width: 100%;
+  height: 60vh;
+  margin: 0;
+  display: flex;
+  align-items: flex-end;
+  text-align: center; }
+  .section-profile .row .div1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .section-profile .row .div1 .h6 {
+      margin: 20px; }
+    .section-profile .row .div1 .icon {
+      width: 130px;
+      height: 130px;
+      margin: 0 10px; }
+    @media (max-width: 992px) {
+      .section-profile .row .div1 .icon {
+        width: 120px;
+        height: 120px; } }
+    @media (max-width: 767px) {
+      .section-profile .row .div1 .icon {
+        width: 100px;
+        height: 100px; } }
+
+@media (max-width: 575px) {
+  .section-profile .row {
+    margin-top: 30px; } }
+
 @keyframes crazyflip {
   0% {
     transform: rotateX(0); }
