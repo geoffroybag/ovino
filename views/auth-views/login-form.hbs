@@ -1,10 +1,33 @@
-{{> flash_messages}}
+{{> header}}
 
-<div class="left">
-            <h1>Login</h1>
+<section class="section-login">
+
+  <div class="fullscreen-bg"></div>
+
+  <div class="row justify-content-center">
+
+    <div class="div1">
+    
+    <div class="h6">Who are you ?</div>
+    <div class="user">
+        <img src="/images/icon-woman.svg" alt="" class="icon">
+        <img src="/images/icon-man.svg" alt="" class="icon">
+    </div>
+
+    {{> flash_messages}}
+
+    <div class="form">
             <form action="/process-login" method="POST">
                 <input type="email" name="emailguess" placeholder="b2o@unkut.com">
                 <input type="password" name="passwordguess" placeholder="izi">
                 <input type="submit" value="LOG IN">
             </form>
-</div>
+    </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+{{> footer}}

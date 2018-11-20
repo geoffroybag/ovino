@@ -25,6 +25,15 @@
           <li class="h4">Style : {{oneWine.style}}</li>
           <li class="h4">Parfum : {{oneWine.parfum}}</li>
         </ul>
+
+        <div class="fav-link">
+          {{#if wine.isFav}}
+          <div class="fav-on"></div>
+          {{else}}
+          <div class="fav-off"></div>
+          {{/if}}
+        </div>
+
         </div>
     </li>
 
