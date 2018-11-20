@@ -13,15 +13,15 @@
     
       <input type='time' value='20:30' class ="h0 time-input"/>
 
-      <input type="text" name="addressguess" placeholder="Where do you want to be delivered ?" class="address-input">
+      <input type="text" name="addressguess" placeholder="Where ?" class="address-input">
         <ul class="list justify-content-center">
 
         {{#each orderInfo}}
-          <li class="one-wine col-lg-4">
+          <li class="one-wine col-lg-6">
             <div class="img">
             <img src="{{this.pictureUrl}}" name = "{{this._id}}" alt="" class="wine-pic">
             </div>
-            <div class="appelation h2"><a href="/add-cart/{{../orderInfo._id}}/{{../wineRecos._id}}/{{this._id}}">{{this.appelation}}</a></div>
+            <div class="appelation h5"><a href="/add-cart/{{../orderInfo._id}}/{{../wineRecos._id}}/{{this._id}}">{{this.appelation}}</a></div>
             <a href="#"><p><u>Delete</u></p></a>
           </li>
           {{/each}}

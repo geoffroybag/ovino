@@ -187,7 +187,6 @@ ul{
 section{
   width: 100vw;
   height: 70vh;
-  overflow: hidden;
 }
 
 header{
@@ -385,69 +384,97 @@ footer{
     background-position: center;
     background-repeat: no-repeat;
   }
-  .list-filters{
-    padding-inline-start:0;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    li{
-      text-align: center;
-      padding: 0 10px;
-    }
-    .wine-color{
-      .wine-color-filter{
-        padding: 0 5px;
-      }
-    }
-  }
-  .list{
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    flex-wrap: wrap;
-    padding-inline-start: 0;
-    padding: 0 100px;
-      .one-wine{
+  .row{    
+    margin-top: 30px;
+    .div1{
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-        a{
+      .h6{
+        margin: 20px;
+      }
+      .icon{
+        width: 130px;
+        height: 130px;
+      }
+      @media (max-width: 992px){
+        .icon{
+          width: 120px;
+          height: 120px;
+        }
+      }
+      @media (max-width: 767px){
+        .icon{
+          width: 100px;
+          height: 100px;
+        }
+      }
+      .list-filters{
+        padding-inline-start:0;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        li{
+          text-align: center;
+          padding: 0 10px;
+        }
+        .wine-color{
+          .wine-color-filter{
+            padding: 0 5px;
+          }
+        }
+      }
+      .list{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        flex-wrap: wrap;
+        padding-inline-start: 0;
+        padding: 0 100px;
+          .one-wine{
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          text-align: center;
-          color: black;
-          text-decoration: none;
-          .img{
-            height: 200px;
-            text-align: center;
-            img{
-              height: 100%;
+            a{
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              text-align: center;
+              color: black;
+              text-decoration: none;
+              .img{
+                height: 200px;
+                text-align: center;
+                img{
+                  height: 100%;
+                }
+              }
+              .appelation{
+                font-family: $gtbold;
+                font-size: 16px;
+                color: #000000;
+                letter-spacing: 1.37px;
+                text-align: center;
+                text-transform: uppercase;
+                height: 40px;
+                display: flex;
+                align-items: center;
+              }
+              .proprieties{
+                display: flex;
+                flex-direction: column;
+                padding-inline-start: 0;
+                text-align: center;
+                margin-bottom: 20px;
+              }
             }
           }
-          .appelation{
-            font-family: $gtbold;
-            font-size: 16px;
-            color: #000000;
-            letter-spacing: 1.37px;
-            text-align: center;
-            text-transform: uppercase;
-            height: 40px;
-            display: flex;
-            align-items: center;
-          }
-          .proprieties{
-            display: flex;
-            flex-direction: column;
-            padding-inline-start: 0;
-            text-align: center;
-            margin-bottom: 20px;
-          }
         }
-      }
+
     }
+  }
 }
 
 .section-product{
@@ -827,7 +854,7 @@ footer{
     background-repeat: no-repeat;
   }
   .row{
-    width: 100%;
+    width: 80%;
     height: 100%;
     margin: 0;
     display: flex;
@@ -842,6 +869,7 @@ footer{
       .list{
         display: flex;
         margin-bottom: 0;
+        padding-inline-start: 0;
         .one-wine{
           list-style: none;  
             .img{
@@ -859,16 +887,12 @@ footer{
                 letter-spacing: 1.37px;
                 text-align: center;
                 text-transform: uppercase;
-                height: 30px;
                 align-items: center;
+                margin: 10px;
                 .proprieties{
                   text-align: center;
                   padding-inline-start: 0;
                   text-transform: uppercase;
-                  line-height: 15px;
-                  .h4{
-                    line-height: 15px;
-                  }
                 }
               }
               @media (max-width: 767px){
@@ -882,7 +906,7 @@ footer{
       .time-input{
         border: none;
         background-color: transparent;
-        height: 80px;
+        height: 70px;
         overflow: hidden;
       }
       .address-input{
