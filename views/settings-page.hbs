@@ -1,7 +1,45 @@
-<h2>User Settings</h2>
+{{> header}}
 
-{{> flash_messages}}
+<section class="section-settings">
 
+  <div class="fullscreen-bg"></div>
+
+  <div class="row justify-content-center">
+
+    <div class="div1">
+    
+    <img src="/images/icon-contact.gif" alt="" class="icon">
+    <div class="h6">User settings</div>
+
+    {{> flash_messages}}
+
+    <form action="/process-settings" method="POST" enctype="multipart/form-data" class="settings-form">
+      <label>
+        <input type="text" name="fullName" value = "{{currentUser.fullName}}">
+      </label>
+
+      <label>
+        <input type="email" name="email" value = "{{currentUser.email}}">
+      </label>
+
+      <div class="button-div">
+          <a href="/profile"><button class="button-font">back</button></a>
+          <button class="button-font">Save Settings</button>
+      </div>
+
+      
+    </form>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+{{> footer}}
+
+{{!-- 
 {{#if currentUser.avatar}}
   <img src="{{currentUser.avatar}}" alt="avatar">
 {{/if}}
@@ -26,4 +64,4 @@
   <button>Save Settings</button>
 </form>
 
-<a href="/profile"><button>back</button></a>
+<a href="/profile"><button>back</button></a> --}}
