@@ -98,18 +98,29 @@ router.get("/wine-reco/:orderId/:subtypeId/reco-route", (req,res,next)=>{
   Meal.findById(subtypeId)
   .populate("wine")
   .then(data =>{
-    res.locals.wineRecos = data
     // res.send(data.wine)
+    res.locals.wineRecos = data;
     
     // return User.findById(req.user._id)
     //   .then(data => {
-    //     const { favorites } = data;
-        
-    //     res.render("pairing/wine-reco.hbs")
-    //   })
-    return Order.findById(orderId)
+      //     const { favorites } = data;
+      
+      //     res.render("pairing/wine-reco.hbs")
+      //   })
+      return Order.findById(orderId)
       .then(order => {
         res.locals.orderInfo = order
+        
+        const wineObjects = data.wine.map(oneWine => {
+          const objVersion = oneWine.toObject();
+          objVersion.isAdded = order.cart.some(id => {
+            return id.toString() === oneWine._id.toString();
+          });
+
+          return objVersion;
+        });
+
+        res.locals.wineArray = wineObjects;
         res.render("pairing/wine-reco.hbs")
       })
   })

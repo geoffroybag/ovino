@@ -13,20 +13,20 @@ $lightgrey: #EFECE9;
 @font-face {
   font-family: 'Coquette-Regular';
   // src: url('/public/font/Coquette-Regular.eot');
-  src: url('/public/font/Coquette-Regular.ttf') format('truetype');
+  src: url('/font/Coquette-Regular.ttf') format('truetype');
       //  url('/public/font/Coquette.woff') format('woff'),
   }
 @font-face {
 	font-family: 'GTAmerica-Bold';
-	src: url('/public/font/GTAmerica-Bold.ttf') format('truetype');
+	src: url('/font/GTAmerica-Bold.ttf') format('truetype');
 }
 @font-face {
 	font-family: 'GTAmerica-BoldItalic';
-	src: url('/public/font/GTAmerica-BoldItalic.ttf') format('truetype');
+	src: url('/font/GTAmerica-BoldItalic.ttf') format('truetype');
 }
 @font-face {
 	font-family: 'GTAmerica-Regular';
-	src: url('/public/font/GTAmerica-Regular.ttf') format('truetype');
+	src: url('/font/GTAmerica-Regular.ttf') format('truetype');
 }
 
 $coquette: 'Coquette';
@@ -171,7 +171,7 @@ p{
 body {
   margin: 0;
   padding: 0;
-  overflow-y: hidden;
+  overflow-y: scroll;
 }
 
 a, a:hover {
@@ -186,7 +186,6 @@ ul{
 
 section{
   width: 100vw;
-  height: 70vh;
 }
 
 header{
@@ -314,7 +313,7 @@ footer{
   }
   .row{
     width: 100%;
-    height: 100%;
+    height: 65vh;
     margin: 0;
     display: flex;
     align-items: flex-end;
@@ -359,7 +358,7 @@ footer{
     }
   }
   button{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     margin-bottom: 80px;
     transform: translate(-50%, -50%);
@@ -578,7 +577,7 @@ footer{
       }
     }
     button{
-      position: absolute;
+      position: fixed;
       bottom: 0;
       margin-bottom: 80px;
       transform: translate(-50%, -50%);
@@ -605,7 +604,7 @@ footer{
   }
   .row{
     width: 100%;
-    height: 100%;
+    height: 80vh;
     margin: 0;
     display: flex;
     align-items: center;
@@ -659,7 +658,7 @@ footer{
     }
   }
   button{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     margin-bottom: 80px;
     transform: translate(-50%, -50%);
@@ -686,7 +685,7 @@ footer{
   }
   .row{
     width: 100%;
-    height: 100%;
+    height: 80vh;
     margin: 0;
     display: flex;
     align-items: center;
@@ -721,12 +720,16 @@ footer{
               letter-spacing: 1.37px;
               text-align: center;
               text-transform: uppercase;
-              height: 30px;
               align-items: center;
               margin-top: 10px;
-              a:hover{
+              .appelation-active{
                 background-color: rgba(181, 172, 165, 0.2);
                 border-radius: 15px;
+                padding: 5px 25px;
+              }
+              a:hover{
+                background-color: rgba(181, 172, 165, 0.2);
+                border-radius: 20px;
                 padding: 5px 25px;
               }
               @media (max-width: 992px){
@@ -759,7 +762,7 @@ footer{
             align-items: center;
             justify-content: center;
             .h5{
-            margin-bottom: 0;
+            margin: 0 2%;
             }
             .fav-on{
               background-image: url("../images/icon-heart-full.svg");
@@ -768,7 +771,7 @@ footer{
               background-position: center;
               height: 30px;
               width: 30px;
-              margin-left: 20px;
+              margin: 20px 0;
             }
             .fav-off{
               background-image: url("../images/icon-heard-empty.svg");
@@ -777,7 +780,7 @@ footer{
               background-position: center;
               height: 30px;
               width: 30px;
-              margin-left: 20px;
+              margin: 0 20px;
 
             }
           }
@@ -817,7 +820,7 @@ footer{
     }
   } 
     .button-div{
-      position: absolute;
+      position: fixed;
       bottom: 0;
       margin-bottom: 80px;
       transform: translate(-50%, -50%);
@@ -959,7 +962,7 @@ footer{
     }
   }
   .button-div{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     margin-bottom: 80px;
     transform: translate(-50%, -50%);
