@@ -31,19 +31,3 @@ $(".appelation").click(function () {
 // function with each 
 // = $(".section-reco").find('.selected').attr('name');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
