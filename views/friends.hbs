@@ -5,13 +5,13 @@ Add friends :
 
 
 Your friends : 
-<div>{{#each userFriends.friends}}
+<div>{{#each userFriends}}
   <ul>
 <li>{{this.fullName}}</li>
 <li>{{this.email}}</li>
 <li>Favorites : 
-  <ul>{{#each userFriends.favorites}}
-    <li>{{this.appelation}}</li>
+  <ul>{{#each this.favorites}}
+    <li>{{this.wine.appelation}}</li>
     {{/each }}
   </ul>
 </li>
