@@ -2,6 +2,7 @@ const express = require('express');
 const router  = express.Router();
 const Wine = require("../models/wine-model.js")
 const Meal = require("../models/meal-model.js")
+const Order = require("../models/order-model.js")
 
 
 
@@ -9,6 +10,9 @@ const Meal = require("../models/meal-model.js")
 router.get("/pairing", (req,res,next)=>{
   res.render("pairing/type-pairing.hbs")
 })
+
+
+
 
 
 router.get("/meat", (req,res,next)=>{
@@ -77,17 +81,52 @@ router.get("/subtype/:subtypeId", (req,res,next)=>{
   .catch(err=>next(err))
 })
 
-// pour relier les deux bases de données, mettre "populate()" pour pusher les données de la DB "wine" dans la DB "meal"
+
+
 router.get("/wine-reco/:subtypeId", (req,res,next)=>{
   const subtypeId = req.params.subtypeId
+  Order.create({randomId : Math.floor(Math.random() * 10000), customerId : req.user._id })
+    .then(order => {
+      res.redirect(`/wine-reco/${order._id}/${subtypeId}/reco-route`)
+    })
+    .catch()
+})
+
+router.get("/wine-reco/:orderId/:subtypeId/reco-route", (req,res,next)=>{
+  const subtypeId = req.params.subtypeId
+  const orderId = req.params.orderId
   Meal.findById(subtypeId)
   .populate("wine")
   .then(data =>{
     res.locals.wineRecos = data
-    // res.send(data.wine)
-    res.render("pairing/wine-reco.hbs")
+    return Order.findById(orderId)
+      .then(order => {
+        res.locals.orderInfo = order
+        res.render("pairing/wine-reco.hbs")
+      })
   })
   .catch(err=>next(err))
+})
+
+
+
+router.get("/add-cart/:_id/:wine", (req, res, next)=>{
+  const { _id, wine } = req.params;
+
+  Order.findByIdAndUpdate(
+    _id,
+    {$push: { cart: {wine} }},
+    {runValidators: true},
+  )
+  .then(data =>{
+    res.redirect(`/order-process`)
+  })
+  .catch(err => next(err))
+
+})
+
+router.get("/order-process", (req,res,next)=>{
+  res.render("order-page.hbs")
 })
 
 
