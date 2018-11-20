@@ -77,5 +77,28 @@ router.get("/logout", (req,res,next)=>{
 
 
 
+// Redirect the user to Google for logging in 
+router.get("/google/login", 
+  passport.authenticate("google", {
+    scope: [
+      "https://www.googleapis.com/auth/plus.login",
+      "https://www.googleapis.com/auth/plus.profile.emails.read",
+    ] 
+  }))
+
+
+// Rediercted to the app after accepting Google login
+router.get("/google/user-info", 
+  passport.authenticate("google", {
+    successRedirect: "/",
+    successFlash: "Google login sucessful",
+    failureRedirect: "/login",
+    failureFlash : "Google login failed"
+  }))
+
+
+
+
+
 
 module.exports = router;

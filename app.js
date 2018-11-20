@@ -13,7 +13,9 @@ const flash        = require('connect-flash')
 const MongoStore   = require('connect-mongo')(session);
 const passport     = require('passport')
 
+// run the code inside "passport-setup.js" & "google-strategy.js"
 require("./config/passport/passport-setup.js")
+require("./config/passport/google-strategy.js")
 
 
 mongoose
