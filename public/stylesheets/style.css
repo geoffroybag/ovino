@@ -358,9 +358,9 @@ footer {
               letter-spacing: 1.37px;
               text-align: center;
               text-transform: uppercase;
-              height: 40px;
               display: flex;
-              align-items: center; }
+              align-items: center;
+              margin: 10px; }
             .section-winelist .row .div1 .list .one-wine a .proprieties {
               display: flex;
               flex-direction: column;
@@ -699,7 +699,10 @@ footer {
         margin-bottom: 0;
         padding-inline-start: 0; }
         .section-order .row .div1 .list .one-wine {
-          list-style: none; }
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          align-items: center; }
           .section-order .row .div1 .list .one-wine .img {
             display: flex;
             justify-content: center;
@@ -870,10 +873,10 @@ footer {
 
 .section-profile .row {
   width: 100%;
-  height: 60vh;
+  height: 80vh;
   margin: 0;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   text-align: center; }
   .section-profile .row .div1 {
     display: flex;
@@ -893,6 +896,13 @@ footer {
       .section-profile .row .div1 .icon {
         width: 100px;
         height: 100px; } }
+  .section-profile .row .profile-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .section-profile .row .profile-buttons .profile-btn {
+      width: 350px;
+      margin: 5px; }
 
 @media (max-width: 575px) {
   .section-profile .row {
