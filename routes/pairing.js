@@ -147,15 +147,24 @@ router.get("/order-process/:_id/:subtypeId", (req,res,next)=>{
   Order.findById(_id)
   .populate("cart")
   .then(data =>{
+    // res.send(data)
     res.locals.orderInfo = data
     if(data.cart.length === 0){
       res.redirect(`/wine-reco/${_id}/${subtypeId}/reco-route`)
     }
     else {
-    
+      let total = 0;
+
+      for (let i=0; i<data.cart.length; i++){
+        total += data.cart[i].prix*10;
+        
+      }
+
+      res.locals.productTotal = total;
+      res.locals.grandTotal = total + 5;
       res.render("order-page.hbs")
     }
-    // res.render("order-page.hbs")
+    res.render("order-page.hbs")
     // res.send(data)
   })
   .catch(err => next(err))

@@ -427,10 +427,11 @@ footer{
       align-items: center;
       .form{
         float:left;
-        /*border-right:1px solid #fff;*/
-        /*padding:15px 0 0 0;*/
         position: relative;
         width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         form input{
           text-align:center;
           width: 400px;
@@ -508,6 +509,7 @@ footer{
         flex-wrap: wrap;
         padding-inline-start: 0;
         padding: 0 100px;
+        margin-bottom: 100px;
           .one-wine{
           display: flex;
           flex-direction: column;
@@ -1043,6 +1045,9 @@ footer{
           justify-content: center;
           padding-inline-start: 0;
           margin: 0 20px;
+          ul{
+            padding-inline-start: 0;
+          }
           .h2{
             margin-top: 20px;
             line-height: 10px;
@@ -1585,6 +1590,65 @@ footer{
   }
 }
 
+.section-signuplogin{
+  .fullscreen-bg{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    background-image: url("../images/background-home.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .row{
+    width: 100%;
+    height: 80vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    .div1{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .h6{
+        margin: 20px;
+      }
+      .image{
+        height: 300px;
+        width: auto;
+      }
+      .button-div{
+        position: fixed;
+        bottom: 0;
+        margin-bottom: 120px;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        .button-div-position{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          .button-left{
+            margin-right: 5px;
+          }
+          .button-right{
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  } 
+  @media (max-width: 575px){
+    .row{
+      margin-top: 30px;
+    }
+  }
+}
+
 .section-settings{
   .fullscreen-bg{
     position: fixed;
@@ -1701,6 +1765,10 @@ footer{
     }
   }
 }
+
+.hideLog {
+  display: none!important;
+ }
 
 
 // ANIMATIONS
