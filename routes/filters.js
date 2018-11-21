@@ -53,4 +53,37 @@ router.get('/filter-name', (req, res, next) => {
       .catch(err =>next(err))
 })
 
-module.exports = router;
+
+router.post("/process-search", (req,res,next)=>{
+  const {search} = req.body
+  console.log(search)
+  Wine.find({geographie : {$eq : search}})
+  .then(data1 =>{
+    if(data1.length === 0){
+      
+      Wine.find({appelation : {$eq : search}})
+        .then(data2 =>{
+            if(data2.length === 0){
+          Wine.find({domaine : {$eq : search}})
+          .then(data3 =>{
+            if(data3.length === 0){}
+            else{res.locals.allWines = data3;
+              res.render('wine-list.hbs')}
+          })}
+          else{res.locals.allWines = data2;
+            res.render('wine-list.hbs')}
+        })
+           .catch(err=>next(err))
+       
+        .catch(err=>next(err))
+    }
+    else{
+      res.locals.allWines = data1;
+      res.render('wine-list.hbs')
+    }
+  })
+  .catch(err=>next(err))
+})
+
+
+module.exports = router; 

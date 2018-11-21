@@ -22,6 +22,10 @@
                 <input type="text" name="fullName" placeholder="Your full name">
                 <input type="email" name="email" placeholder="Your email">
                 <input type="password" name="originalPassword" placeholder="Password">
+                <div>
+                    <input type="checkbox" class = 'checkbox_check' name="legal">
+                    <label for="legal">I CERTIFY THAT I AM 18 YEARS OF AGE OR OLDER</label>
+                </div>
                 <input type="submit" value="SIGN UP">
             </form>
         <a href="/google/login"><button class="button-google"><img src="/images/google.svg" alt="">Login with Google</button></a>
@@ -34,3 +38,11 @@
 </section>
 
 {{> footer}}
+</div>
+
+
+<h2>Search : </h2>
+<form action="/process-search" method="POST">
+    <input type="text" name="search" placeholder="Your full name">
+    <input type="submit" value="SIGN UP">
+</form>

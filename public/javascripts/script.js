@@ -35,6 +35,17 @@ $(".fav-link").click(function () {
 
 })
 
+// $(document).ready(function(){
+//   masterMind();
+//   $(".color-section").addClass("blocked")
+//   $(".result-1").addClass(arrayResult[0]);
+//   $(".result-2").addClass(arrayResult[1]);
+//   $(".result-3").addClass(arrayResult[2]);
+//   $(".result-4").addClass(arrayResult[3]);
+
+//   });
+
+// if ($('input.checkbox_check').is(':checked')) {
 
 
 
