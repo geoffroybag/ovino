@@ -148,8 +148,8 @@ router.get("/order-process/:_id/:subtypeId", (req,res,next)=>{
   .populate("cart")
   .then(data =>{
     res.locals.orderInfo = data.cart
- 
-    res.render("order-page.hbs")
+    res.send(data)
+    // res.render("order-page.hbs")
   })
   .catch(err => next(err))
 })
