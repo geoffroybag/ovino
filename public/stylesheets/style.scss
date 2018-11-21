@@ -430,6 +430,7 @@ footer{
         /*border-right:1px solid #fff;*/
         /*padding:15px 0 0 0;*/
         position: relative;
+        width: 100%;
         form input{
           text-align:center;
           width: 400px;
@@ -437,12 +438,17 @@ footer{
           margin-bottom: 30px;
           border:none;
           border-radius:25px;
+          background: transparent;
+          border: 1px solid #B5ACA5;
+          font-family: $gtreg;
+          font-size: 14px;
+          letter-spacing: 1.76px;
         }
         form input:focus{
           outline:none;
         }
         ::-webkit-input-placeholder{
-          color:grey;
+          color:$darkgrey;
           letter-spacing: 1px;
         }
         form input[type="submit"]{
@@ -997,7 +1003,7 @@ footer{
             outline:none;
           }
           ::-webkit-input-placeholder{
-            color:grey;
+            color:$darkgrey;
             letter-spacing: 1px;
           }
         }
@@ -1466,6 +1472,16 @@ footer{
       height:100%;
       /*padding:15px 0 0 0;*/
       position: relative;
+      width: 100%;
+      div{
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+        .checkbox_check{
+          width: 30px;
+        }
+      }
       form input{
         text-align:center;
         width:100%;
@@ -1473,12 +1489,17 @@ footer{
         margin-bottom:10px;
         border:none;
         border-radius:25px;
+        background: transparent;
+        border: 1px solid #B5ACA5;
+        font-family: $gtreg;
+        font-size: 14px;
+        letter-spacing: 1.76px;
       }
       form input:focus{
         outline:none;
       }
       ::-webkit-input-placeholder{
-        color:grey;
+        color:#B5ACA5;
         letter-spacing: 1px;
       }
       form input[type="submit"]{
@@ -1624,19 +1645,26 @@ footer{
           label{
             display: flex;
             flex-direction: row;
+            width: 100%;
             input{
               text-align:center;
               height:35px;
               margin-bottom:10px;
               border:none;
               border-radius:25px;
-              width: 350px;
+              background: transparent;
+              border: 1px solid $darkgrey;
+              font-family: $gtreg;
+              font-size: 14px;
+              letter-spacing: 1.76px;
+              width: 100%;
+              color: #B5ACA5;
             }
             input:focus{
               outline:none;
             }
             ::-webkit-input-placeholder{
-              color:grey;
+              color:$darkgrey;
               letter-spacing: 1px;
             }
             input[type="submit"]{

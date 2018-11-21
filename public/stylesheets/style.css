@@ -339,18 +339,24 @@ footer {
         float: left;
         /*border-right:1px solid #fff;*/
         /*padding:15px 0 0 0;*/
-        position: relative; }
+        position: relative;
+        width: 100%; }
         .section-winelist .row .div1 .form form input {
           text-align: center;
           width: 400px;
           height: 35px;
           margin-bottom: 30px;
           border: none;
-          border-radius: 25px; }
+          border-radius: 25px;
+          background: transparent;
+          border: 1px solid #B5ACA5;
+          font-family: "GTAmerica-Regular";
+          font-size: 14px;
+          letter-spacing: 1.76px; }
         .section-winelist .row .div1 .form form input:focus {
           outline: none; }
         .section-winelist .row .div1 .form ::-webkit-input-placeholder {
-          color: grey;
+          color: #B5ACA5;
           letter-spacing: 1px; }
         .section-winelist .row .div1 .form form input[type="submit"] {
           background-color: black;
@@ -785,7 +791,7 @@ footer {
           .section-myfriends .row .div1 .add-friends .form input:focus {
             outline: none; }
           .section-myfriends .row .div1 .add-friends .form ::-webkit-input-placeholder {
-            color: grey;
+            color: #B5ACA5;
             letter-spacing: 1px; }
       .section-myfriends .row .div1 .h6 {
         margin: 20px; }
@@ -1162,18 +1168,31 @@ footer {
       /*border-right:1px solid #fff;*/
       height: 100%;
       /*padding:15px 0 0 0;*/
-      position: relative; }
+      position: relative;
+      width: 100%; }
+      .section-login .row .div1 .form div {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        align-items: center; }
+        .section-login .row .div1 .form div .checkbox_check {
+          width: 30px; }
       .section-login .row .div1 .form form input {
         text-align: center;
         width: 100%;
         height: 35px;
         margin-bottom: 10px;
         border: none;
-        border-radius: 25px; }
+        border-radius: 25px;
+        background: transparent;
+        border: 1px solid #B5ACA5;
+        font-family: "GTAmerica-Regular";
+        font-size: 14px;
+        letter-spacing: 1.76px; }
       .section-login .row .div1 .form form input:focus {
         outline: none; }
       .section-login .row .div1 .form ::-webkit-input-placeholder {
-        color: grey;
+        color: #B5ACA5;
         letter-spacing: 1px; }
       .section-login .row .div1 .form form input[type="submit"] {
         background-color: black;
@@ -1290,18 +1309,25 @@ footer {
       align-items: center; }
       .section-settings .row .div1 .settings-form label {
         display: flex;
-        flex-direction: row; }
+        flex-direction: row;
+        width: 100%; }
         .section-settings .row .div1 .settings-form label input {
           text-align: center;
           height: 35px;
           margin-bottom: 10px;
           border: none;
           border-radius: 25px;
-          width: 350px; }
+          background: transparent;
+          border: 1px solid #B5ACA5;
+          font-family: "GTAmerica-Regular";
+          font-size: 14px;
+          letter-spacing: 1.76px;
+          width: 100%;
+          color: #B5ACA5; }
         .section-settings .row .div1 .settings-form label input:focus {
           outline: none; }
         .section-settings .row .div1 .settings-form label ::-webkit-input-placeholder {
-          color: grey;
+          color: #B5ACA5;
           letter-spacing: 1px; }
         .section-settings .row .div1 .settings-form label input[type="submit"] {
           background-color: black;
