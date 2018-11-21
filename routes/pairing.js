@@ -223,14 +223,25 @@ router.get("/delete-one/:_id/:wineId/:subtypeId", (req,res,next)=>{
   .catch(err => next(err))
 })
 
-router.get("/fav/:wineId", (req, res, next) => {
-  const { wineId } = req.params;
-  Wine.findById(wineId)
-    .then(data =>{
-      res.render("wine-page.hbs")
-    })
-    .catch(err => next(err))
+router.get("/fav/:_id/", (req,res,next)=>{
+  const { _id } = req.params
+  Wine.findById(_id)
+  .then(data =>{
+    
+      const objVersion = data.toObject()
+        objVersion.isFavorite = req.user.favorites.some(fave => {
+          return fave.wine.toString() === data._id.toString();
+        });
+        
+      res.locals.oneWine = objVersion;
+
+    res.render("wine-page.hbs")
+  })
+  .catch(err=>next(err))
 })
+
+
+
 
 
 module.exports = router;
