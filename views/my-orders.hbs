@@ -11,17 +11,17 @@
   <img src="/images/icon-bottles.svg" alt="" class="icon">
   <div class="h6">My orders</div>
 
-  <div class="list">
+  <div class="orderlist col-lg-12 col-md-12">
    {{#each orderInfo}}
-      <ul>
-      <li>Order Id : {{this.randomId}}</li>
-      <li>Order date : {{this.createdAt}}</li>
-      <ul>Wines : 
-            {{#each this.cart}}
-            <li>{{this.appelation}}</li>
-            {{/each}}
-         </ul>
-      </ul>
+      <div class="wineinfos col-lg-12 col-md-12">
+      <div class="h5">Order n° {{this.randomId}}</div>
+      <div class="h4">{{this.createdAt}}</div>
+        <ul class="winelist">
+              {{#each this.cart}}
+              <li class="h2">{{this.appelation}}</li>
+              {{/each}}
+        </ul>
+      </div>
    {{/each}}
   </div>
 

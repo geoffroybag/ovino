@@ -213,10 +213,14 @@ router.get("/delete/:_id/:subtypeId/:wine", (req,res,next)=>{
   .catch(err => next(err))
 })
 
-
-
-
-
+router.get("/fav/:wineId", (req, res, next) => {
+  const { wineId } = req.params;
+  Wine.findById(wineId)
+    .then(data =>{
+      res.render("wine-page.hbs")
+    })
+    .catch(err => next(err))
+})
 
 
 module.exports = router;

@@ -1,12 +1,31 @@
-Your favorites : 
+{{> header}}
 
+<section class="section-myfavs">
 
-<div>{{#each userFavorites}}
-  <ul>
-<li>{{this.wine.appelation}}</li>
-<li>{{this.wine.domaine}}</li>
-<li>{{this.wine.millesime}}</li>
+  <div class="fullscreen-bg"></div>
 
-  </ul>
-{{/each}}
-</div>
+  <div class="row justify-content-center">
+
+    <div class="div1">
+
+  <img src="/images/icon-bottles.svg" alt="" class="icon">
+  <div class="h6">Your favorites :</div>
+
+  <div class="list">
+  {{#each userFavorites}}
+    <ul class="one-wine"><a href="/fav/{{this._id}}">
+      <img src="{{this.wine.pictureUrl}}" alt="" class="picture">
+      <li class="h2">{{this.wine.appelation}}</li>
+      <li class="h4">{{this.wine.domaine}}</li>
+      <li class="h5">{{this.wine.millesime}}</li>
+    </a></ul>
+  {{/each}}
+  </div>
+
+  </div>
+  
+  <div>
+
+</section>
+
+{{> footer}}
