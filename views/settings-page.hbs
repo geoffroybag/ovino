@@ -23,12 +23,12 @@
       </label>
 
       <div class="button-div">
-          <a href="/profile"><button class="button-font">back</button></a>
           <button class="button-font">Save Settings</button>
       </div>
 
       
     </form>
+          <a href="/profile"><button class="button-font">back</button></a>
 
 
     </div>
@@ -39,29 +39,3 @@
 
 {{> footer}}
 
-{{!-- 
-{{#if currentUser.avatar}}
-  <img src="{{currentUser.avatar}}" alt="avatar">
-{{/if}}
-
-<form action="/process-settings" method="POST" enctype="multipart/form-data">
-
-  <label>
-    Full Name : 
-    <input type="text" name="fullName" value = "{{currentUser.fullName}}">
-  </label>
-
-  <label>
-    Email : 
-    <input type="email" name="email" value = "{{currentUser.email}}">
-  </label>
-
-  <label>
-    Avatar : 
-    <input type="file" name="avatarUpload">
-  </label>
-
-  <button>Save Settings</button>
-</form>
-
-<a href="/profile"><button>back</button></a> --}}
