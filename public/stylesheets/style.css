@@ -1262,6 +1262,100 @@ footer {
   .section-profile .row {
     margin-top: 30px; } }
 
+.section-contact .fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+  background-image: url("../images/background-home.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.section-contact .row {
+  width: 100%;
+  height: 80vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  text-align: center; }
+  .section-contact .row .div1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .section-contact .row .div1 .h6 {
+      margin: 20px; }
+    .section-contact .row .div1 .content {
+      display: flex;
+      flex-direction: column; }
+      .section-contact .row .div1 .content .social-medias {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-inline-start: 0;
+        margin-top: 15px;
+        margin-bottom: 5px; }
+        .section-contact .row .div1 .content .social-medias li {
+          margin: 0 5px; }
+      .section-contact .row .div1 .content .newsletter-form {
+        float: left;
+        /*border-right:1px solid #fff;*/
+        height: 100%;
+        /*padding:15px 0 0 0;*/
+        position: relative; }
+        .section-contact .row .div1 .content .newsletter-form label {
+          display: flex;
+          flex-direction: column;
+          width: 100%; }
+          .section-contact .row .div1 .content .newsletter-form label input {
+            text-align: center;
+            height: 35px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 25px;
+            background: transparent;
+            border: 1px solid #B5ACA5;
+            font-family: "GTAmerica-Regular";
+            font-size: 14px;
+            letter-spacing: 1.76px;
+            width: 100%;
+            color: #B5ACA5; }
+          .section-contact .row .div1 .content .newsletter-form label input:focus {
+            outline: none; }
+          .section-contact .row .div1 .content .newsletter-form label ::-webkit-input-placeholder {
+            color: #B5ACA5;
+            letter-spacing: 1px; }
+          .section-contact .row .div1 .content .newsletter-form label input[type="submit"] {
+            background-color: black;
+            color: #fff;
+            height: 45px;
+            font-family: "GTAmerica-Regular";
+            font-size: 13px;
+            letter-spacing: 2.29px;
+            text-align: center;
+            text-transform: uppercase; }
+        .section-contact .row .div1 .content .newsletter-form .button-div .button-font {
+          width: 350px; }
+    .section-contact .row .div1 .icon {
+      width: 130px;
+      height: 130px;
+      margin: 0 10px; }
+    @media (max-width: 992px) {
+      .section-contact .row .div1 .icon {
+        width: 120px;
+        height: 120px; } }
+    @media (max-width: 767px) {
+      .section-contact .row .div1 .icon {
+        width: 100px;
+        height: 100px; } }
+
+@media (max-width: 575px) {
+  .section-contact .row {
+    margin-top: 30px; } }
+
 .section-signuplogin .fullscreen-bg {
   position: fixed;
   top: 0;

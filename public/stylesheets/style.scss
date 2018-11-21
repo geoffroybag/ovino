@@ -1590,6 +1590,124 @@ footer{
   }
 }
 
+.section-contact{
+  .fullscreen-bg{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    background-image: url("../images/background-home.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .row{
+    width: 100%;
+    height: 80vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    .div1{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .h6{
+        margin: 20px;
+      }
+      .content{
+        display: flex;
+        flex-direction: column;
+        .social-medias{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding-inline-start: 0;
+          margin-top: 15px;
+          margin-bottom: 5px;
+          li{
+            margin: 0 5px;
+          }
+        }
+        .newsletter-form{
+          float:left;
+          /*border-right:1px solid #fff;*/
+          height:100%;
+          /*padding:15px 0 0 0;*/
+          position: relative;
+          label{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            
+            input{
+              text-align:center;
+              height:35px;
+              margin-bottom:10px;
+              border:none;
+              border-radius:25px;
+              background: transparent;
+              border: 1px solid $darkgrey;
+              font-family: $gtreg;
+              font-size: 14px;
+              letter-spacing: 1.76px;
+              width: 100%;
+              color: #B5ACA5;
+            }
+            input:focus{
+              outline:none;
+            }
+            ::-webkit-input-placeholder{
+              color:$darkgrey;
+              letter-spacing: 1px;
+            }
+            input[type="submit"]{
+              background-color:black;
+              color:#fff;
+              height: 45px;
+              font-family: $gtreg;
+              font-size: 13px;
+              letter-spacing: 2.29px;
+              text-align: center;
+              text-transform: uppercase;
+            }
+          }
+          .button-div{
+            .button-font{
+              width: 350px;
+            }
+          }
+        }
+      }
+        .icon{
+          width: 130px;
+          height: 130px;
+          margin: 0 10px;
+        }
+        @media (max-width: 992px){
+          .icon{
+            width: 120px;
+            height: 120px;
+          }
+        }
+        @media (max-width: 767px){
+          .icon{
+            width: 100px;
+            height: 100px;
+          }
+        }
+    }
+  } 
+  @media (max-width: 575px){
+    .row{
+      margin-top: 30px;
+    }
+  }
+}
+
 .section-signuplogin{
   .fullscreen-bg{
     position: fixed;

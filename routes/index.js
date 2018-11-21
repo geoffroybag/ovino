@@ -11,10 +11,17 @@ router.get('/menu', (req, res, next) => {
   res.render('menu.hbs');
 })
 
+router.get('/advice', (req, res, next) => {
+  res.render('advice.hbs');
+})
+
+router.get('/contact', (req, res, next) => {
+  res.render('contact.hbs');
+})
+
 router.get('/index', (req, res, next) => {
   res.render('index.hbs');
 })
-
 
 router.get('/', (req, res, next) => {
   res.render('index.hbs');
@@ -70,12 +77,7 @@ router.get("/add-fav-cellar/:wineId", (req, res, next) => {
 })
 
 router.get('/profile', (req, res,next)=>{
-  if(req.user){
-    res.render('profile-page.hbs')
-  } else {
-    res.render('signup-or-login.hbs')
-  }
-  
+  res.render('profile-page.hbs')
 })
 
 
