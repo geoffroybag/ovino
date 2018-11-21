@@ -15,6 +15,12 @@ router.post("/process-signup", (req, res, next)=>{
   const{fullName, email, originalPassword} = req.body;
   const encryptedPassword = bcrypt.hashSync(originalPassword, 10);
 
+  if(!legal === null){
+    req.flash("error", "You must agree T&C's")
+    res.redirect("/signup")
+    return;
+  }
+
   if(!originalPassword || originalPassword.match(/[0-9]/) === null){
     req.flash("error", "Password can't be blank and must contain a number")
     res.redirect("/signup")
