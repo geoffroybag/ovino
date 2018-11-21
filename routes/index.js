@@ -44,6 +44,20 @@ router.get("/add-fav/:meal/:wineId", (req, res, next) => {
     .catch(err => next(err))
 })
 
+router.get("/delete-fav/:wineId", (req, res, next) => {
+  const { wineId } = req.params;
+  User.findByIdAndUpdate(
+    req.user._id,
+    {$pull: { favorites: {wine : wineId} }},
+    {runValidators: true},
+  )
+  .populate("favorites")
+    .then(data =>{
+      res.redirect(`/cellar/details/${wineId}`)
+    })
+    .catch(err => next(err))
+})
+
 
 router.get("/add-fav-cellar/:wineId", (req, res, next) => {
   const { wineId } = req.params;

@@ -118,7 +118,7 @@ router.get("/wine-reco/:orderId/:subtypeId/reco-route", (req,res,next)=>{
 
           return objVersion;
         });
-
+        res.locals.subTypeId = subtypeId
         res.locals.wineArray = wineObjects;
         res.render("pairing/wine-reco.hbs")
       })
