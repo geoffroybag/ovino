@@ -1,35 +1,35 @@
-{;_id;5bf0214b6f95a57fe1464b47;Montagny Premier Cru Blanc;Bourgogne;Blanc
-{;_id;5bf0214b6f95a57fe1464b48;Moulis-en-Médoc;Bordeaux;Rouge
-{;_id;5bf0214b6f95a57fe1464b49;Saint Chinian;Languedoc Roussillon;Rouge
-{;_id;5bf0214b6f95a57fe1464b4a;Saint Estèphe;Bordeaux;Rouge
-{;_id;5bf0214b6f95a57fe1464b4b;Côtes de Provence Rouge;Côtes-de-Provence;Rouge
-{;_id;5bf0214b6f95a57fe1464b4c;Bordeaux AOP Rouge;Bordeaux;Rouge
-{;_id;5bf0214b6f95a57fe1464b4d;Haut-Médoc;Bordeaux;Rouge
-{;_id;5bf0214b6f95a57fe1464b4e;Saint Emilion;Bordeaux;Rouge
-{;_id;5bf0214b6f95a57fe1464b4f;Saint Estèphe;Bordeaux;Rouge
-{;_id;5bf0214b6f95a57fe1464b50;Graves;Bordeaux;Rouge
-{;_id;5bf0214b6f95a57fe1464b51;Languedoc;Languedoc Roussillon;Rouge
-{;_id;5bf0214b6f95a57fe1464b52;Cotes du Rhone Rouge;Côtes du Rhone;Rouge
-{;_id;5bf0214b6f95a57fe1464b53;Saint-Romain Rouge;Bourgogne;Rouge
-{;_id;5bf0214b6f95a57fe1464b54;Pommard;Bourgogne;Rouge
-{;_id;5bf0214b6f95a57fe1464b55;Ventoux Rouge;Vallée du Rhône;Rouge
-{;_id;5bf0214b6f95a57fe1464b56;Saint-Joseph;Vallée du Rhône;Rouge
-{;_id;5bf0214b6f95a57fe1464b57;Chateauneuf-du-Pape;Provence;Rouge
-{;_id;5bf0214b6f95a57fe1464b58;Collioure;Languedoc Roussillon;Rouge
-{;_id;5bf0214b6f95a57fe1464b59;Givry;Bourgogne;Rouge
-{;_id;5bf0214b6f95a57fe1464b5a;Saint-Emilion Grand Cru;Bordeaux;Rouge
-{;_id;5bf0214b6f95a57fe1464b5b;Ladoix;Bourgogne;Blanc
-{;_id;5bf0214b6f95a57fe1464b5c;Charmes-Chambertin Grand Cru;Bourgogne;Rouge
-{;_id;5bf0214b6f95a57fe1464b5d;appelation;geographie;couleur
-{;_id;5bf0214b6f95a57fe1464b5e;Médoc;Bordeaux;Rouge
-{;_id;5bf0214b6f95a57fe1464b5f;Cadillac-côtes-de-bordeaux;Bordeaux;Rouge
-{;_id;5bf0214b6f95a57fe1464b60;Margaux;Bordeaux;Rouge
-{;_id;5bf0214b6f95a57fe1464b61;Menetou-Salon;Vallée de la Loire;Blanc
-{;_id;5bf0214b6f95a57fe1464b62;Mercurey;Bourgogne;Blanc
-{;_id;5bf0214b6f95a57fe1464b63;Cote-Rotie;Vallée du Rhône;Rouges
-{;_id;5bf0214b6f95a57fe1464b64;Savennières;Vallée de la Loire;Blanc
-{;_id;5bf0214b6f95a57fe1464b65;Poiré;Normandie;Blanc
-{;_id;5bf0214b6f95a57fe1464b66;Terrasses du Larzac;Languedoc Roussillon;Rouge
-{;_id;5bf0214b6f95a57fe1464b67;Saumur;Vallée de la Loire;Rouge
-{;_id;5bf0214b6f95a57fe1464b68;Languedoc;Languedoc Roussillon;Rouge
-{;_id;5bf0214b6f95a57fe1464b69;Petit Chablis;Bourgogne;Blanc
+id;appelation;Region;Couleur
+5bf0214b6f95a57fe1464b47;Montagny Premier Cru Blanc;Bourgogne;Blanc
+5bf0214b6f95a57fe1464b5b;Ladoix;Bourgogne;Blanc
+5bf0214b6f95a57fe1464b61;Menetou-Salon;Vallée de la Loire;Blanc
+5bf0214b6f95a57fe1464b62;Mercurey;Bourgogne;Blanc
+5bf0214b6f95a57fe1464b64;Savennières;Vallée de la Loire;Blanc
+5bf0214b6f95a57fe1464b65;Poiré;Normandie;Blanc
+5bf0214b6f95a57fe1464b69;Petit Chablis;Bourgogne;Blanc
+5bf0214b6f95a57fe1464b48;Moulis-en-Médoc;Bordeaux;Rouge
+5bf0214b6f95a57fe1464b49;Saint Chinian;Languedoc Roussillon;Rouge
+5bf0214b6f95a57fe1464b4a;Saint Estèphe;Bordeaux;Rouge
+5bf0214b6f95a57fe1464b4b;Côtes de Provence Rouge;Côtes-de-Provence;Rouge
+5bf0214b6f95a57fe1464b4c;Bordeaux AOP Rouge;Bordeaux;Rouge
+5bf0214b6f95a57fe1464b4d;Haut-Médoc;Bordeaux;Rouge
+5bf0214b6f95a57fe1464b4e;Saint Emilion;Bordeaux;Rouge
+5bf0214b6f95a57fe1464b4f;Saint Estèphe;Bordeaux;Rouge
+5bf0214b6f95a57fe1464b50;Graves;Bordeaux;Rouge
+5bf0214b6f95a57fe1464b51;Languedoc;Languedoc Roussillon;Rouge
+5bf0214b6f95a57fe1464b52;Cotes du Rhone Rouge;Côtes du Rhone;Rouge
+5bf0214b6f95a57fe1464b53;Saint-Romain Rouge;Bourgogne;Rouge
+5bf0214b6f95a57fe1464b54;Pommard;Bourgogne;Rouge
+5bf0214b6f95a57fe1464b55;Ventoux Rouge;Vallée du Rhône;Rouge
+5bf0214b6f95a57fe1464b56;Saint-Joseph;Vallée du Rhône;Rouge
+5bf0214b6f95a57fe1464b57;Chateauneuf-du-Pape;Provence;Rouge
+5bf0214b6f95a57fe1464b58;Collioure;Languedoc Roussillon;Rouge
+5bf0214b6f95a57fe1464b59;Givry;Bourgogne;Rouge
+5bf0214b6f95a57fe1464b5a;Saint-Emilion Grand Cru;Bordeaux;Rouge
+5bf0214b6f95a57fe1464b5c;Charmes-Chambertin Grand Cru;Bourgogne;Rouge
+5bf0214b6f95a57fe1464b5e;Médoc;Bordeaux;Rouge
+5bf0214b6f95a57fe1464b5f;Cadillac-côtes-de-bordeaux;Bordeaux;Rouge
+5bf0214b6f95a57fe1464b60;Margaux;Bordeaux;Rouge
+5bf0214b6f95a57fe1464b66;Terrasses du Larzac;Languedoc Roussillon;Rouge
+5bf0214b6f95a57fe1464b67;Saumur;Vallée de la Loire;Rouge
+5bf0214b6f95a57fe1464b68;Languedoc;Languedoc Roussillon;Rouge
+5bf0214b6f95a57fe1464b63;Cote-Rotie;Vallée du Rhône;Rouges
