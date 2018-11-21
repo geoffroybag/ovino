@@ -13,7 +13,7 @@
 
   <div class="list">
   {{#each userFavorites}}
-    <ul class="one-wine"><a href="/fav/{{this._id}}">
+    <ul class="one-wine"><a href="/fav/{{this.wine._id}}">
       <img src="{{this.wine.pictureUrl}}" alt="" class="picture">
       <li class="h2">{{this.wine.appelation}}</li>
       <li class="h4">{{this.wine.domaine}}</li>
