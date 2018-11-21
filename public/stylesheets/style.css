@@ -63,7 +63,11 @@ p {
 
 @media (max-width: 767px) {
   .h0 {
-    font-size: 60px; } }
+    font-size: 50px; } }
+
+@media (max-width: 575px) {
+  .h0 {
+    font-size: 30px; } }
 
 .h1 {
   font-family: "GTAmerica-Bold";
@@ -237,11 +241,17 @@ footer {
         text-align: center;
         text-transform: uppercase;
         color: white; }
+        @media (max-width: 575px) {
+          .section-menu .fullscreen-bg .row ul li {
+            font-size: 35px; } }
         .section-menu .fullscreen-bg .row ul li a {
           color: white; }
         .section-menu .fullscreen-bg .row ul li a:hover {
           font-family: "GTAmerica-BoldItalic";
           color: white; }
+    @media (max-width: 575px) {
+      .section-menu .fullscreen-bg .row ul {
+        padding: 20px; } }
 
 .section-home .fullscreen-bg {
   position: fixed;

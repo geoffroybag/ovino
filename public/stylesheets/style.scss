@@ -92,7 +92,12 @@ p{
 }
 @media (max-width: 767px){
   .h0{
-    font-size: 60px;
+    font-size: 50px;
+  }
+}
+@media (max-width: 575px){
+  .h0{
+    font-size: 30px;
   }
 }
 
@@ -304,6 +309,9 @@ footer{
           text-align: center;
           text-transform: uppercase;
           color: white;
+          @media (max-width: 575px){
+            font-size: 35px;
+          }
           a{
             color: white;
           }
@@ -311,6 +319,11 @@ footer{
             font-family: $gtboldit;
             color: white;
           }
+        }
+      }
+      @media (max-width: 575px){
+        ul{
+          padding: 20px;
         }
       }
     }
