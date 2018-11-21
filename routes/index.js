@@ -15,12 +15,10 @@ router.get('/index', (req, res, next) => {
   res.render('index.hbs');
 })
 
-/* GET home page */
+
 router.get('/', (req, res, next) => {
   res.render('index.hbs');
-  // setTimeout(function(){ 
-  //   res.render('index.hbs');
-  //  }, 2000);
+
 });
 
 router.get("/wines", (req,res,next)=>{
