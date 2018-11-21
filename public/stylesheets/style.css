@@ -335,6 +335,32 @@ footer {
       display: flex;
       flex-direction: column;
       align-items: center; }
+      .section-winelist .row .div1 .form {
+        float: left;
+        /*border-right:1px solid #fff;*/
+        /*padding:15px 0 0 0;*/
+        position: relative; }
+        .section-winelist .row .div1 .form form input {
+          text-align: center;
+          width: 400px;
+          height: 35px;
+          margin-bottom: 10px;
+          border: none;
+          border-radius: 25px; }
+        .section-winelist .row .div1 .form form input:focus {
+          outline: none; }
+        .section-winelist .row .div1 .form ::-webkit-input-placeholder {
+          color: grey;
+          letter-spacing: 1px; }
+        .section-winelist .row .div1 .form form input[type="submit"] {
+          background-color: black;
+          color: #fff;
+          height: 45px;
+          font-family: "GTAmerica-Regular";
+          font-size: 13px;
+          letter-spacing: 2.29px;
+          text-align: center;
+          text-transform: uppercase; }
       .section-winelist .row .div1 .h6 {
         margin: 20px; }
       .section-winelist .row .div1 .icon {
