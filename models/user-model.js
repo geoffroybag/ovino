@@ -10,7 +10,7 @@ const userSchema = new Schema({
   favorites : [{wine : {type : Schema.Types.ObjectId, ref: "Wine"}}],
   avatar : String,
   friends : [{type : Schema.Types.ObjectId, ref: "User"}],
-
+  legal : Boolean,
 }, {
   timestamps : true
 });
