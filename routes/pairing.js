@@ -7,12 +7,15 @@ const Order = require("../models/order-model.js")
 
 
 
-router.get("/pairing", (req,res,next)=>{
-  res.render("pairing/type-pairing.hbs")
+router.get("/start", (req,res,next)=>{
+  if(req.user){
+    res.render("pairing/type-pairing.hbs")
+  }
+  else{
+    res.render("signup-or-login-pairing.hbs")
+  }
+  
 })
-
-
-
 
 
 router.get("/meat", (req,res,next)=>{
