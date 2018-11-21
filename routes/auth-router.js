@@ -30,7 +30,7 @@ router.post("/process-signup", (req, res, next)=>{
 
   User.create({fullName, email, encryptedPassword})
     .then(data => {
-      req.flash("success","Sign up successful 👍🏻")
+      req.flash("success","Sign up successful")
       res.redirect("/login")})
     .catch(err=>next(err))
 })
@@ -56,7 +56,7 @@ router.post("/process-login", (req,res,next)=>{
 
         // "req.logIn()" is a Passport method that calls "serializeUser()"
         req.logIn(data,()=>{
-          req.flash("success","Log in successful 👍🏻")
+          req.flash("success","Log in successful")
           // redirect to the home page if password correct
           res.redirect("/")
         })
@@ -64,7 +64,7 @@ router.post("/process-login", (req,res,next)=>{
       }
       else {
         // "req.flash" has 2 arguments : message type and message text
-        req.flash("error","Incorrect password 🛂")
+        req.flash("error","Incorrect password")
         // redirect to the login page if the password is wrong
         res.redirect("/login")}
     })
@@ -77,7 +77,7 @@ router.post("/process-login", (req,res,next)=>{
 router.get("/logout", (req,res,next)=>{
   // logOut() will remove the user Id from the session
   req.logOut();
-  req.flash("success", "Logged Out successfully 👋")
+  req.flash("success", "Logged Out successfully")
   res.redirect('/')
 })
 

@@ -8,7 +8,7 @@
 
     <div class="div1">
 
-  <img src="/images/icon-bottles.svg" alt="" class="icon">
+  {{!-- <img src="/images/icon-bottles.svg" alt="" class="icon"> --}}
   <div class="h6">Choose your wine</div>
 
   <ul class="list-filters">
@@ -16,6 +16,12 @@
     <li class="h5"><a href="/filter-name">name</a></li>
     <li class="h5 wine-color"><a href="/filter-color-red" class="wine-color-filter"><img src="/images/icon-red.svg" alt=""></a><a href="/filter-color-white" class="wine-color-filter"><img src="/images/icon-yellow.svg" alt="" ></a><a href="/filter-color-pink" class="wine-color-filter"><img src="/images/icon-pink.svg" alt=""></a></li>
   </ul>
+
+  <div class="form">
+    <form action="/process-search" method="POST">
+        <input type="text" name="search" placeholder="Search for a wine">
+    </form>
+  </div>
 
   <ul class="list">
   {{#each allWines}}
