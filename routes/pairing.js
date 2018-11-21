@@ -174,22 +174,24 @@ router.get("/details/:_id/:subtypeId/:wineId", (req,res,next)=>{
 })
 
 
+
 router.get("/cellar/details/:_id/", (req,res,next)=>{
   const { _id } = req.params
   Wine.findById(_id)
   .then(data =>{
-    
       const objVersion = data.toObject()
         objVersion.isFavorite = req.user.favorites.some(fave => {
           return fave.wine.toString() === data._id.toString();
         });
-        
-      res.locals.oneWine = objVersion;
 
+      res.locals.oneWine = objVersion;
     res.render("wine-page.hbs")
   })
   .catch(err=>next(err))
 })
+
+
+
 
 router.get("/delete/:_id/:subtypeId/:wine", (req,res,next)=>{
   const { _id, subtypeId, wine } = req.params;

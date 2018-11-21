@@ -32,11 +32,11 @@ router.get("/wines", (req,res,next)=>{
     .catch(err=>next(err))
 })
 
-router.get("/add-fav/:meal/:wine", (req, res, next) => {
-  const { meal, wine } = req.params;
+router.get("/add-fav/:meal/:wineId", (req, res, next) => {
+  const { meal, wineId } = req.params;
   User.findByIdAndUpdate(
     req.user._id,
-    {$push: { favorites: {wine} }},
+    {$push: { favorites: {wine : wineId} }},
     {runValidators: true},
   )
   .populate("favorites")
@@ -60,7 +60,7 @@ router.get("/add-fav-cellar/:wineId", (req, res, next) => {
   } else {
     User.findByIdAndUpdate(
     req.user._id,
-    {$push: { favorites: {wineId} }},
+    {$push: { favorites: {wine : wineId} }},
     {runValidators: true},
   )
   .populate("favorites")
