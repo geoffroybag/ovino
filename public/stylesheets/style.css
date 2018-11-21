@@ -497,9 +497,14 @@ footer {
       .section-product .row .div1 .one-wine .content {
         display: flex;
         flex-direction: column; }
+        .section-product .row .div1 .one-wine .content .favorite-in {
+          display: flex;
+          align-items: center; }
         .section-product .row .div1 .one-wine .content .h5 {
           text-align: left;
-          margin-left: 20px; }
+          margin-left: 20px;
+          line-height: 0;
+          margin-top: 8px; }
         .section-product .row .div1 .one-wine .content .appelation {
           text-align: left;
           display: flex;
@@ -1262,6 +1267,56 @@ footer {
   .section-profile .row {
     margin-top: 30px; } }
 
+.section-advice .fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+  background-image: url("../images/background-home.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.section-advice .row {
+  width: 80%;
+  height: 80vh;
+  margin: 0 10%;
+  display: flex;
+  align-items: center;
+  text-align: center; }
+  .section-advice .row .div1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .section-advice .row .div1 .h6 {
+      margin: 20px; }
+    .section-advice .row .div1 .content {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start; }
+    .section-advice .row .div1 .icon {
+      width: 130px;
+      height: 130px;
+      margin: 0 10px; }
+    @media (max-width: 992px) {
+      .section-advice .row .div1 .icon {
+        width: 120px;
+        height: 120px; } }
+    @media (max-width: 767px) {
+      .section-advice .row .div1 .icon {
+        width: 100px;
+        height: 100px; } }
+
+@media (max-width: 575px) {
+  .section-advice .row {
+    margin-top: 30px; } }
+
 .section-contact .fullscreen-bg {
   position: fixed;
   top: 0;
@@ -1285,12 +1340,14 @@ footer {
   .section-contact .row .div1 {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    width: 350px; }
     .section-contact .row .div1 .h6 {
       margin: 20px; }
     .section-contact .row .div1 .content {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      width: 100%; }
       .section-contact .row .div1 .content .social-medias {
         display: flex;
         align-items: center;

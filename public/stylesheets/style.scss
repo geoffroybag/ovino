@@ -625,9 +625,15 @@ footer{
       .content{
         display: flex;
         flex-direction: column;
+        .favorite-in{
+          display: flex;
+          align-items: center;
+        }
       .h5{
         text-align: left;
         margin-left: 20px;
+        line-height: 0;
+        margin-top: 8px;
       }
       .appelation{
         text-align: left;
@@ -1590,6 +1596,68 @@ footer{
   }
 }
 
+.section-advice{
+  .fullscreen-bg{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    background-image: url("../images/background-home.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .row{
+    width: 80%;
+    height: 80vh;
+    margin: 0 10%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    .div1{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .h6{
+        margin: 20px;
+      }
+      .content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+      }
+        .icon{
+          width: 130px;
+          height: 130px;
+          margin: 0 10px;
+        }
+        @media (max-width: 992px){
+          .icon{
+            width: 120px;
+            height: 120px;
+          }
+        }
+        @media (max-width: 767px){
+          .icon{
+            width: 100px;
+            height: 100px;
+          }
+        }
+    }
+  } 
+  @media (max-width: 575px){
+    .row{
+      margin-top: 30px;
+    }
+  }
+}
+
 .section-contact{
   .fullscreen-bg{
     position: fixed;
@@ -1615,12 +1683,14 @@ footer{
       display: flex;
       flex-direction: column;
       align-items: center;
+      width: 350px;
       .h6{
         margin: 20px;
       }
       .content{
         display: flex;
         flex-direction: column;
+        width: 100%;
         .social-medias{
           display: flex;
           align-items: center;

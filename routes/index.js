@@ -7,6 +7,11 @@ const Meal = require("../models/meal-model.js")
 const User = require("../models/user-model.js")
 const Order = require("../models/order-model.js")
 
+router.get('/order', (req, res, next) => {
+  req.flash("success", "Thank you ! Order completed !")
+  res.redirect("/profile")
+})
+
 router.get('/menu', (req, res, next) => {
   res.render('menu.hbs');
 })
@@ -72,11 +77,6 @@ router.get("/add-fav-cellar/:wineId", (req, res, next) => {
   const isFavorited = req.user.favorites.some(oneId => {
     return oneId.wine.toString() === wineId.toString();
   });
-  console.log(isFavorited)
-  if(isFavorited === true){
-    req.flash("error", "This wine is already in your favorites")
-    res.redirect(`/cellar/details/${wineId}`)
-  } else {
     User.findByIdAndUpdate(
     req.user._id,
     {$push: { favorites: {wine : wineId} }},
@@ -87,7 +87,6 @@ router.get("/add-fav-cellar/:wineId", (req, res, next) => {
       res.redirect(`/cellar/details/${wineId}`)
     })
     .catch(err => next(err))
-  }
 })
 
 router.get('/profile', (req, res,next)=>{

@@ -11,6 +11,8 @@
     <img src="/images/icon-contact.gif" alt="" class="icon">
     <div class="h6">Hello <b>{{currentUser.fullName}}</b>. Welcome to your profile page</div>
     
+        {{> flash_messages}}
+
     <ul class="col-lg-12 profile-buttons">
           <a href="/settings"><li><button class="button-font profile-btn">My infos</button></li></a>
           <a href="/my-orders"><li><button class="button-font profile-btn">My orders</button></li></a>
