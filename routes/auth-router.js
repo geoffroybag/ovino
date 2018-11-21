@@ -5,7 +5,6 @@ const passport = require("passport")
 
 const User = require("../models/user-model.js")
 
-
 router.get("/signup", (req, res, next)=>{
   res.render("auth-views/signup-form.hbs")
 })
@@ -127,7 +126,7 @@ router.post("/process-login-pairing", (req,res,next)=>{
         req.logIn(data,()=>{
           req.flash("success","Log in successful")
           // redirect to the home page if password correct
-          res.redirect("/")
+          res.redirect("/start")
         })
 
       }

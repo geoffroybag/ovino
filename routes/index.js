@@ -70,7 +70,12 @@ router.get("/add-fav-cellar/:wineId", (req, res, next) => {
 })
 
 router.get('/profile', (req, res,next)=>{
-  res.render('profile-page.hbs')
+  if(req.user){
+    res.render('profile-page.hbs')
+  } else {
+    res.render('signup-or-login.hbs')
+  }
+  
 })
 
 
