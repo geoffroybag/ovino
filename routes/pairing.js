@@ -147,9 +147,10 @@ router.get("/order-process/:_id/:subtypeId", (req,res,next)=>{
   Order.findById(_id)
   .populate("cart")
   .then(data =>{
-    res.locals.orderInfo = data.cart
-    res.send(data)
-    // res.render("order-page.hbs")
+    res.locals.orderInfo = data
+ 
+    res.render("order-page.hbs")
+    // res.send(data)
   })
   .catch(err => next(err))
 })
@@ -173,13 +174,10 @@ router.get("/cellar/details/:_id/", (req,res,next)=>{
   Wine.findById(_id)
   .then(data =>{
     
-
-    
       const objVersion = data.toObject()
         objVersion.isFavorite = req.user.favorites.some(fave => {
           return fave.wine.toString() === data._id.toString();
         });
-
         
       res.locals.oneWine = objVersion;
 
@@ -192,7 +190,8 @@ router.get("/delete/:_id/:subtypeId/:wine", (req,res,next)=>{
   const { _id, subtypeId, wine } = req.params;
   Order.findByIdAndUpdate(
     _id,
-    {$pull: {cart :  wine}}
+    {$pull: {cart :  wine}},
+    {runValidators: true}
   )
   .then(data =>{
     res.redirect(`/wine-reco/${_id}/${subtypeId}/reco-route`)
@@ -201,14 +200,20 @@ router.get("/delete/:_id/:subtypeId/:wine", (req,res,next)=>{
 })
 
 
-router.get("/delete/:_id/:subtypeId/:wine", (req,res,next)=>{
-  const { _id, subtypeId, wine } = req.params;
+router.get("/delete-one/:_id/:wineId/:subtypeId", (req,res,next)=>{
+  const { _id , wineId, subtypeId} = req.params;
   Order.findByIdAndUpdate(
     _id,
-    {$pull: {cart :  wine}}
+    {$pull: {cart :  wineId}},
+    {runValidators: true}
   )
   .then(data =>{
-    res.redirect(`/wine-reco/${_id}/${subtypeId}/reco-route`)
+    if(data.cart.length === 1){
+      res.redirect(`/wine-reco/${_id}/${subtypeId}/reco-route`)
+    }
+    else {
+      res.redirect(`/order-process/${_id}/${subtypeId}`)
+    }
   })
   .catch(err => next(err))
 })
