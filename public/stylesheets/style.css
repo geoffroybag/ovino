@@ -34,6 +34,26 @@ p {
   line-height: 15px;
   text-transform: uppercase; }
 
+.button-google {
+  background: white;
+  padding: 12px 0px;
+  border-radius: 50px;
+  border: none;
+  font-family: "GTAmerica-Regular";
+  font-size: 13px;
+  color: black;
+  letter-spacing: 2.29px;
+  text-align: center;
+  line-height: 15px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  justify-content: center; }
+  .button-google img {
+    padding-right: 20px; }
+
 .h0 {
   font-family: "GTAmerica-Bold";
   font-size: 80px;
@@ -143,8 +163,16 @@ footer {
   position: fixed;
   bottom: 0;
   left: 50%;
-  margin-bottom: 5px;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  z-index: 200;
+  margin-bottom: -40px; }
+
+.menu {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 200; }
 
 .button-font {
   width: 350px;
@@ -701,7 +729,9 @@ footer {
     margin-top: 30px;
     display: flex;
     align-items: center;
-    height: 70vh; }
+    height: 70vh;
+    flex-direction: column;
+    margin-bottom: 100px; }
     .section-myfriends .row .div1 {
       display: flex;
       flex-direction: column;
@@ -803,7 +833,11 @@ footer {
     background-position: center;
     background-repeat: no-repeat; }
   .section-myfavs .row {
-    margin-top: 30px; }
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px; }
     .section-myfavs .row .div1 {
       display: flex;
       flex-direction: column;
@@ -865,6 +899,8 @@ footer {
               padding-inline-start: 0;
               text-align: center;
               margin-bottom: 20px; }
+    .section-myfavs .row a {
+      margin-top: 10px; }
 
 .section-order {
   display: flex;
@@ -1110,9 +1146,14 @@ footer {
         color: grey;
         letter-spacing: 1px; }
       .section-login .row .div1 .form form input[type="submit"] {
-        background-color: #FFBF37;
+        background-color: black;
         color: #fff;
-        font-weight: bold; }
+        height: 45px;
+        font-family: "GTAmerica-Regular";
+        font-size: 13px;
+        letter-spacing: 2.29px;
+        text-align: center;
+        text-transform: uppercase; }
 
 @media (max-width: 575px) {
   .section-login .row {
@@ -1176,7 +1217,7 @@ footer {
   left: 0;
   overflow: hidden;
   z-index: -100;
-  background-image: url("../images/background-home.svg");
+  background-image: url("../images/background-cellar.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
@@ -1192,6 +1233,8 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    .section-settings .row .div1 a {
+      margin-top: 10px; }
     .section-settings .row .div1 .h6 {
       margin: 20px; }
     .section-settings .row .div1 .icon {
@@ -1231,9 +1274,14 @@ footer {
           color: grey;
           letter-spacing: 1px; }
         .section-settings .row .div1 .settings-form label input[type="submit"] {
-          background-color: #FFBF37;
+          background-color: black;
           color: #fff;
-          font-weight: bold; }
+          height: 45px;
+          font-family: "GTAmerica-Regular";
+          font-size: 13px;
+          letter-spacing: 2.29px;
+          text-align: center;
+          text-transform: uppercase; }
       .section-settings .row .div1 .settings-form .button-div .button-font {
         width: 350px; }
   .section-settings .row .profile-buttons {

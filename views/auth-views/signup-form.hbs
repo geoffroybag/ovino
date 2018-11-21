@@ -1,12 +1,36 @@
+{{> header}}
 
-{{> flash_messages}}
 
-<div class="left">
-            <h1>Sign Up</h1>
+<section class="section-login">
+
+  <div class="fullscreen-bg"></div>
+
+  <div class="row justify-content-center">
+
+    <div class="div1">
+    
+    <div class="h6">Please, Sign Up.</div>
+    <div class="user">
+        <img src="/images/icon-woman.svg" alt="" class="icon">
+        <img src="/images/icon-man.svg" alt="" class="icon">
+    </div>
+
+    {{> flash_messages}}
+
+    <div class="form">
             <form action="/process-signup" method="POST">
                 <input type="text" name="fullName" placeholder="Your full name">
                 <input type="email" name="email" placeholder="Your email">
                 <input type="password" name="originalPassword" placeholder="Password">
                 <input type="submit" value="SIGN UP">
             </form>
-</div>
+        <a href="/google/login"><button class="button-google"><img src="/images/google.svg" alt="">Login with Google</button></a>
+    </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+{{> footer}}
