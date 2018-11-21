@@ -6,6 +6,11 @@ const passport = require("passport")
 const User = require("../models/user-model.js")
 
 
+router.get("/signuplogin", (req, res, next)=>{
+  res.render("signup-or-login.hbs")
+})
+
+
 router.get("/signup", (req, res, next)=>{
   res.render("auth-views/signup-form.hbs")
 })

@@ -36,7 +36,7 @@ p {
 
 .button-google {
   background: white;
-  padding: 12px 0px;
+  padding: 10px 0px;
   border-radius: 50px;
   border: none;
   font-family: "GTAmerica-Regular";
@@ -337,10 +337,11 @@ footer {
       align-items: center; }
       .section-winelist .row .div1 .form {
         float: left;
-        /*border-right:1px solid #fff;*/
-        /*padding:15px 0 0 0;*/
         position: relative;
-        width: 100%; }
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
         .section-winelist .row .div1 .form form input {
           text-align: center;
           width: 400px;
@@ -401,7 +402,8 @@ footer {
         justify-content: center;
         flex-wrap: wrap;
         padding-inline-start: 0;
-        padding: 0 100px; }
+        padding: 0 100px;
+        margin-bottom: 100px; }
         .section-winelist .row .div1 .list .one-wine {
           display: flex;
           flex-direction: column;
@@ -822,6 +824,8 @@ footer {
           justify-content: center;
           padding-inline-start: 0;
           margin: 0 20px; }
+          .section-myfriends .row .div1 .list .one-friend ul {
+            padding-inline-start: 0; }
           .section-myfriends .row .div1 .list .one-friend .h2 {
             margin-top: 20px;
             line-height: 10px; }
@@ -1258,6 +1262,54 @@ footer {
   .section-profile .row {
     margin-top: 30px; } }
 
+.section-signuplogin .fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+  background-image: url("../images/background-home.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.section-signuplogin .row {
+  width: 100%;
+  height: 80vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  text-align: center; }
+  .section-signuplogin .row .div1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .section-signuplogin .row .div1 .h6 {
+      margin: 20px; }
+    .section-signuplogin .row .div1 .image {
+      height: 300px;
+      width: auto; }
+    .section-signuplogin .row .div1 .button-div {
+      position: fixed;
+      bottom: 0;
+      margin-bottom: 120px;
+      transform: translate(-50%, -50%);
+      left: 50%; }
+      .section-signuplogin .row .div1 .button-div .button-div-position {
+        display: flex;
+        flex-direction: row;
+        align-items: center; }
+        .section-signuplogin .row .div1 .button-div .button-div-position .button-left {
+          margin-right: 5px; }
+        .section-signuplogin .row .div1 .button-div .button-div-position .button-right {
+          margin-left: 5px; }
+
+@media (max-width: 575px) {
+  .section-signuplogin .row {
+    margin-top: 30px; } }
+
 .section-settings .fullscreen-bg {
   position: fixed;
   top: 0;
@@ -1351,6 +1403,9 @@ footer {
 @media (max-width: 575px) {
   .section-settings .row {
     margin-top: 30px; } }
+
+.hideLog {
+  display: none !important; }
 
 @keyframes crazyflip {
   0% {

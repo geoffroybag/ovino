@@ -48,3 +48,14 @@ document.addEventListener('DOMContentLoaded', () => {
   google.maps.event.addDomListener(window, 'load', function() {
     initializeAutocomplete('user_input_autocomplete_address');
   });
+
+const classLogOk = document.querySelector(".success-message");
+const classLogError = document.querySelector(".error-message");
+
+setTimeout(() => {
+ classLogOk.classList.add("hideLog")
+},2000);
+
+setTimeout(() => {
+ classLogError.classList.add("hideLog")
+},2000);
