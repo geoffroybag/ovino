@@ -148,8 +148,13 @@ router.get("/order-process/:_id/:subtypeId", (req,res,next)=>{
   .populate("cart")
   .then(data =>{
     res.locals.orderInfo = data
- 
-    res.render("order-page.hbs")
+    if(data.cart.length === 0){
+      res.redirect(`/wine-reco/${_id}/${subtypeId}/reco-route`)
+    }
+    else {
+      res.render("order-page.hbs")
+    }
+    // res.render("order-page.hbs")
     // res.send(data)
   })
   .catch(err => next(err))

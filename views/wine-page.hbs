@@ -26,10 +26,9 @@
           <li class="h4">Parfum : {{oneWine.parfum}}</li>
         </ul>
 
-
            <a href="/add-fav-cellar/{{oneWine._id}}" class="fav-link">
            {{#if oneWine.isFavorite}}
-           <div class="fav-on"></div>
+           <div class="fav-on"></div>{{> flash_messages}}
            {{else}}
            <div class="fav-off"></div>
             {{/if}}

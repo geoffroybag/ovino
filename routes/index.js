@@ -47,21 +47,29 @@ router.get("/add-fav/:meal/:wine", (req, res, next) => {
 })
 
 
-router.get("/add-fav-cellar/:wine", (req, res, next) => {
-  const { wine } = req.params;
-  User.findByIdAndUpdate(
+router.get("/add-fav-cellar/:wineId", (req, res, next) => {
+  const { wineId } = req.params;
+
+  const isFavorited = req.user.favorites.some(oneId => {
+    return oneId.wine.toString() === wineId.toString();
+  });
+  console.log(isFavorited)
+  if(isFavorited === true){
+    req.flash("error", "This wine is already in your favorites")
+    res.redirect(`/cellar/details/${wineId}`)
+  } else {
+    User.findByIdAndUpdate(
     req.user._id,
-    {$push: { favorites: {wine} }},
+    {$push: { favorites: {wineId} }},
     {runValidators: true},
   )
   .populate("favorites")
     .then(data =>{
-      res.redirect(`/cellar/details/${wine}`)
+      res.redirect(`/cellar/details/${wineId}`)
     })
     .catch(err => next(err))
+  }
 })
-
-
 
 router.get('/profile', (req, res,next)=>{
   res.render('profile-page.hbs')

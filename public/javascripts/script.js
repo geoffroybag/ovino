@@ -42,14 +42,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }
     }
- 
-
   }
  
   // Initialisation du champs autocomplete
   google.maps.event.addDomListener(window, 'load', function() {
     initializeAutocomplete('user_input_autocomplete_address');
   });
-
- 
-

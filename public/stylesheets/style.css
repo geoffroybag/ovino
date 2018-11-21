@@ -489,6 +489,9 @@ footer {
       .section-product .row .div1 .one-wine .content {
         display: flex;
         flex-direction: column; }
+        .section-product .row .div1 .one-wine .content .h5 {
+          text-align: left;
+          margin-left: 20px; }
         .section-product .row .div1 .one-wine .content .appelation {
           text-align: left;
           display: flex;
