@@ -9,47 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
 // }, 3000);
 
 
-var cart = []
-
-$(".appelation").click(function () {
-
-  var wine = $(event.target);
-  wine.toggleClass("selected");
-  $(function() {
-    $(".section-reco .selected").each(function() {
-      cart.push($(this).attr('name'));
-    });
-  });
-
-});
-
-$(".fav-link").click(function () {
-
-  var wine = $(event.target);
-  wine.toggleClass("added");
-  $(function() {
-    $(".section-reco .added").each(function() {
-      cart.push($(this).attr('name'));
-    });
-  });
-
-})
-
-// $(document).ready(function(){
-//   masterMind();
-//   $(".color-section").addClass("blocked")
-//   $(".result-1").addClass(arrayResult[0]);
-//   $(".result-2").addClass(arrayResult[1]);
-//   $(".result-3").addClass(arrayResult[2]);
-//   $(".result-4").addClass(arrayResult[3]);
-
-//   });
-
-// if ($('input.checkbox_check').is(':checked')) {
-
-
-
-
   // Lie le champs adresse en champs autocomplete afin que l'API puisse afficher les propositions d'adresses
   function initializeAutocomplete(id) {
     var element = document.getElementById(id);

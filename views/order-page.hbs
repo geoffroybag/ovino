@@ -15,15 +15,14 @@
 
       <input id="user_input_autocomplete_address" type="text" name="addressguess" placeholder="Where ?" class="address-input">
         <ul class="list justify-content-center">
-
-        {{#each orderInfo}}
-          <li class="one-wine col-lg-6">
-            <div class="img">
-            <img src="{{this.pictureUrl}}" name = "{{this._id}}" alt="" class="wine-pic">
-            </div>
-            <div class="appelation h5"><a href="/add-cart/{{../orderInfo._id}}/{{../wineRecos._id}}/{{this._id}}">{{this.appelation}}</a></div>
-            {{!-- <a href="/delete/{{this._id}}/{{}}/{{}}"><p><u>Delete</u></p></a> --}}
-          </li>
+          {{#each orderInfo.cart}}
+            <li class="one-wine col-lg-6">
+              <div class="img">
+              <img src="{{this.pictureUrl}}" name = "{{this._id}}" alt="" class="wine-pic">
+              </div>
+              <div class="appelation h5">{{this.appelation}}</div>
+              <a href="/delete-one/{{../orderInfo._id}}/{{this._id}}/{{../mealId}}"><p><u>Delete</u></p></a>
+            </li>
           {{/each}}
         </ul>
 
