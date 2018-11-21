@@ -22,7 +22,7 @@
             <img src="{{this.pictureUrl}}" name = "{{this._id}}" alt="" class="wine-pic">
             </div>
             <div class="appelation h5"><a href="/add-cart/{{../orderInfo._id}}/{{../wineRecos._id}}/{{this._id}}">{{this.appelation}}</a></div>
-            <a href="/delete/{{this._id}}/{{}}/{{}}"><p><u>Delete</u></p></a>
+            {{!-- <a href="/delete/{{this._id}}/{{}}/{{}}"><p><u>Delete</u></p></a> --}}
           </li>
           {{/each}}
         </ul>

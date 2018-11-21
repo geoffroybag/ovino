@@ -66,7 +66,9 @@ router.post("/process-search", (req,res,next)=>{
             if(data2.length === 0){
           Wine.find({domaine : {$eq : search}})
           .then(data3 =>{
-            if(data3.length === 0){}
+            if(data3.length === 0){
+              res.redirect('/wines')
+            }
             else{res.locals.allWines = data3;
               res.render('wine-list.hbs')}
           })}
