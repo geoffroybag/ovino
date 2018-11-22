@@ -641,6 +641,7 @@ footer{
         .favorite-in{
           display: flex;
           align-items: center;
+          
         }
       .h5{
         text-align: left;
@@ -670,12 +671,11 @@ footer{
           line-height: 10px;
         }
       }
-
       .fav-link{
         display: flex;
         align-items: center;
         .fav-on{
-          background-image: url("../images/icon-heart-full.svg");
+          // background-image: url("../images/icon-heart-full.svg");
           background-size: contain;
           background-repeat: no-repeat;
           background-position: center;
@@ -683,7 +683,7 @@ footer{
           width: 30px;
         }
         .fav-off{
-          background-image: url("../images/icon-heard-empty.svg");
+          // background-image: url("../images/icon-heard-empty.svg");
           background-size: contain;
           background-repeat: no-repeat;
           background-position: center;
@@ -907,23 +907,25 @@ footer{
             .h5{
             margin: 0 2%;
             }
-            .fav-on{
-              background-image: url("../images/icon-heart-full.svg");
-              background-size: contain;
-              background-repeat: no-repeat;
-              background-position: center;
-              height: 30px;
-              width: 30px;
-              margin: 0 20px;
-            }
-            .fav-off{
-              background-image: url("../images/icon-heard-empty.svg");
-              background-size: contain;
-              background-repeat: no-repeat;
-              background-position: center;
-              height: 30px;
-              width: 30px;
-              margin: 0 20px;
+            .fav-link{
+              .fav-on{
+                // background-image: url("../images/icon-heart-full.svg");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 30px;
+                width: 30px;
+                margin: 0 20px;
+              }
+              .fav-off{
+                // background-image: url("../images/icon-heard-empty.svg");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 30px;
+                width: 30px;
+                margin: 0 20px;
+              }
             }
           }
         }    

@@ -37,13 +37,13 @@
            <a href="/details/{{../orderInfo._id}}/{{../wineRecos._id}}/{{this._id}}" id="details" class="h5">Details</a>
          
           
-           <a class="fav-link">
+           <div class="fav-link">
            {{#if this.isFavorite}}
-           <div class="fav-on"></div>
+           <a href="#"><div class="fav-on"><img src="/images/icon-heart-full.svg" alt=""></div></a>
            {{else}}
-           <div class="fav-off"></div>
+           <a href="#"><div class="fav-off"><img src="/images/icon-heard-empty.svg" alt=""></div></a>
             {{/if}}
-           </a>
+           </div>
            
 
            <a href="/delete/{{../orderInfo._id}}/{{../wineRecos._id}}/{{this._id}}" id="details" class="h5">Delete</a>
