@@ -333,15 +333,24 @@ footer{
           text-align: center;
           text-transform: uppercase;
           color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
           @media (max-width: 575px){
             font-size: 35px;
           }
+          img{
+            margin-left: 20px;
+            margin-right: 20px;
+          }
           a{
-            color: white;
+            color: $red;
+            text-shadow: 1px 1px #fff, -1px 1px #fff, 1px -1px #fff, -1px -1px #fff, 1px 1px 5px #555;
           }
           a:hover{
-            font-family: $gtboldit;
+            font-family: $gtbold;
             color: white;
+            text-shadow: none;
           }
         }
       }

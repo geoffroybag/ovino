@@ -240,15 +240,23 @@ footer {
         letter-spacing: 3.86px;
         text-align: center;
         text-transform: uppercase;
-        color: white; }
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
         @media (max-width: 575px) {
           .section-menu .fullscreen-bg .row ul li {
             font-size: 35px; } }
+        .section-menu .fullscreen-bg .row ul li img {
+          margin-left: 20px;
+          margin-right: 20px; }
         .section-menu .fullscreen-bg .row ul li a {
-          color: white; }
+          color: #8C2632;
+          text-shadow: 1px 1px #fff, -1px 1px #fff, 1px -1px #fff, -1px -1px #fff, 1px 1px 5px #555; }
         .section-menu .fullscreen-bg .row ul li a:hover {
-          font-family: "GTAmerica-BoldItalic";
-          color: white; }
+          font-family: "GTAmerica-Bold";
+          color: white;
+          text-shadow: none; }
     @media (max-width: 575px) {
       .section-menu .fullscreen-bg .row ul {
         padding: 20px; } }
