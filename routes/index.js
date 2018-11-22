@@ -145,7 +145,7 @@ router.get("/friends", (req,res,next)=>{
   User.findById(req.user._id)
     .populate('friends.friend')
     .populate({
-      path: 'friends',
+      path: 'friends.friend',
       populate: { path: 'favorites.wine' }
     })
     .then(data=>{
