@@ -48,8 +48,9 @@ router.get("/add-fav/:meal/:wineId", (req, res, next) => {
     .catch(err => next(err))
 })
 
-router.get("/delete-fav/:wineId", (req, res, next) => {
-  const { wineId } = req.params;
+router.get("/delete-fav-cellar/:wineId", (req, res, next) => {
+  const { wineId } = req.params
+
   User.findByIdAndUpdate(
     req.user._id,
     {$pull: { favorites: {wine : wineId} }},
@@ -57,7 +58,7 @@ router.get("/delete-fav/:wineId", (req, res, next) => {
   )
   .populate("favorites")
     .then(data =>{
-      res.redirect(`/wines-reco/${meal}`)
+      res.redirect(`/cellar/details/${wineId}`)
     })
     .catch(err => next(err))
 })
@@ -227,6 +228,87 @@ router.get("/my-orders", (req,res,next)=>{
       res.render("my-orders.hbs")
     })
 })
+
+
+router.get("/cellar/friend/:_id/", (req,res,next)=>{
+  const { _id } = req.params
+  Wine.findById(_id)
+  .then(data =>{
+    if(req.user){
+      const objVersion = data.toObject()
+        objVersion.isFavorite = req.user.favorites.some(fave => {
+          return fave.wine.toString() === data._id.toString();
+        });
+
+      res.locals.oneWine = objVersion;
+    res.render("friend-wine.hbs")
+  }
+    else{
+      res.locals.oneWine = data;
+      res.render("friend-wine.hbs")
+    }
+  })
+  .catch(err=>next(err))
+})
+
+
+
+
+router.get("/delete-fav-friend/:wineId", (req, res, next) => {
+  const { wineId } = req.params
+
+  User.findByIdAndUpdate(
+    req.user._id,
+    {$pull: { favorites: {wine : wineId} }},
+    {runValidators: true},
+  )
+  .populate("favorites")
+    .then(data =>{
+      res.redirect(`/cellar/friend/${wineId}`)
+    })
+    .catch(err => next(err))
+})
+
+
+router.get("/add-fav-friend/:wineId", (req, res, next) => {
+  const { wineId } = req.params;
+
+  const isFavorited = req.user.favorites.some(oneId => {
+    return oneId.wine.toString() === wineId.toString();
+  });
+  console.log(isFavorited)
+  if(isFavorited === true){
+    req.flash("error", "This wine is already in your favorites")
+    res.redirect(`/cellar/friend/${wineId}`)
+  } else {
+    User.findByIdAndUpdate(
+    req.user._id,
+    {$push: { favorites: {wine : wineId} }},
+    {runValidators: true},
+  )
+  .populate("favorites")
+    .then(data =>{
+      res.redirect(`/cellar/friend/${wineId}`)
+    })
+    .catch(err => next(err))
+  }
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 module.exports = router;

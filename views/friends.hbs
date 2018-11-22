@@ -28,7 +28,7 @@
       <div class="h5">Favorites : </div>
         <ul>
           {{#each this.friend.favorites}}
-          <li class="h4">{{this.wine.appelation}}</li>
+          <li class="h6"><a href="/cellar/friend/{{this.wine._id}}" class="type">{{this.wine.appelation}}</a></li>
           {{/each }}
         </ul>
     </a></div>

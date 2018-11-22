@@ -855,6 +855,8 @@ footer {
           margin: 0 20px; }
           .section-myfriends .row .div1 .list .one-friend ul {
             padding-inline-start: 0; }
+            .section-myfriends .row .div1 .list .one-friend ul .h6 {
+              margin: 0; }
           .section-myfriends .row .div1 .list .one-friend .h2 {
             margin-top: 20px;
             line-height: 10px; }

@@ -33,9 +33,9 @@
 
             <div class="fav-link">
            {{#if oneWine.isFavorite}}
-           <a href="/delete-fav-cellar/{{oneWine._id}}"><div class="fav-on"><img src="/images/icon-heart-full.svg" alt=""></div></a>
+           <a href="/delete-fav-friend/{{oneWine._id}}"><div class="fav-on"><img src="/images/icon-heart-full.svg" alt=""></div></a>
            {{else}}
-           <a href="/add-fav-cellar/{{oneWine._id}}"><div class="fav-off"><img src="/images/icon-heard-empty.svg" alt=""></div></a>
+           <a href="/add-fav-friend/{{oneWine._id}}"><div class="fav-off"><img src="/images/icon-heard-empty.svg" alt=""></div></a>
             {{/if}}
            </div>
            
@@ -49,7 +49,7 @@
 
   </div>
 
-  <a href="/wines"><button class="button-font">back</button></a>
+  <a href="/friends"><button class="button-font">back</button></a>
 
 </section>
 
