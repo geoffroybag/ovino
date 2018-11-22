@@ -363,7 +363,8 @@ footer {
           font-size: 14px;
           letter-spacing: 1.76px; }
         .section-winelist .row .div1 .form form input:focus {
-          outline: none; }
+          outline: none;
+          color: black; }
         .section-winelist .row .div1 .form ::-webkit-input-placeholder {
           color: #B5ACA5;
           letter-spacing: 1px; }
@@ -808,7 +809,8 @@ footer {
             width: 100%;
             color: #B5ACA5; }
           .section-myfriends .row .div1 .add-friends .form input:focus {
-            outline: none; }
+            outline: none;
+            color: black; }
           .section-myfriends .row .div1 .add-friends .form ::-webkit-input-placeholder {
             color: #B5ACA5;
             letter-spacing: 1px; }
@@ -1225,7 +1227,8 @@ footer {
         font-size: 14px;
         letter-spacing: 1.76px; }
       .section-login .row .div1 .form form input:focus {
-        outline: none; }
+        outline: none;
+        color: black; }
       .section-login .row .div1 .form ::-webkit-input-placeholder {
         color: #B5ACA5;
         letter-spacing: 1px; }
@@ -1407,7 +1410,8 @@ footer {
             width: 100%;
             color: #B5ACA5; }
           .section-contact .row .div1 .content .newsletter-form label input:focus {
-            outline: none; }
+            outline: none;
+            color: black; }
           .section-contact .row .div1 .content .newsletter-form label ::-webkit-input-placeholder {
             color: #B5ACA5;
             letter-spacing: 1px; }
@@ -1604,7 +1608,8 @@ footer {
           width: 100%;
           color: #B5ACA5; }
         .section-settings .row .div1 .settings-form label input:focus {
-          outline: none; }
+          outline: none;
+          color: black; }
         .section-settings .row .div1 .settings-form label ::-webkit-input-placeholder {
           color: #B5ACA5;
           letter-spacing: 1px; }

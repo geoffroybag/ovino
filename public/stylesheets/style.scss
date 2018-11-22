@@ -482,6 +482,7 @@ footer{
         }
         form input:focus{
           outline:none;
+          color: black;
         }
         ::-webkit-input-placeholder{
           color:$darkgrey;
@@ -1056,6 +1057,7 @@ footer{
           }
           input:focus{
             outline:none;
+            color: black;
           }
           ::-webkit-input-placeholder{
             color:$darkgrey;
@@ -1571,6 +1573,7 @@ footer{
       }
       form input:focus{
         outline:none;
+        color: black;
       }
       ::-webkit-input-placeholder{
         color:#B5ACA5;
@@ -1792,6 +1795,7 @@ footer{
             }
             input:focus{
               outline:none;
+              color: black;
             }
             ::-webkit-input-placeholder{
               color:$darkgrey;
@@ -2040,6 +2044,7 @@ footer{
             }
             input:focus{
               outline:none;
+              color: black;
             }
             ::-webkit-input-placeholder{
               color:$darkgrey;
