@@ -36,6 +36,9 @@
            <div class="fav-off"></div>
             {{/if}}
            </a>
+           {{#each userFriends}}
+           <a>{{this.email}}</a>
+           {{/each }}
           {{/if}}
         </div>
     </li>

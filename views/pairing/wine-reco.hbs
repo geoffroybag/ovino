@@ -11,7 +11,7 @@
     <div class="div1 col-lg-12 col-md-12 col-sm-12">
     
     <img src="/images/icon-drink.gif" alt="" class="icon">
-      <div class="h6">Choose your wine</div>
+      <div class="h6">Our sommelier recommends:</div>
 
         <ul class="list justify-content-center">
 
@@ -35,7 +35,7 @@
            <a href="/details/{{../orderInfo._id}}/{{../wineRecos._id}}/{{this._id}}" id="details" class="h5">Details</a>
          
           
-           <a class="fav-link">
+           <a href="/add-fav/{{../wineRecos._id}}/{{this._id}}" class="fav-link">
            {{#if this.isFavorite}}
            <div class="fav-on"></div>
            {{else}}
@@ -59,7 +59,7 @@
 <div class="button-div">
   <div class="button-div-position">
     <a href="/subtype/{{subTypeId}}"><button class="button-font button-left">previous</button></a>
-    <a href="/order-process/{{orderInfo._id}}/{{wineRecos._id}}/"><button class="button-font button-right">buy</button></a>
+    <a href="/order-process/{{orderInfo._id}}/{{wineRecos._id}}/"><button class="button-font button-right">go to cart</button></a>
   </div>
 </div>
 

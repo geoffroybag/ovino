@@ -3,6 +3,7 @@ const router  = express.Router();
 const Wine = require("../models/wine-model.js")
 const Meal = require("../models/meal-model.js")
 const Order = require("../models/order-model.js")
+const User = require("../models/user-model.js")
 
 
 
@@ -262,6 +263,29 @@ router.get("/fav/:_id/", (req,res,next)=>{
 })
 
 
+
+
+router.get("/add-fav-pairing/:wineId/:orderId/:mealId", (req, res, next) => {
+  const { wineId, orderId,mealId  } = req.params;
+
+  const isFavorited = req.user.favorites.some(oneId => {
+    return oneId.wine.toString() === wineId.toString();
+  });
+    User.findByIdAndUpdate(
+    req.user._id,
+    {$push: { favorites: {wine : wineId} }},
+    {runValidators: true},
+  )
+  .populate("favorites")
+    .then(data =>{
+      res.redirect(`/wine-reco/${orderId}/${mealId}/reco-route`)
+    })
+    .catch(err => next(err))
+})
+
+router.get('/profile', (req, res,next)=>{
+  res.render('profile-page.hbs')
+})
 
 
 
