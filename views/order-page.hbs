@@ -10,7 +10,7 @@
     
     <img src="/images/icon-order.gif" alt="" class="icon">
       <div class="h6">What time please ?</div>
-    <form action="/time-info" method="post">
+    <form action="/time-info/{{orderInfo._id}}" method="post">
       <input type='time' name = 'hourOrdered' value='20:30' class ="h0 time-input"/>
 
       <input id="user_input_autocomplete_address" type="text" name="shippingAddress" placeholder="Where ?" class="address-input">

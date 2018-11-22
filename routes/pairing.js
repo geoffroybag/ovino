@@ -170,8 +170,7 @@ router.get("/order-process/:_id/:subtypeId", (req,res,next)=>{
       res.locals.grandTotal = total + 5;
       res.render("order-page.hbs")
     }
-    res.render("order-page.hbs")
-    // res.send(data)
+
   })
   .catch(err => next(err))
 })

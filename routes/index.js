@@ -161,6 +161,7 @@ router.post("/add-friend", (req,res,next)=>{
 
     User.findOne({email : {$eq : emailadress}})
     .then(data1 => {
+      if (data1){
       const objVersion = data1.toObject()
       objVersion.isFriend = req.user.friends.some(oneFriend => {
         return oneFriend.friend.toString() === data1._id.toString()  
@@ -177,7 +178,13 @@ router.post("/add-friend", (req,res,next)=>{
     else{
       res.redirect('/friends')
     }
-})
+}
+
+else{
+  req.flash("error", "This user doesn't exist")
+  res.redirect(`/friends`)
+}})
+
 .catch(err => next(err))
 })
 
@@ -206,15 +213,20 @@ router.get("/contact", (req,res,next)=>{
 })
 
 
-router.post("/time-info", (req,res,next)=>{
-  const {hourOrdered, shippingAddress} = req.body;
+router.post("/time-info/:orderId", (req,res,next)=>{
+  const {orderId} = req.params
+  // res.send(req.body)
+  const {hourOrdered, shippingAddress} = req.body;  
   Order.findByIdAndUpdate(
-    req.user._id, 
+    orderId, 
     {$set: {hourOrdered, shippingAddress}},
+    {runValidators: true, new :true},
     )
   .then(data=>{
+    // res.send(data)
     res.redirect("/my-orders")
   })
+  .catch(err=>next(err))
 })
 
 
