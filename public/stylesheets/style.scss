@@ -85,14 +85,14 @@ p{
 // Delivery hour or "0" in empty friends pages/favorite wines page
 .h0{
   font-family: $gtbold;
-  font-size: 70px;
+  font-size: 50px;
   color: #000000;
   letter-spacing: 2px;
   text-align: center;
 }
 @media (max-width: 767px){
   .h0{
-    font-size: 50px;
+    font-size: 40px;
   }
 }
 @media (max-width: 575px){
