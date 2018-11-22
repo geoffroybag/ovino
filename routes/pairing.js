@@ -89,7 +89,7 @@ router.get("/subtype/:subtypeId", (req,res,next)=>{
 
 router.get("/wine-reco/:subtypeId", (req,res,next)=>{
   const subtypeId = req.params.subtypeId
-  Order.create({randomId : Math.floor(Math.random() * 10000), customerId : req.user._id })
+  Order.create({randomId : Math.floor(Math.random() * 10000), customerId : req.user._id, hourOrdered: "-", shippingAddress : "-" })
     .then(order => {
       res.redirect(`/wine-reco/${order._id}/${subtypeId}/reco-route`)
     })
@@ -99,6 +99,7 @@ router.get("/wine-reco/:subtypeId", (req,res,next)=>{
 router.get("/wine-reco/:orderId/:subtypeId/reco-route", (req,res,next)=>{
   const subtypeId = req.params.subtypeId
   const orderId = req.params.orderId
+  
   Meal.findById(subtypeId)
   .populate("wine")
   .then(data =>{
@@ -113,7 +114,7 @@ router.get("/wine-reco/:orderId/:subtypeId/reco-route", (req,res,next)=>{
           objVersion.isAdded = order.cart.some(id => {
             return id.toString() === oneWine._id.toString();
           });
-          objVersion.isFavorite = req.user.favorites.some(fave => {
+          objVersion.isFavorited = req.user.favorites.some(fave => {
             return fave.wine.toString() === oneWine._id.toString();
           });
 
@@ -180,14 +181,25 @@ router.get("/details/:_id/:subtypeId/:wineId", (req,res,next)=>{
   const { _id, subtypeId, wineId } = req.params
   res.locals.mealId = subtypeId
     res.locals.orderId = _id
+    
   Wine.findById(wineId)
   .then(data =>{
-    res.locals.oneWine = data;
+    if(req.user){
+      const objVersion = data.toObject()
+        objVersion.isFavorite = req.user.favorites.some(fave => {
+          return fave.wine.toString() === data._id.toString();
+        });
+
+      res.locals.oneWine = objVersion;
     res.render("product-page.hbs")
+  }
+    else{
+      res.locals.oneWine = data;
+      res.render("product-page.hbs")
+    }
   })
   .catch(err=>next(err))
 })
-
 
 
 router.get("/cellar/details/:_id/", (req,res,next)=>{
@@ -266,12 +278,69 @@ router.get("/fav/:_id/", (req,res,next)=>{
 
 
 
-router.get("/add-fav-pairing/:wineId/:orderId/:mealId", (req, res, next) => {
-  const { wineId, orderId,mealId  } = req.params;
+router.get('/profile', (req, res,next)=>{
+  res.render('profile-page.hbs')
+})
+
+
+router.get("/add-fav-detail/:wineId/:ordernId/:subtypeId", (req, res, next) => {
+  const { wineId, ordernId,subtypeId  } = req.params
+
 
   const isFavorited = req.user.favorites.some(oneId => {
     return oneId.wine.toString() === wineId.toString();
   });
+  console.log(isFavorited)
+  if(isFavorited === true){
+    req.flash("error", "This wine is already in your favorites")
+    res.redirect(`/details/${ordernId}/${subtypeId}/${wineId}`)
+  } else {
+    User.findByIdAndUpdate(
+    req.user._id,
+    {$push: { favorites: {wine : wineId} }},
+    {runValidators: true},
+  )
+  .populate("favorites")
+    .then(data =>{
+      res.redirect(`/details/${ordernId}/${subtypeId}/${wineId}`)
+    })
+    .catch(err => next(err))
+  }
+
+})
+
+
+router.get("/delete-fav-detail/:wineId/:ordernId/:subtypeId", (req, res, next) => {
+  const { wineId, ordernId,subtypeId  } = req.params
+
+
+    User.findByIdAndUpdate(
+    req.user._id,
+    {$pull: { favorites: {wine : wineId} }},
+    {runValidators: true},
+  )
+  .populate("favorites")
+    .then(data =>{
+      res.redirect(`/details/${ordernId}/${subtypeId}/${wineId}`)
+    })
+    .catch(err => next(err))
+
+})
+
+
+
+router.get("/add-fav-pairing/:wineId/:orderId/:mealId", (req, res, next) => {
+  const { wineId, orderId,mealId } = req.params
+
+
+  const isFavorited = req.user.favorites.some(oneId => {
+    return oneId.wine.toString() === wineId.toString();
+  });
+  console.log(isFavorited)
+  if(isFavorited === true){
+    req.flash("error", "This wine is already in your favorites")
+    res.redirect(`/wine-reco/${orderId}/${mealId}/reco-route`)
+  } else {
     User.findByIdAndUpdate(
     req.user._id,
     {$push: { favorites: {wine : wineId} }},
@@ -282,11 +351,28 @@ router.get("/add-fav-pairing/:wineId/:orderId/:mealId", (req, res, next) => {
       res.redirect(`/wine-reco/${orderId}/${mealId}/reco-route`)
     })
     .catch(err => next(err))
+  }
 })
 
-router.get('/profile', (req, res,next)=>{
-  res.render('profile-page.hbs')
+
+router.get("/delete-fav-pairing/:wineId/:orderId/:mealId", (req, res, next) => {
+  const { wineId, orderId,mealId } = req.params
+
+  User.findByIdAndUpdate(
+    req.user._id,
+    {$pull: { favorites: {wine : wineId} }},
+    {runValidators: true},
+  )
+  .populate("favorites")
+    .then(data =>{
+      res.redirect(`/wine-reco/${orderId}/${mealId}/reco-route`)
+    })
+    .catch(err => next(err))
 })
+
+
+
+
 
 
 

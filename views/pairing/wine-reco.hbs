@@ -38,10 +38,10 @@
          
           
            <div class="fav-link">
-           {{#if this.isFavorite}}
-           <a href="#"><div class="fav-on"><img src="/images/icon-heart-full.svg" alt=""></div></a>
+           {{#if this.isFavorited}}
+           <a href="/delete-fav-pairing/{{this._id}}/{{../orderInfo._id}}/{{../wineRecos._id}}"><div class="fav-on"><img src="/images/icon-heart-full.svg" alt=""></div></a>
            {{else}}
-           <a href="#"><div class="fav-off"><img src="/images/icon-heard-empty.svg" alt=""></div></a>
+           <a href="/add-fav-pairing/{{this._id}}/{{../orderInfo._id}}/{{../wineRecos._id}}"><div class="fav-off"><img src="/images/icon-heard-empty.svg" alt=""></div></a>
             {{/if}}
            </div>
            

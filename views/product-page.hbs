@@ -29,9 +29,9 @@
 
             <div class="fav-link">
            {{#if oneWine.isFavorite}}
-           <a href="#"><div class="fav-on"><img src="/images/icon-heart-full.svg" alt=""></div></a>
+           <a href="/delete-fav-detail/{{oneWine._id}}/{{orderId}}/{{mealId}}"><div class="fav-on"><img src="/images/icon-heart-full.svg" alt=""></div></a>
            {{else}}
-           <a href="#"><div class="fav-off"><img src="/images/icon-heard-empty.svg" alt=""></div></a>
+           <a href="/add-fav-detail/{{oneWine._id}}/{{orderId}}/{{mealId}}"><div class="fav-off"><img src="/images/icon-heard-empty.svg" alt=""></div></a>
             {{/if}}
            </div>
            

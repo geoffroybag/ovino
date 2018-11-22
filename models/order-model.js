@@ -8,6 +8,7 @@ const orderSchema = new Schema({
   quantity : {type : Number},
   totalPrice : {type : Number},
   email : {type : String,},
+  hourOrdered : {type : String,},
   dateOrdered : {type : Date},
   shippingAddress : {type : String,},
   customerId : {type : Schema.Types.ObjectId, ref: "User"},

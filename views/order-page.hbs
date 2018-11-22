@@ -1,3 +1,7 @@
+<script>  google.maps.event.addDomListener(window, 'load', function() {
+    initializeAutocomplete('user_input_autocomplete_address');
+  });</script>
+
 {{> header}}
 
 <section class="section-order">
@@ -10,10 +14,10 @@
     
     <img src="/images/icon-order.gif" alt="" class="icon">
       <div class="h6">What time please ?</div>
-    
-      <input type='time' value='20:30' class ="h0 time-input"/>
+    <form action="/time-info" method="post">
+      <input type='time' name = 'hourOrdered' value='20:30' class ="h0 time-input"/>
 
-      <input id="user_input_autocomplete_address" type="text" name="addressguess" placeholder="Where ?" class="address-input">
+      <input id="user_input_autocomplete_address" type="text" name="shippingAddress" placeholder="Where ?" class="address-input">
         <ul class="list justify-content-center">
           {{#each orderInfo.cart}}
             <li class="one-wine col-lg-6">
@@ -34,11 +38,11 @@
 
 <div class="button-div">
   <div class="button-div-position">
-    <a href="/wine-reco/{{orderId}}/{{mealId}}/reco-route"><button class="button-font button-left">previous</button></a>
+    <a href="/wine-reco/{{orderId}}/{{mealId}}/reco-route"><span class="button-font button-left">previous</span></a>
     <a href="/order/{{oneWine._id}}"><button class="button-font button-right">order</button></a>
   </div>
 </div>
-
+</form>
 </section>
 
 {{> footer}}

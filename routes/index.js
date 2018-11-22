@@ -197,4 +197,37 @@ router.get("/autocomplete", (req,res,next)=>{
 })
 
 
+router.get("/advice", (req,res,next)=>{
+  res.render("advice.hbs")
+})
+
+router.get("/contact", (req,res,next)=>{
+  res.render("contact.hbs")
+})
+
+
+router.post("/time-info", (req,res,next)=>{
+  const {hourOrdered, shippingAddress} = req.body;
+  Order.findByIdAndUpdate(
+    req.user._id, 
+    {$set: {hourOrdered, shippingAddress}},
+    )
+  .then(data=>{
+    res.redirect("/my-orders")
+  })
+})
+
+
+router.get("/my-orders", (req,res,next)=>{
+  Order.find({customerId : {$eq : req.user._id}})
+    .populate("cart")
+    .sort({createdAt : -1})
+    .limit(5)
+    .then(data=>{
+      res.locals.orderInfo = data;
+      res.render("my-orders.hbs")
+    })
+})
+
+
 module.exports = router;
