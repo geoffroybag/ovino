@@ -56,14 +56,14 @@ p {
 
 .h0 {
   font-family: "GTAmerica-Bold";
-  font-size: 70px;
+  font-size: 50px;
   color: #000000;
   letter-spacing: 2px;
   text-align: center; }
 
 @media (max-width: 767px) {
   .h0 {
-    font-size: 50px; } }
+    font-size: 40px; } }
 
 @media (max-width: 575px) {
   .h0 {
@@ -785,7 +785,6 @@ footer {
     margin-top: 30px;
     display: flex;
     align-items: center;
-    height: 70vh;
     flex-direction: column;
     margin-bottom: 100px; }
     .section-myfriends .row .div1 {
@@ -803,16 +802,32 @@ footer {
           width: 350px; }
           .section-myfriends .row .div1 .add-friends .form input {
             text-align: center;
-            width: 100%;
             height: 35px;
             margin-bottom: 10px;
             border: none;
-            border-radius: 25px; }
+            border-radius: 25px;
+            background: transparent;
+            border: 1px solid #B5ACA5;
+            font-family: "GTAmerica-Regular";
+            font-size: 14px;
+            letter-spacing: 1.76px;
+            width: 100%;
+            color: #B5ACA5; }
           .section-myfriends .row .div1 .add-friends .form input:focus {
             outline: none; }
           .section-myfriends .row .div1 .add-friends .form ::-webkit-input-placeholder {
             color: #B5ACA5;
             letter-spacing: 1px; }
+          .section-myfriends .row .div1 .add-friends .form input[type="submit"] {
+            background-color: white;
+            color: black;
+            height: 45px;
+            font-family: "GTAmerica-Regular";
+            font-size: 13px;
+            letter-spacing: 2.29px;
+            text-align: center;
+            text-transform: uppercase;
+            border: none; }
       .section-myfriends .row .div1 .h6 {
         margin: 20px; }
       .section-myfriends .row .div1 .icon {

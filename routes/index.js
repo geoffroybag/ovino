@@ -7,6 +7,11 @@ const Meal = require("../models/meal-model.js")
 const User = require("../models/user-model.js")
 const Order = require("../models/order-model.js")
 
+router.get('/order', (req, res, next) => {
+  req.flash("success", "Thank you ! Order completed !")
+  res.redirect("/my-orders")
+})
+
 router.get('/menu', (req, res, next) => {
   res.render('menu.hbs');
 })
@@ -139,7 +144,7 @@ router.get("/my-orders", (req,res,next)=>{
 
 router.get("/friends", (req,res,next)=>{
   User.findById(req.user._id)
-    .populate("friends")
+    .populate('friends.friend')
     .populate({
       path: 'friends',
       populate: { path: 'favorites.wine' }
@@ -152,19 +157,28 @@ router.get("/friends", (req,res,next)=>{
 })
 
 router.post("/add-friend", (req,res,next)=>{
-    const{email} = req.body;
+    const{emailadress} = req.body;
 
-    User.findOne({email : {$eq : email}})
-    .then(oneFriend =>
+    User.findOne({email : {$eq : emailadress}})
+    .then(data1 => {
+      const objVersion = data1.toObject()
+      objVersion.isFriend = req.user.friends.some(oneFriend => {
+        return oneFriend.friend.toString() === data1._id.toString()  
+    })
+    if(!objVersion.isFriend){
         User.findByIdAndUpdate(
         req.user._id,
-        {$push: { friends: oneFriend._id }},
+        {$push: { friends: {friend : data1._id} }},
       )
-      .then(data =>{
+      .then(data2 =>{
         res.redirect(`/friends`)
       })
-    .catch(err => next(err)))
-    
+    }    
+    else{
+      res.redirect('/friends')
+    }
+})
+.catch(err => next(err))
 })
 
 router.get("/favorites", (req,res,next)=>{

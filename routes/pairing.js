@@ -154,6 +154,7 @@ router.get("/order-process/:_id/:subtypeId", (req,res,next)=>{
     // res.send(data)
     res.locals.orderInfo = data
     if(data.cart.length === 0){
+      req.flash("error", "Please, select a wine before buy it.")
       res.redirect(`/wine-reco/${_id}/${subtypeId}/reco-route`)
     }
     else {
