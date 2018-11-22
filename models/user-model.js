@@ -9,7 +9,7 @@ const userSchema = new Schema({
   role : {type : String, enum : ["normal", "admin"], default : "normal"},
   favorites : [{wine : {type : Schema.Types.ObjectId, ref: "Wine"}}],
   avatar : String,
-  friends : [{type : Schema.Types.ObjectId, ref: "User"}],
+  friends : [{friend : {type : Schema.Types.ObjectId, ref: "User"}}],
   legal : Boolean,
 }, {
   timestamps : true

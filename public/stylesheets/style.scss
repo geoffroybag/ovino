@@ -1000,7 +1000,6 @@ footer{
     margin-top: 30px;
     display: flex;
     align-items: center;
-    height: 70vh;
     flex-direction: column;
     margin-bottom: 100px;
     .div1{
@@ -1016,13 +1015,20 @@ footer{
           height:100%;
           position: relative;
           width: 350px;
+          
           input{
             text-align:center;
-            width:100%;
             height:35px;
             margin-bottom:10px;
             border:none;
             border-radius:25px;
+            background: transparent;
+            border: 1px solid $darkgrey;
+            font-family: $gtreg;
+            font-size: 14px;
+            letter-spacing: 1.76px;
+            width: 100%;
+            color: #B5ACA5;
           }
           input:focus{
             outline:none;
@@ -1030,6 +1036,17 @@ footer{
           ::-webkit-input-placeholder{
             color:$darkgrey;
             letter-spacing: 1px;
+          }
+          input[type="submit"]{
+            background-color:white;
+            color:black;
+            height: 45px;
+            font-family: $gtreg;
+            font-size: 13px;
+            letter-spacing: 2.29px;
+            text-align: center;
+            text-transform: uppercase;
+            border: none;
           }
         }
       }

@@ -14,7 +14,8 @@
   <div class="add-friends">
     <div class="h4">Add friends :</div>
     <form action="/add-friend" method="POST" class="form">   
-    <input type="email" name="email" placeholder="b2o@unkut.com">
+    <input type="email" name="emailadress" placeholder="name@example.fr">
+    <input type="submit" value="SUBMIT">
     </form>
   </div>
   
@@ -22,11 +23,11 @@
   <div class="h4">Your friends :</div>
   {{#each userFriends}}
     <div class="one-friend"><a href="#">
-      <div class="h2">{{this.fullName}}</div>
-      <div class="h4">{{this.email}}</div>
+      <div class="h2">{{this.friend.fullName}}</div>
+      <div class="h4">{{this.friend.email}}</div>
       <div class="h5">Favorites : </div>
         <ul>
-          {{#each this.favorites}}
+          {{#each this.friend.favorites}}
           <li class="h4">{{this.wine.appelation}}</li>
           {{/each }}
         </ul>
