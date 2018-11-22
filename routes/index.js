@@ -152,7 +152,6 @@ router.get("/friends", (req,res,next)=>{
     .then(data=>{
       res.locals.userFriends = data.friends;
       res.render("friends.hbs")
-      // res.send(data)
     })
 })
 
@@ -187,6 +186,23 @@ else{
 
 .catch(err => next(err))
 })
+
+
+router.get("/delete-friend/:id", (req,res,next)=>{
+  const{id} = req.params;
+
+  User.findByIdAndUpdate(
+    req.user._id,
+    {$pull: { friends: {friend : id} }},
+    {runValidators: true},
+  )
+  .populate("friends")
+    .then(data =>{
+      res.redirect(`/friends`)
+    })
+    .catch(err => next(err))
+})
+
 
 router.get("/favorites", (req,res,next)=>{
   User.findById(req.user._id)
