@@ -25,6 +25,17 @@
           <li class="h4">Style : {{oneWine.style}}</li>
           <li class="h4">Géographie : {{oneWine.geographie}}</li>
         </ul>
+
+
+            <div class="fav-link">
+           {{#if oneWine.isFavorite}}
+           <a href="#"><div class="fav-on"><img src="/images/icon-heart-full.svg" alt=""></div></a>
+           {{else}}
+           <a href="#"><div class="fav-off"><img src="/images/icon-heard-empty.svg" alt=""></div></a>
+            {{/if}}
+           </div>
+           
+
         </div>
     </li>
 

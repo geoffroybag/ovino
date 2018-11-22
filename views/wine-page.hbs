@@ -12,10 +12,13 @@
       <div class="h6">Choose your wine</div>
 
   <li class="one-wine">
+
         <div class="img col-lg-3 col-md-3">
           <img src="{{oneWine.pictureUrl}}" alt="">
         </div>
+
         <div class="content col-lg-9 col-md-9">
+
         <div class="appelation h1">{{oneWine.appelation}}</div>
         <div class="domaine h2">{{oneWine.domaine}}</div>
         <div class="h3">{{oneWine.millesime}}</div>
@@ -27,20 +30,19 @@
         </ul>
 
           {{#if currentUser}}
-           <a href="/add-fav-cellar/{{oneWine._id}}" class="fav-link">
+
+            <div class="fav-link">
            {{#if oneWine.isFavorite}}
-           <div class="favorite-in"><div class="fav-on"></div>
-           <a href="/delete-fav/{{oneWine._id}}"><div class="h5"><u>delete as favorite</u></div></a>
-           </div>
+           <a href="/delete-fav/{{oneWine._id}}"><div class="fav-on"><img src="/images/icon-heart-full.svg" alt=""></div></a>
            {{else}}
-           <div class="fav-off"></div>
+           <a href="/add-fav-cellar/{{oneWine._id}}"><div class="fav-off"><img src="/images/icon-heard-empty.svg" alt=""></div></a>
             {{/if}}
-           </a>
-           {{#each userFriends}}
-           <a>{{this.email}}</a>
-           {{/each }}
+           </div>
+           
           {{/if}}
-        </div>
+
+          </div>
+
     </li>
 
     </div>

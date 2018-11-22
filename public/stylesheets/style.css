@@ -535,14 +535,12 @@ footer {
           display: flex;
           align-items: center; }
           .section-product .row .div1 .one-wine .content .fav-link .fav-on {
-            background-image: url("../images/icon-heart-full.svg");
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
             height: 30px;
             width: 30px; }
           .section-product .row .div1 .one-wine .content .fav-link .fav-off {
-            background-image: url("../images/icon-heard-empty.svg");
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
@@ -715,16 +713,14 @@ footer {
             justify-content: center; }
             .section-reco .row .div1 .list .one-wine .more .h5 {
               margin: 0 2%; }
-            .section-reco .row .div1 .list .one-wine .more .fav-on {
-              background-image: url("../images/icon-heart-full.svg");
+            .section-reco .row .div1 .list .one-wine .more .fav-link .fav-on {
               background-size: contain;
               background-repeat: no-repeat;
               background-position: center;
               height: 30px;
               width: 30px;
               margin: 0 20px; }
-            .section-reco .row .div1 .list .one-wine .more .fav-off {
-              background-image: url("../images/icon-heard-empty.svg");
+            .section-reco .row .div1 .list .one-wine .more .fav-link .fav-off {
               background-size: contain;
               background-repeat: no-repeat;
               background-position: center;
