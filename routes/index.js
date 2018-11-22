@@ -7,24 +7,23 @@ const Meal = require("../models/meal-model.js")
 const User = require("../models/user-model.js")
 const Order = require("../models/order-model.js")
 
-router.get('/order', (req, res, next) => {
-  req.flash("success", "Thank you ! Order completed !")
-  res.redirect("/my-orders")
+// HOME
+router.get('/', (req, res, next) => {
+  res.render('index.hbs');
+});
+
+router.get('/index', (req, res, next) => {
+  res.render('index.hbs');
 })
 
 router.get('/menu', (req, res, next) => {
   res.render('menu.hbs');
 })
 
-router.get('/index', (req, res, next) => {
-  res.render('index.hbs');
+router.get('/order', (req, res, next) => {
+  req.flash("success", "Thank you ! Order completed !")
+  res.redirect("/my-orders")
 })
-
-
-router.get('/', (req, res, next) => {
-  res.render('index.hbs');
-
-});
 
 router.get("/wines", (req,res,next)=>{
   Wine.find()

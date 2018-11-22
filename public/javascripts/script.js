@@ -1,13 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
-
   console.log('IronGenerator JS imported successfully!');
-
 }, false);
 
 // setTimeout(function(){
 //     window.location = window.location.protocol + '//' + window.location.host + "/index";
 // }, 3000);
 
+function scrollDown() {
+ 
+  TweenMax.to(".loadingpage", 3, {
+       delay: 0.2,
+       top: "-110%",
+       ease: Expo.easeInOut
+  });
+ 
+ }
 
   // Lie le champs adresse en champs autocomplete afin que l'API puisse afficher les propositions d'adresses
   function initializeAutocomplete(id) {
