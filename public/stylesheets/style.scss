@@ -209,6 +209,8 @@ a, a:hover {
 
 ul{
   list-style-type: none;
+  -webkit-padding-start: 0;
+  padding-inline-start: 0;
 }
 
 section{
@@ -775,8 +777,9 @@ footer{
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      ul{
+      .type{
         padding-inline-start: 0;
+        -webkit-padding-start: 0;
         li{
           list-style-type: none;
           line-height: 30px;
@@ -861,8 +864,8 @@ footer{
       }
       .list{
         padding-inline-start: 0;
+        -webkit-padding-start: 0;
         display : flex; 
-        padding-inline-start: 0;
         width: 70%;
         .one-wine{
         list-style: none;  
