@@ -1534,7 +1534,10 @@ footer {
       margin: 20px; }
     .section-signuplogin .row .div1 .image {
       height: 300px;
-      width: auto; }
+      width: auto;
+      animation: 1s tirebouchon;
+      animation-iteration-count: infinite;
+      transition-timing-function: ease-in-out; }
     .section-signuplogin .row .div1 .button-div {
       position: fixed;
       bottom: 0;
@@ -1659,5 +1662,13 @@ footer {
     transform: rotateX(360deg); }
   100% {
     transform: rotateX(0); } }
+
+@keyframes tirebouchon {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(-10px); }
+  100% {
+    transform: translateY(0); } }
 
 /*# sourceMappingURL=style.css.map */

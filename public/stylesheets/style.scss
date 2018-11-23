@@ -1954,6 +1954,9 @@ footer{
       .image{
         height: 300px;
         width: auto;
+        animation: 1s tirebouchon;
+        animation-iteration-count: infinite;
+        transition-timing-function: ease-in-out;
       }
       .button-div{
         position: fixed;
@@ -2117,5 +2120,17 @@ footer{
   }
   100% {
     transform: rotateX(0);
+  }
+}
+
+@keyframes tirebouchon{
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }

@@ -38,7 +38,7 @@ router.get("/poultry", (req,res,next)=>{
 })
 
 router.get("/fish-and-seafood", (req,res,next)=>{
-  Meal.find({type : {$eq : "Fish & Seafood"}})
+  Meal.find({type : {$eq : "Fish&Seafood"}})
   .then(data =>{
     res.locals.allMeat = data
     res.render("pairing/type-meat.hbs")
