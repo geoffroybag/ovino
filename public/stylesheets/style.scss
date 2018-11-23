@@ -29,10 +29,10 @@ $lightgrey: #EFECE9;
 	src: url('/font/GTAmerica-Regular.ttf') format('truetype');
 }
 
-$coquette: 'Coquette';
-$gtbold: 'GTAmerica-Bold';
-$gtboldit: 'GTAmerica-BoldItalic';
-$gtreg: 'GTAmerica-Regular';
+$coquette: 'Coquette', cursive;
+$gtbold: 'GTAmerica-Bold', Helvetica, sans-serif;
+$gtboldit: 'GTAmerica-BoldItalic', Helvetica, sans-serif;
+$gtreg: 'GTAmerica-Regular', Helvetica, sans-serif;
 
 // Details wine pages paragraphes
 p{
