@@ -132,7 +132,7 @@ router.post('/process-settings', fileUploader.single("avatarUpload") ,(req,res, 
 
 
 router.get("/my-orders", (req,res,next)=>{
-  Order.find({customerId : {$eq : req.user._id}})
+  Order.find({customerId : {$eq : req.user._id}, hourOrdered : {$ne : ""}, shippingAddress : {$ne : ""}})
     .populate("cart")
     .sort({createdAt : -1})
     .limit(5)

@@ -89,7 +89,7 @@ router.get("/subtype/:subtypeId", (req,res,next)=>{
 
 router.get("/wine-reco/:subtypeId", (req,res,next)=>{
   const subtypeId = req.params.subtypeId
-  Order.create({randomId : Math.floor(Math.random() * 10000), customerId : req.user._id, hourOrdered: "-", shippingAddress : "-" })
+  Order.create({randomId : Math.floor(Math.random() * 10000), customerId : req.user._id, hourOrdered: "", shippingAddress : "" })
     .then(order => {
       res.redirect(`/wine-reco/${order._id}/${subtypeId}/reco-route`)
     })
