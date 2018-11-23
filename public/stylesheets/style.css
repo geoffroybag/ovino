@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @font-face {
-  font-family: 'Coquette-Regular';
+  font-family: 'Coquette';
   src: url("/font/Coquette-Regular.ttf") format("truetype"); }
 
 @font-face {
@@ -16,7 +16,7 @@
   src: url("/font/GTAmerica-Regular.ttf") format("truetype"); }
 
 p {
-  font-family: "GTAmerica-Regular";
+  font-family: "GTAmerica-Regular", Helvetica, sans-serif;
   font-size: 10px;
   color: #000000;
   letter-spacing: 1.76px;
@@ -26,7 +26,7 @@ p {
   background: #000000;
   padding: 15px 100px;
   border-radius: 50px;
-  font-family: "GTAmerica-Regular";
+  font-family: "GTAmerica-Regular", Helvetica, sans-serif;
   font-size: 13px;
   color: #FFFFFF;
   letter-spacing: 2.29px;
@@ -39,7 +39,7 @@ p {
   padding: 10px 0px;
   border-radius: 50px;
   border: none;
-  font-family: "GTAmerica-Regular";
+  font-family: "GTAmerica-Regular", Helvetica, sans-serif;
   font-size: 13px;
   color: black;
   letter-spacing: 2.29px;
@@ -55,7 +55,7 @@ p {
     padding-right: 20px; }
 
 .h0 {
-  font-family: "GTAmerica-Bold";
+  font-family: "GTAmerica-Bold", Helvetica, sans-serif;
   font-size: 50px;
   color: #000000;
   letter-spacing: 2px;
@@ -70,7 +70,7 @@ p {
     font-size: 30px; } }
 
 .h1 {
-  font-family: "GTAmerica-Bold";
+  font-family: "GTAmerica-Bold", Helvetica, sans-serif;
   font-size: 35px;
   color: #000000;
   letter-spacing: 3.94px;
@@ -88,7 +88,7 @@ p {
     line-height: 15px; } }
 
 .h2 {
-  font-family: "GTAmerica-Bold";
+  font-family: "GTAmerica-Bold", Helvetica, sans-serif;
   font-size: 16px;
   color: #000000;
   letter-spacing: 1.37px;
@@ -102,7 +102,7 @@ p {
     line-height: 20px; } }
 
 .h3 {
-  font-family: "GTAmerica-Regular";
+  font-family: "GTAmerica-Regular", Helvetica, sans-serif;
   font-size: 20px;
   color: #000000;
   letter-spacing: 3.53px;
@@ -113,7 +113,7 @@ p {
     font-size: 16px; } }
 
 .h4 {
-  font-family: "GTAmerica-Regular";
+  font-family: "GTAmerica-Regular", Helvetica, sans-serif;
   font-size: 12px;
   color: #000000;
   letter-spacing: 2.47px;
@@ -125,7 +125,7 @@ p {
     font-size: 11px; } }
 
 .h5 {
-  font-family: "GTAmerica-Regular";
+  font-family: "GTAmerica-Regular", Helvetica, sans-serif;
   font-size: 10px;
   color: #000000;
   letter-spacing: 1.76px;
@@ -134,7 +134,7 @@ p {
   text-transform: uppercase; }
 
 .h6 {
-  font-family: "Coquette";
+  font-family: "Coquette", cursive;
   font-size: 20px;
   color: #000000;
   text-align: center;
@@ -235,7 +235,7 @@ footer {
       margin-block-end: 0;
       padding-inline-start: 0; }
       .section-menu .fullscreen-bg .row ul li {
-        font-family: "GTAmerica-Bold";
+        font-family: "GTAmerica-Bold", Helvetica, sans-serif;
         font-size: 45px;
         letter-spacing: 3.86px;
         text-align: center;
@@ -254,7 +254,7 @@ footer {
           color: #8C2632;
           text-shadow: 1px 1px #fff, -1px 1px #fff, 1px -1px #fff, -1px -1px #fff, 1px 1px 5px #555; }
         .section-menu .fullscreen-bg .row ul li a:hover {
-          font-family: "GTAmerica-Bold";
+          font-family: "GTAmerica-Bold", Helvetica, sans-serif;
           color: white;
           text-shadow: none; }
     @media (max-width: 575px) {
@@ -369,7 +369,7 @@ footer {
           border-radius: 25px;
           background: transparent;
           border: 1px solid #B5ACA5;
-          font-family: "GTAmerica-Regular";
+          font-family: "GTAmerica-Regular", Helvetica, sans-serif;
           font-size: 14px;
           letter-spacing: 1.76px; }
         .section-winelist .row .div1 .form form input:focus {
@@ -382,7 +382,7 @@ footer {
           background-color: black;
           color: #fff;
           height: 45px;
-          font-family: "GTAmerica-Regular";
+          font-family: "GTAmerica-Regular", Helvetica, sans-serif;
           font-size: 13px;
           letter-spacing: 2.29px;
           text-align: center;
@@ -442,7 +442,7 @@ footer {
               .section-winelist .row .div1 .list .one-wine a .img img {
                 height: 100%; }
             .section-winelist .row .div1 .list .one-wine a .appelation {
-              font-family: "GTAmerica-Bold";
+              font-family: "GTAmerica-Bold", Helvetica, sans-serif;
               font-size: 16px;
               color: #000000;
               letter-spacing: 1.37px;
@@ -682,7 +682,7 @@ footer {
             .section-reco .row .div1 .list .one-wine .img .wine-pic {
               height: 130px; }
           .section-reco .row .div1 .list .one-wine .appelation {
-            font-family: "GTAmerica-Bold";
+            font-family: "GTAmerica-Bold", Helvetica, sans-serif;
             font-size: 16px;
             color: #000000;
             letter-spacing: 1.37px;
@@ -814,7 +814,7 @@ footer {
             border-radius: 25px;
             background: transparent;
             border: 1px solid #B5ACA5;
-            font-family: "GTAmerica-Regular";
+            font-family: "GTAmerica-Regular", Helvetica, sans-serif;
             font-size: 14px;
             letter-spacing: 1.76px;
             width: 100%;
@@ -829,7 +829,7 @@ footer {
             background-color: white;
             color: black;
             height: 45px;
-            font-family: "GTAmerica-Regular";
+            font-family: "GTAmerica-Regular", Helvetica, sans-serif;
             font-size: 13px;
             letter-spacing: 2.29px;
             text-align: center;
@@ -882,7 +882,7 @@ footer {
             color: black;
             text-decoration: none; }
             .section-myfriends .row .div1 .list .one-friend a .appelation {
-              font-family: "GTAmerica-Bold";
+              font-family: "GTAmerica-Bold", Helvetica, sans-serif;
               font-size: 16px;
               color: #000000;
               letter-spacing: 1.37px;
@@ -966,7 +966,7 @@ footer {
             color: black;
             text-decoration: none; }
             .section-myfavs .row .div1 .list .one-wine a .appelation {
-              font-family: "GTAmerica-Bold";
+              font-family: "GTAmerica-Bold", Helvetica, sans-serif;
               font-size: 16px;
               color: #000000;
               letter-spacing: 1.37px;
@@ -1033,7 +1033,7 @@ footer {
             .section-order .row .div1 .list .one-wine .img .wine-pic {
               height: 80px; }
           .section-order .row .div1 .list .one-wine .appelation {
-            font-family: "GTAmerica-Bold";
+            font-family: "GTAmerica-Bold", Helvetica, sans-serif;
             font-size: 16px;
             color: #000000;
             letter-spacing: 1.37px;
@@ -1056,14 +1056,14 @@ footer {
         overflow: hidden; }
       .section-order .row .div1 .address-input {
         text-align: center;
-        width: 80%;
+        width: 100%;
         height: 35px;
         margin-bottom: 10px;
         border: none;
         background-color: #F8F8F8;
         border-radius: 25px;
         margin-top: 20px;
-        font-family: "GTAmerica-Regular";
+        font-family: "GTAmerica-Regular", Helvetica, sans-serif;
         font-size: 12px;
         letter-spacing: 2.29px;
         text-align: center;
@@ -1236,7 +1236,7 @@ footer {
         border-radius: 25px;
         background: transparent;
         border: 1px solid #B5ACA5;
-        font-family: "GTAmerica-Regular";
+        font-family: "GTAmerica-Regular", Helvetica, sans-serif;
         font-size: 14px;
         letter-spacing: 1.76px; }
       .section-login .row .div1 .form form input:focus {
@@ -1249,7 +1249,7 @@ footer {
         background-color: black;
         color: #fff;
         height: 45px;
-        font-family: "GTAmerica-Regular";
+        font-family: "GTAmerica-Regular", Helvetica, sans-serif;
         font-size: 13px;
         letter-spacing: 2.29px;
         text-align: center;
@@ -1417,7 +1417,7 @@ footer {
             border-radius: 25px;
             background: transparent;
             border: 1px solid #B5ACA5;
-            font-family: "GTAmerica-Regular";
+            font-family: "GTAmerica-Regular", Helvetica, sans-serif;
             font-size: 14px;
             letter-spacing: 1.76px;
             width: 100%;
@@ -1432,7 +1432,7 @@ footer {
             background-color: black;
             color: #fff;
             height: 45px;
-            font-family: "GTAmerica-Regular";
+            font-family: "GTAmerica-Regular", Helvetica, sans-serif;
             font-size: 13px;
             letter-spacing: 2.29px;
             text-align: center;
@@ -1618,7 +1618,7 @@ footer {
           border-radius: 25px;
           background: transparent;
           border: 1px solid #B5ACA5;
-          font-family: "GTAmerica-Regular";
+          font-family: "GTAmerica-Regular", Helvetica, sans-serif;
           font-size: 14px;
           letter-spacing: 1.76px;
           width: 100%;
@@ -1633,7 +1633,7 @@ footer {
           background-color: black;
           color: #fff;
           height: 45px;
-          font-family: "GTAmerica-Regular";
+          font-family: "GTAmerica-Regular", Helvetica, sans-serif;
           font-size: 13px;
           letter-spacing: 2.29px;
           text-align: center;
