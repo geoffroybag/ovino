@@ -1052,8 +1052,27 @@ footer {
       .section-order .row .div1 .time-input {
         border: none;
         background-color: transparent;
-        height: 60px;
-        overflow: hidden; }
+        height: 43px;
+        overflow: hidden;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none; }
+      .section-order .row .div1 .time-input:focus {
+        outline: none; }
+      .section-order .row .div1 input[type=time] {
+        -webkit-appearance: menulist-button; }
+      .section-order .row .div1 input[type=time]:focus, .section-order .row .div1 input[type=time]:hover {
+        -webkit-appearance: listbox; }
+      .section-order .row .div1 input[type=number]::-webkit-inner-spin-button,
+      .section-order .row .div1 input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        opacity: 0;
+        display: none; }
       .section-order .row .div1 .address-input {
         text-align: center;
         width: 100%;

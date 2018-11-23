@@ -1353,8 +1353,31 @@ footer{
       .time-input{
         border: none;
         background-color: transparent;
-        height: 60px;
+        height: 43px;
         overflow: hidden;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+      }
+      .time-input:focus{
+        outline: none;
+      }
+      input[type=time]{
+        -webkit-appearance: menulist-button;
+      }
+      input[type=time]:focus, input[type=time]:hover{
+        -webkit-appearance: listbox;
+      }
+      input[type=number]::-webkit-inner-spin-button, 
+      input[type=number]::-webkit-outer-spin-button { 
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          opacity: 0;
+          display: none;
       }
       .address-input{
         text-align: center;
