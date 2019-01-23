@@ -1052,7 +1052,7 @@ footer {
       .section-order .row .div1 .time-input {
         border: none;
         background-color: transparent;
-        height: 65px;
+        height: 60px;
         overflow: hidden;
         -webkit-touch-callout: none;
         -webkit-user-select: none;
@@ -1091,7 +1091,8 @@ footer {
           .section-order .row .div1 .address-input {
             font-size: 10px; } }
       .section-order .row .div1 .h6 {
-        margin: 20px; }
+        margin-top: 20px;
+        margin-bottom: 10px; }
       @media (max-width: 992px) {
         .section-order .row .div1 .h6 {
           margin: 20px 10px 10px 10px; } }
