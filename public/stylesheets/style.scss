@@ -1353,7 +1353,7 @@ footer{
       .time-input{
         border: none;
         background-color: transparent;
-        height: 65px;
+        height: 60px;
         overflow: hidden;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -1398,7 +1398,8 @@ footer{
         }
       }
       .h6{
-        margin: 20px;
+        margin-top: 20px;
+        margin-bottom: 10px;
       }
       @media (max-width: 992px){
         .h6{
