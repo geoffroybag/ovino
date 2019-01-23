@@ -31,9 +31,6 @@
   "devDependencies": {
     "nodemon": "^1.12.1"
   },
-  "engines": {
-    "node": "10.9.0"
-  },
   "main": "app.js",
   "bin": {
     "awesome-project": "seed.js"
