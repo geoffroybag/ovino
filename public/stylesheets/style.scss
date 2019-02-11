@@ -233,6 +233,12 @@ footer{
   margin-bottom: -40px;
 }
 
+@media (max-width: 575px){
+  button{
+    width: 250px !important;
+  }
+}
+
 .menu{
   position: fixed;
   bottom: 0; 
@@ -2156,5 +2162,20 @@ footer{
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 650px){
+  #section-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 150px;
+  }
+  .button-font{
+    position: relative;
+    margin: 0;
+    transform: none;
+    left: 0;
   }
 }
