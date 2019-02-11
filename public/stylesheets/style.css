@@ -174,7 +174,7 @@ footer {
   z-index: 200;
   margin-bottom: -40px; }
 
-@media (max-width: 700px) {
+@media (max-width: 713px) {
   button, input {
     width: 250px !important; }
   .section-home {
@@ -269,7 +269,7 @@ footer {
       .section-menu .fullscreen-bg .row ul {
         padding: 20px; } }
 
-@media (max-width: 700px) {
+@media (max-width: 713px) {
   .section-home {
     margin-bottom: 100px; } }
 
@@ -309,7 +309,7 @@ footer {
   display: flex;
   align-items: flex-end;
   text-align: center; }
-  @media (max-width: 700px) {
+  @media (max-width: 713px) {
     .section-home .row {
       height: auto; } }
   .section-home .row .div3 {
@@ -333,7 +333,7 @@ footer {
       width: 100px;
       height: 100px; } }
 
-@media (max-width: 575px) {
+@media (max-width: 713px) {
   .section-home .bottles-homepage {
     display: none; }
   .section-home .row {
@@ -345,7 +345,7 @@ footer {
   margin-bottom: 80px;
   transform: translate(-50%, -50%);
   left: 50%; }
-  @media (max-width: 700px) {
+  @media (max-width: 713px) {
     .section-home button {
       position: relative;
       margin-bottom: 0;
@@ -375,7 +375,6 @@ footer {
       flex-direction: column;
       align-items: center; }
       .section-winelist .row .div1 .form {
-        float: left;
         position: relative;
         width: 100%;
         display: flex;
@@ -393,7 +392,7 @@ footer {
           font-family: "GTAmerica-Regular", Helvetica, sans-serif;
           font-size: 14px;
           letter-spacing: 1.76px; }
-          @media (max-width: 700px) {
+          @media (max-width: 713px) {
             .section-winelist .row .div1 .form input {
               width: 250px; } }
         .section-winelist .row .div1 .form input:focus {
@@ -653,7 +652,7 @@ footer {
       .section-type .row .icon {
         width: 100px;
         height: 100px; } }
-  @media (max-width: 575px) {
+  @media (max-width: 713px) {
     .section-type .bottles-homepage {
       display: none; } }
   .section-type button {
@@ -1135,7 +1134,7 @@ footer {
       .section-order .row .icon {
         width: 100px;
         height: 100px; } }
-  @media (max-width: 575px) {
+  @media (max-width: 713px) {
     .section-order .bottles-homepage {
       display: none; } }
   .section-order .button-div {
@@ -1238,7 +1237,7 @@ footer {
   display: flex;
   align-items: flex-end;
   text-align: center; }
-  @media (max-width: 700px) {
+  @media (max-width: 713px) {
     .section-login .row {
       height: auto;
       margin-bottom: 100px; } }
@@ -1266,26 +1265,30 @@ footer {
         .section-login .row .div1 .user .icon {
           width: 100px;
           height: 100px; } }
+    @media (max-width: 713px) {
+      .section-login .row .div1 form {
+        display: flex;
+        flex-direction: column;
+        align-items: center; } }
     .section-login .row .div1 .form {
-      float: left;
       /*border-right:1px solid #fff;*/
       height: 100%;
       /*padding:15px 0 0 0;*/
       position: relative;
       width: 100%; }
-      @media (max-width: 700px) {
+      @media (max-width: 713px) {
         .section-login .row .div1 .form {
           display: flex;
           flex-direction: column;
           align-items: center; } }
       .section-login .row .div1 .form div {
+        margin: 0;
         display: flex;
         flex-direction: row;
         text-align: left;
         align-items: center; }
         .section-login .row .div1 .form div .checkbox_check {
-          width: 30px;
-          height: 30px; }
+          width: 30px; }
       .section-login .row .div1 .form form input {
         text-align: center;
         width: 100%;
@@ -1298,7 +1301,7 @@ footer {
         font-family: "GTAmerica-Regular", Helvetica, sans-serif;
         font-size: 14px;
         letter-spacing: 1.76px; }
-        @media (max-width: 700px) {
+        @media (max-width: 713px) {
           .section-login .row .div1 .form form input {
             width: 250px; } }
       .section-login .row .div1 .form form input:focus {
@@ -1321,7 +1324,7 @@ footer {
   .section-login .row {
     margin-top: 0; } }
 
-@media (max-width: 700px) {
+@media (max-width: 713px) {
   .section-profile {
     margin-bottom: 100px; } }
 
@@ -1375,7 +1378,7 @@ footer {
   .section-profile .row {
     margin-top: 0; } }
 
-@media (max-width: 700px) {
+@media (max-width: 713px) {
   .section-advice {
     margin-top: 30px;
     margin-bottom: 100px; } }
@@ -1451,7 +1454,7 @@ footer {
   display: flex;
   align-items: center;
   text-align: center; }
-  @media (max-width: 700px) {
+  @media (max-width: 713px) {
     .section-contact .row {
       margin-bottom: 80px; } }
   .section-contact .row .div1 {
@@ -1484,7 +1487,7 @@ footer {
           display: flex;
           flex-direction: column;
           width: 100%; }
-          @media (max-width: 700px) {
+          @media (max-width: 713px) {
             .section-contact .row .div1 .content .newsletter-form label {
               align-items: center; } }
           .section-contact .row .div1 .content .newsletter-form label input {
@@ -1500,7 +1503,7 @@ footer {
             letter-spacing: 1.76px;
             width: 100%;
             color: #B5ACA5; }
-            @media (max-width: 700px) {
+            @media (max-width: 713px) {
               .section-contact .row .div1 .content .newsletter-form label input {
                 width: 250px; } }
           .section-contact .row .div1 .content .newsletter-form label input:focus {
@@ -1607,7 +1610,7 @@ footer {
   display: flex;
   align-items: center;
   text-align: center; }
-  @media (max-width: 700px) {
+  @media (max-width: 713px) {
     .section-signuplogin .row {
       align-items: flex-start;
       height: auto;
@@ -1624,7 +1627,7 @@ footer {
       animation: 1s tirebouchon;
       animation-iteration-count: infinite;
       transition-timing-function: ease-in-out; }
-      @media (max-width: 700px) {
+      @media (max-width: 713px) {
         .section-signuplogin .row .div1 .image {
           height: 150px; } }
     .section-signuplogin .row .div1 .button-div {
@@ -1633,34 +1636,34 @@ footer {
       margin-bottom: 120px;
       transform: translate(-50%, -50%);
       left: 50%; }
-      @media (max-width: 700px) {
+      @media (max-width: 713px) {
         .section-signuplogin .row .div1 .button-div {
           margin-bottom: 50px; } }
       .section-signuplogin .row .div1 .button-div .button-div-position {
         display: flex;
         flex-direction: row;
         align-items: center; }
-        @media (max-width: 700px) {
+        @media (max-width: 713px) {
           .section-signuplogin .row .div1 .button-div .button-div-position {
             flex-direction: column; } }
         .section-signuplogin .row .div1 .button-div .button-div-position .button-left {
           margin-right: 5px; }
-          @media (max-width: 700px) {
+          @media (max-width: 713px) {
             .section-signuplogin .row .div1 .button-div .button-div-position .button-left {
               margin: 0; } }
         .section-signuplogin .row .div1 .button-div .button-div-position .button-right {
           margin-left: 5px; }
-          @media (max-width: 700px) {
+          @media (max-width: 713px) {
             .section-signuplogin .row .div1 .button-div .button-div-position .button-right {
               margin: 0; } }
 
-@media (max-width: 700px) {
+@media (max-width: 713px) {
   .section-signuplogin .row {
     margin-top: 40px; }
     .section-signuplogin .row .button-div-position {
       flex-direction: column; } }
 
-@media (max-width: 700px) {
+@media (max-width: 713px) {
   .section-settings {
     margin-bottom: 100px; } }
 
@@ -1779,6 +1782,9 @@ footer {
     transform: translateY(0); } }
 
 .certify {
-  margin: 0 30px; }
+  margin: 0 30px;
+  justify-content: center; }
+  .certify .h5 {
+    text-align: left; }
 
 /*# sourceMappingURL=style.css.map */

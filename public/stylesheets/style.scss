@@ -233,7 +233,7 @@ footer{
   margin-bottom: -40px;
 }
 
-@media (max-width: 700px){
+@media (max-width: 713px){
   button, input{
     width: 250px !important;
   }
@@ -375,7 +375,7 @@ footer{
 }
 
 .section-home{
-  @media (max-width:700px){
+  @media (max-width:713px){
     margin-bottom: 100px;
   }
   .fullscreen-bg{
@@ -408,7 +408,7 @@ footer{
     width: auto;
   }
   .row{
-    @media (max-width:700px){
+    @media (max-width:713px){
       height: auto;
     }
     width: 100%;
@@ -448,7 +448,7 @@ footer{
       }
     }
   } 
-  @media (max-width: 575px){
+  @media (max-width: 713px){
     .bottles-homepage{
       display: none;
     }
@@ -462,7 +462,7 @@ footer{
     margin-bottom: 80px;
     transform: translate(-50%, -50%);
     left: 50%;
-    @media (max-width: 700px){
+    @media (max-width: 713px){
       position: relative;
       margin-bottom: 0;
       transform: none;
@@ -495,14 +495,13 @@ footer{
       flex-direction: column;
       align-items: center;
       .form{
-        float:left;
         position: relative;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
          input{
-          @media (max-width:700px){
+          @media (max-width:713px){
             width: 250px;
           }
           text-align:center;
@@ -852,7 +851,7 @@ footer{
       }
     }
   } 
-  @media (max-width: 575px){
+  @media (max-width: 713px){
     .bottles-homepage{
       display: none;
     }
@@ -1455,7 +1454,7 @@ footer{
       }
     }
   } 
-  @media (max-width: 575px){
+  @media (max-width: 713px){
     .bottles-homepage{
       display: none;
     }
@@ -1576,7 +1575,7 @@ footer{
     background-repeat: no-repeat;
   }
   .row{
-    @media (max-width: 700px){
+    @media (max-width: 713px){
       height: auto;
       margin-bottom: 100px;
     }
@@ -1617,30 +1616,35 @@ footer{
           }
         }
       }
+      @media (max-width: 713px){
+        form{display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+      }
     .form{
-      @media (max-width: 700px){
+      @media (max-width: 713px){
         display: flex;
         flex-direction: column;
         align-items: center;
       }
-      float:left;
       /*border-right:1px solid #fff;*/
       height:100%;
       /*padding:15px 0 0 0;*/
       position: relative;
       width: 100%;
       div{
+        margin: 0;
         display: flex;
         flex-direction: row;
         text-align: left;
         align-items: center;
         .checkbox_check{
           width: 30px;
-          height: 30px;
         }
       }
       form input{
-        @media (max-width: 700px){
+        @media (max-width: 713px){
           width: 250px;
         }
         text-align:center;
@@ -1684,7 +1688,7 @@ footer{
 }
 
 .section-profile{
-  @media (max-width: 700px){
+  @media (max-width: 713px){
   margin-bottom: 100px;
   }
   .fullscreen-bg{
@@ -1750,7 +1754,7 @@ footer{
 }
 
 .section-advice{
-  @media (max-width: 700px){
+  @media (max-width: 713px){
   margin-top: 30px;
   margin-bottom: 100px;
   }
@@ -1831,7 +1835,7 @@ footer{
     background-repeat: no-repeat;
   }
   .row{
-    @media (max-width:700px){
+    @media (max-width:713px){
       margin-bottom: 80px;
     }
     width: 100%;
@@ -1873,11 +1877,11 @@ footer{
             display: flex;
             flex-direction: column;
             width: 100%;
-            @media (max-width:700px){
+            @media (max-width:713px){
               align-items: center;
             }
             input{
-              @media (max-width:700px){
+              @media (max-width:713px){
                 width: 250px;
               }
               text-align:center;
@@ -2023,7 +2027,7 @@ footer{
     background-repeat: no-repeat;
   }
   .row{
-    @media (max-width: 700px){
+    @media (max-width: 713px){
       align-items: flex-start;
       height: auto;
       margin-bottom: 100px;
@@ -2047,12 +2051,12 @@ footer{
         animation: 1s tirebouchon;
         animation-iteration-count: infinite;
         transition-timing-function: ease-in-out;
-        @media (max-width: 700px){
+        @media (max-width: 713px){
           height: 150px;
         }
       }
       .button-div{
-          @media (max-width: 700px) {
+          @media (max-width: 713px) {
             margin-bottom: 50px;
           }
         position: fixed;
@@ -2061,20 +2065,20 @@ footer{
         transform: translate(-50%, -50%);
         left: 50%;
         .button-div-position{
-          @media (max-width: 700px) {
+          @media (max-width: 713px) {
               flex-direction: column;
           }
           display: flex;
           flex-direction: row;
           align-items: center;
           .button-left{
-            @media (max-width: 700px) {
+            @media (max-width: 713px) {
                 margin: 0;
             }
             margin-right: 5px;
           }
           .button-right{
-            @media (max-width: 700px) {
+            @media (max-width: 713px) {
                 margin: 0;
             }
             margin-left: 5px;
@@ -2083,7 +2087,7 @@ footer{
       }
     }
   } 
-  @media (max-width: 700px){
+  @media (max-width: 713px){
     .row{
       margin-top: 40px;
       .button-div-position{
@@ -2094,7 +2098,7 @@ footer{
 }
 
 .section-settings{
-  @media (max-width: 700px){
+  @media (max-width: 713px){
   margin-bottom: 100px;
   }
   .fullscreen-bg{
@@ -2249,4 +2253,8 @@ footer{
 
 .certify{
   margin: 0 30px;
+  justify-content: center;
+  .h5{
+    text-align: left;
+  }
 }
