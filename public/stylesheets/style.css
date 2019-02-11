@@ -180,12 +180,7 @@ footer {
   .section-home {
     display: flex;
     flex-direction: column;
-    align-items: center; }
-    .section-home button {
-      position: relative;
-      margin: 0;
-      transform: none;
-      left: 0; } }
+    align-items: center; } }
 
 .menu {
   position: fixed;
@@ -274,6 +269,10 @@ footer {
       .section-menu .fullscreen-bg .row ul {
         padding: 20px; } }
 
+@media (max-width: 650px) {
+  .section-home {
+    margin-bottom: 100px; } }
+
 .section-home .fullscreen-bg {
   position: fixed;
   top: 0;
@@ -312,8 +311,7 @@ footer {
   text-align: center; }
   @media (max-width: 650px) {
     .section-home .row {
-      height: auto;
-      margin-bottom: 150px; } }
+      height: auto; } }
   .section-home .row .div3 {
     margin: 0; }
     .section-home .row .div3 .h6 {
@@ -347,6 +345,12 @@ footer {
   margin-bottom: 80px;
   transform: translate(-50%, -50%);
   left: 50%; }
+  @media (max-width: 650px) {
+    .section-home button {
+      position: relative;
+      margin-bottom: 0;
+      transform: none;
+      left: 0; } }
 
 .section-winelist {
   display: flex;
@@ -1228,7 +1232,8 @@ footer {
   text-align: center; }
   @media (max-width: 650px) {
     .section-login .row {
-      height: auto; } }
+      height: auto;
+      margin-bottom: 100px; } }
   .section-login .row .div1 {
     display: flex;
     flex-direction: column;
@@ -1576,7 +1581,9 @@ footer {
   text-align: center; }
   @media (max-width: 650px) {
     .section-signuplogin .row {
-      align-items: flex-start; } }
+      align-items: flex-start;
+      height: auto;
+      margin-bottom: 100px; } }
   .section-signuplogin .row .div1 {
     display: flex;
     flex-direction: column;
@@ -1738,5 +1745,8 @@ footer {
     transform: translateY(-10px); }
   100% {
     transform: translateY(0); } }
+
+.certify {
+  margin: 0 30px; }
 
 /*# sourceMappingURL=style.css.map */
