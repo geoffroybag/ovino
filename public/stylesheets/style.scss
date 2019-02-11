@@ -233,7 +233,7 @@ footer{
   margin-bottom: -40px;
 }
 
-@media (max-width: 650px){
+@media (max-width: 700px){
   button, input{
     width: 250px !important;
   }
@@ -375,7 +375,7 @@ footer{
 }
 
 .section-home{
-  @media (max-width:650px){
+  @media (max-width:700px){
     margin-bottom: 100px;
   }
   .fullscreen-bg{
@@ -408,7 +408,7 @@ footer{
     width: auto;
   }
   .row{
-    @media (max-width:650px){
+    @media (max-width:700px){
       height: auto;
     }
     width: 100%;
@@ -462,7 +462,7 @@ footer{
     margin-bottom: 80px;
     transform: translate(-50%, -50%);
     left: 50%;
-    @media (max-width: 650px){
+    @media (max-width: 700px){
       position: relative;
       margin-bottom: 0;
       transform: none;
@@ -502,7 +502,7 @@ footer{
         align-items: center;
         justify-content: center;
          input{
-          @media (max-width:650px){
+          @media (max-width:700px){
             width: 250px;
           }
           text-align:center;
@@ -1576,7 +1576,7 @@ footer{
     background-repeat: no-repeat;
   }
   .row{
-    @media (max-width: 650px){
+    @media (max-width: 700px){
       height: auto;
       margin-bottom: 100px;
     }
@@ -1618,7 +1618,7 @@ footer{
         }
       }
     .form{
-      @media (max-width: 650px){
+      @media (max-width: 700px){
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1636,10 +1636,11 @@ footer{
         align-items: center;
         .checkbox_check{
           width: 30px;
+          height: 30px;
         }
       }
       form input{
-        @media (max-width: 650px){
+        @media (max-width: 700px){
           width: 250px;
         }
         text-align:center;
@@ -1683,7 +1684,7 @@ footer{
 }
 
 .section-profile{
-  @media (max-width: 650px){
+  @media (max-width: 700px){
   margin-bottom: 100px;
   }
   .fullscreen-bg{
@@ -1749,7 +1750,7 @@ footer{
 }
 
 .section-advice{
-  @media (max-width: 650px){
+  @media (max-width: 700px){
   margin-top: 30px;
   margin-bottom: 100px;
   }
@@ -1830,7 +1831,7 @@ footer{
     background-repeat: no-repeat;
   }
   .row{
-    @media (max-width:650px){
+    @media (max-width:700px){
       margin-bottom: 80px;
     }
     width: 100%;
@@ -1872,11 +1873,11 @@ footer{
             display: flex;
             flex-direction: column;
             width: 100%;
-            @media (max-width:650px){
+            @media (max-width:700px){
               align-items: center;
             }
             input{
-              @media (max-width:650px){
+              @media (max-width:700px){
                 width: 250px;
               }
               text-align:center;
@@ -2022,7 +2023,7 @@ footer{
     background-repeat: no-repeat;
   }
   .row{
-    @media (max-width: 650px){
+    @media (max-width: 700px){
       align-items: flex-start;
       height: auto;
       margin-bottom: 100px;
@@ -2046,12 +2047,12 @@ footer{
         animation: 1s tirebouchon;
         animation-iteration-count: infinite;
         transition-timing-function: ease-in-out;
-        @media (max-width: 650px){
+        @media (max-width: 700px){
           height: 150px;
         }
       }
       .button-div{
-          @media (max-width: 650px) {
+          @media (max-width: 700px) {
             margin-bottom: 50px;
           }
         position: fixed;
@@ -2060,20 +2061,20 @@ footer{
         transform: translate(-50%, -50%);
         left: 50%;
         .button-div-position{
-          @media (max-width: 650px) {
+          @media (max-width: 700px) {
               flex-direction: column;
           }
           display: flex;
           flex-direction: row;
           align-items: center;
           .button-left{
-            @media (max-width: 650px) {
+            @media (max-width: 700px) {
                 margin: 0;
             }
             margin-right: 5px;
           }
           .button-right{
-            @media (max-width: 650px) {
+            @media (max-width: 700px) {
                 margin: 0;
             }
             margin-left: 5px;
@@ -2082,7 +2083,7 @@ footer{
       }
     }
   } 
-  @media (max-width: 650px){
+  @media (max-width: 700px){
     .row{
       margin-top: 40px;
       .button-div-position{
@@ -2093,7 +2094,7 @@ footer{
 }
 
 .section-settings{
-  @media (max-width: 650px){
+  @media (max-width: 700px){
   margin-bottom: 100px;
   }
   .fullscreen-bg{
