@@ -175,7 +175,7 @@ footer {
   margin-bottom: -40px; }
 
 @media (max-width: 650px) {
-  button {
+  button, input {
     width: 250px !important; }
   .section-home {
     display: flex;
@@ -381,7 +381,7 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center; }
-        .section-winelist .row .div1 .form form input {
+        .section-winelist .row .div1 .form input {
           text-align: center;
           width: 400px;
           height: 35px;
@@ -393,7 +393,10 @@ footer {
           font-family: "GTAmerica-Regular", Helvetica, sans-serif;
           font-size: 14px;
           letter-spacing: 1.76px; }
-        .section-winelist .row .div1 .form form input:focus {
+          @media (max-width: 650px) {
+            .section-winelist .row .div1 .form input {
+              width: 250px; } }
+        .section-winelist .row .div1 .form input:focus {
           outline: none;
           color: black; }
         .section-winelist .row .div1 .form ::-webkit-input-placeholder {
@@ -551,7 +554,8 @@ footer {
           flex-direction: row; }
         @media (max-width: 767px) {
           .section-product .row .div1 .one-wine .content .appelation {
-            justify-content: center; } }
+            justify-content: center;
+            line-height: 30px; } }
         .section-product .row .div1 .one-wine .content .h2 {
           text-align: left; }
         .section-product .row .div1 .one-wine .content .proprieties {
@@ -823,10 +827,12 @@ footer {
         flex-direction: column;
         align-items: center; }
         .section-myfriends .row .div1 .add-friends .form {
-          float: left;
           height: 100%;
           position: relative;
-          width: 350px; }
+          width: 350px;
+          display: flex;
+          flex-direction: column;
+          align-items: center; }
           .section-myfriends .row .div1 .add-friends .form input {
             text-align: center;
             height: 35px;
@@ -872,7 +878,6 @@ footer {
       .section-myfriends .row .div1 .list {
         flex-wrap: wrap;
         padding-inline-start: 0;
-        padding: 0 100px;
         justify-content: center;
         display: flex;
         flex-direction: column;
@@ -975,7 +980,9 @@ footer {
           margin: 0 20px; }
           .section-myfavs .row .div1 .list .one-wine .h2 {
             margin-top: 20px;
-            line-height: 10px; }
+            line-height: 20px; }
+          .section-myfavs .row .div1 .list .one-wine .h4 {
+            text-align: center; }
           .section-myfavs .row .div1 .list .one-wine .picture {
             height: 200px; }
           .section-myfavs .row .div1 .list .one-wine a {
@@ -1178,6 +1185,7 @@ footer {
         align-items: center;
         flex-direction: column; }
         .section-myorders .row .div1 .orderlist .wineinfos {
+          min-width: 250px;
           padding-inline-start: 0;
           margin: 0 10px 20px 10px;
           padding: 15px 20px 0 20px;
@@ -1312,6 +1320,10 @@ footer {
   .section-login .row {
     margin-top: 0; } }
 
+@media (max-width: 650px) {
+  .section-profile {
+    margin-bottom: 100px; } }
+
 .section-profile .fullscreen-bg {
   position: fixed;
   top: 0;
@@ -1362,6 +1374,11 @@ footer {
   .section-profile .row {
     margin-top: 0; } }
 
+@media (max-width: 650px) {
+  .section-advice {
+    margin-top: 30px;
+    margin-bottom: 100px; } }
+
 .section-advice .fullscreen-bg {
   position: fixed;
   top: 0;
@@ -1394,7 +1411,8 @@ footer {
       width: 100%;
       display: flex;
       flex-direction: row;
-      align-items: flex-start; }
+      align-items: flex-start;
+      justify-content: center; }
     .section-advice .row .div1 .icon {
       width: 130px;
       height: 130px;
@@ -1432,6 +1450,9 @@ footer {
   display: flex;
   align-items: center;
   text-align: center; }
+  @media (max-width: 650px) {
+    .section-contact .row {
+      margin-bottom: 80px; } }
   .section-contact .row .div1 {
     display: flex;
     flex-direction: column;
@@ -1462,6 +1483,9 @@ footer {
           display: flex;
           flex-direction: column;
           width: 100%; }
+          @media (max-width: 650px) {
+            .section-contact .row .div1 .content .newsletter-form label {
+              align-items: center; } }
           .section-contact .row .div1 .content .newsletter-form label input {
             text-align: center;
             height: 35px;
@@ -1475,6 +1499,9 @@ footer {
             letter-spacing: 1.76px;
             width: 100%;
             color: #B5ACA5; }
+            @media (max-width: 650px) {
+              .section-contact .row .div1 .content .newsletter-form label input {
+                width: 250px; } }
           .section-contact .row .div1 .content .newsletter-form label input:focus {
             outline: none;
             color: black; }
@@ -1598,7 +1625,7 @@ footer {
       transition-timing-function: ease-in-out; }
       @media (max-width: 650px) {
         .section-signuplogin .row .div1 .image {
-          height: 180px; } }
+          height: 150px; } }
     .section-signuplogin .row .div1 .button-div {
       position: fixed;
       bottom: 0;
@@ -1631,6 +1658,10 @@ footer {
     margin-top: 40px; }
     .section-signuplogin .row .button-div-position {
       flex-direction: column; } }
+
+@media (max-width: 650px) {
+  .section-settings {
+    margin-bottom: 100px; } }
 
 .section-settings .fullscreen-bg {
   position: fixed;
