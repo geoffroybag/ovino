@@ -10,7 +10,7 @@ function scrollDown() {
  
   TweenMax.to(".loadingpage", 3, {
        delay: 0.2,
-       top: "-110%",
+       top: "-120%",
        ease: Expo.easeInOut
   });
  
