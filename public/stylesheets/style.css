@@ -333,7 +333,7 @@ footer {
       width: 100px;
       height: 100px; } }
 
-@media (max-width: 713px) {
+@media (max-width: 767px) {
   .section-home .bottles-homepage {
     display: none; }
   .section-home .row {
@@ -652,7 +652,7 @@ footer {
       .section-type .row .icon {
         width: 100px;
         height: 100px; } }
-  @media (max-width: 713px) {
+  @media (max-width: 767px) {
     .section-type .bottles-homepage {
       display: none; } }
   .section-type button {
@@ -1134,7 +1134,7 @@ footer {
       .section-order .row .icon {
         width: 100px;
         height: 100px; } }
-  @media (max-width: 713px) {
+  @media (max-width: 767px) {
     .section-order .bottles-homepage {
       display: none; } }
   .section-order .button-div {
