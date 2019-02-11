@@ -602,6 +602,9 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  @media (max-width: 713px) {
+    .section-type .prev-btn {
+      position: relative; } }
   .section-type .fullscreen-bg {
     position: fixed;
     top: 0;
@@ -685,6 +688,10 @@ footer {
     display: flex;
     align-items: center;
     text-align: center; }
+    @media (max-width: 767px) {
+      .section-reco .row {
+        height: auto;
+        margin-top: 30px; } }
     .section-reco .row .div1 {
       display: flex;
       flex-direction: column;
@@ -697,8 +704,14 @@ footer {
         -webkit-padding-start: 0;
         display: flex;
         width: 70%; }
+        @media (max-width: 767px) {
+          .section-reco .row .div1 .list {
+            flex-direction: column; } }
         .section-reco .row .div1 .list .one-wine {
           list-style: none; }
+          @media (max-width: 767px) {
+            .section-reco .row .div1 .list .one-wine {
+              margin: 10px 0; } }
           .section-reco .row .div1 .list .one-wine .img {
             display: flex;
             justify-content: center;
@@ -786,14 +799,30 @@ footer {
     margin-bottom: 80px;
     transform: translate(-50%, -50%);
     left: 50%; }
+    @media (max-width: 767px) {
+      .section-reco .button-div {
+        position: relative;
+        margin: 0;
+        transform: none;
+        left: auto;
+        margin-bottom: 100px; } }
     .section-reco .button-div .button-div-position {
       display: flex;
       flex-direction: row;
       align-items: center; }
+      @media (max-width: 767px) {
+        .section-reco .button-div .button-div-position {
+          flex-direction: column; } }
       .section-reco .button-div .button-div-position .button-left {
         margin-right: 5px; }
+        @media (max-width: 767px) {
+          .section-reco .button-div .button-div-position .button-left {
+            margin-right: 0; } }
       .section-reco .button-div .button-div-position .button-right {
         margin-left: 5px; }
+        @media (max-width: 767px) {
+          .section-reco .button-div .button-div-position .button-right {
+            margin-right: 0; } }
 
 .section-myfriends {
   display: flex;
@@ -1143,14 +1172,32 @@ footer {
     margin-bottom: 80px;
     transform: translate(-50%, -50%);
     left: 50%; }
+    @media (max-width: 767px) {
+      .section-order .button-div {
+        position: relative;
+        margin: 0;
+        transform: none;
+        left: auto;
+        margin-bottom: 100px; } }
     .section-order .button-div .button-div-position {
       display: flex;
       flex-direction: row;
       align-items: center; }
+      @media (max-width: 767px) {
+        .section-order .button-div .button-div-position {
+          flex-direction: column; } }
       .section-order .button-div .button-div-position .button-left {
         margin-right: 5px; }
+        @media (max-width: 767px) {
+          .section-order .button-div .button-div-position .button-left {
+            margin: 0;
+            width: 250px; } }
       .section-order .button-div .button-div-position .button-right {
         margin-left: 5px; }
+        @media (max-width: 767px) {
+          .section-order .button-div .button-div-position .button-right {
+            margin: 0;
+            width: 250px; } }
 
 .section-myorders {
   display: flex;

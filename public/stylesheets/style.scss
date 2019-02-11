@@ -787,6 +787,11 @@ footer{
   display: flex;
   flex-direction: column;
   align-items: center;
+  .prev-btn{
+    @media (max-width:713px) {
+      position: relative;
+    }
+  }
   .fullscreen-bg{
     position: fixed;
     top: 0;
@@ -889,6 +894,10 @@ footer{
     display: flex;
     align-items: center;
     text-align: center;
+    @media (max-width:767px){
+      height: auto;
+      margin-top: 30px;
+    }
     .div1{
       display: flex;
       flex-direction: column;
@@ -898,11 +907,17 @@ footer{
         margin: 20px;
       }
       .list{
+        @media (max-width:767px){
+          flex-direction: column;
+        }
         padding-inline-start: 0;
         -webkit-padding-start: 0;
         display : flex; 
         width: 70%;
         .one-wine{
+          @media (max-width:767px){
+            margin: 10px 0;
+          }
         list-style: none;  
           .img{
             display: flex;
@@ -1023,20 +1038,36 @@ footer{
     }
   } 
     .button-div{
+    @media (max-width:767px){
+      position: relative;
+      margin: 0;
+      transform: none;
+      left: auto;
+      margin-bottom: 100px;
+    }
       position: fixed;
       bottom: 0;
       margin-bottom: 80px;
       transform: translate(-50%, -50%);
       left: 50%;
       .button-div-position{
+        @media (max-width:767px){
+          flex-direction: column;
+        }
         display: flex;
         flex-direction: row;
         align-items: center;
         .button-left{
           margin-right: 5px;
+          @media (max-width:767px){
+            margin-right: 0;
+          }
         }
         .button-right{
           margin-left: 5px;
+          @media (max-width:767px){
+            margin-right: 0;
+          }
         }
       }
     }
@@ -1460,19 +1491,37 @@ footer{
     }
   }
   .button-div{
+    @media (max-width:767px){
+      position: relative;
+      margin: 0;
+      transform: none;
+      left: auto;
+      margin-bottom: 100px;
+    }
     position: fixed;
     bottom: 0;
     margin-bottom: 80px;
     transform: translate(-50%, -50%);
     left: 50%;
     .button-div-position{
+      @media (max-width:767px){
+        flex-direction: column;
+      }
       display: flex;
       flex-direction: row;
       align-items: center;
       .button-left{
+        @media (max-width:767px){
+          margin:0;
+          width: 250px
+        }
         margin-right: 5px;
       }
       .button-right{
+        @media (max-width:767px){
+          margin:0;
+          width: 250px
+        }
         margin-left: 5px;
       }
     }
