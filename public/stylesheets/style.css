@@ -1830,7 +1830,8 @@ footer {
 
 .certify {
   margin: 0 30px;
-  justify-content: center; }
+  justify-content: center;
+  height: auto; }
   .certify .h5 {
     text-align: left; }
 
